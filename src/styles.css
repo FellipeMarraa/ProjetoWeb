@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+.cabecalho{
+position: absolute;
+width: 1500px;
+height: 86px;
+left: 0px;
+top: 0px;
+}
+#logo{
+position: absolute;
+width: 62px;
+height: 57px;
+left: 52px;
+top: 17px;
+
+font-family: Saira Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 57px;
+color: #000000;
+}
+
+#empresa{
+ position: absolute;
+width: 111px;
+height: 57px;
+left: 522px;
+top: 14px;
+
+font-family: Saira Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 57px;
+color: #000000;
+}
