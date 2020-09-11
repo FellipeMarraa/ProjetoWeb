@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ProjetoUC"
+    }
+  },
+  "defaultProject": "ProjetoUC",
+  "cli": {
+    "analytics": "e1bbdbc9-ea3f-4796-bfa8-b7bfbedf8fe9"
+  }
 }
