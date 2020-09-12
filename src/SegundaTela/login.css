@@ -39,6 +39,7 @@ position: absolute;
   width: 400px;
   height: 40px;
   border-radius: 20px;
+  outline: none;
 }
 
 #senha{
@@ -47,6 +48,7 @@ position: absolute;
   width: 400px;
   height: 40px;
   border-radius: 20px;
+  outline: none;
 }
 
 #login{
@@ -58,6 +60,7 @@ position: absolute;
   background-color: #79b3f6;
   border-radius: 20px;
   cursor:pointer ;
+  outline: none;
 }
 
 #esqueceu-senha{
@@ -77,6 +80,7 @@ position: absolute;
 #cadastrar{
   color: #79b3f6;
   cursor:pointer;
+  outline: none;
 
 }
 
