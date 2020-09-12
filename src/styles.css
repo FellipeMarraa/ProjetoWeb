@@ -52,13 +52,14 @@ position: absolute;
 margin-left: 5px;
   margin-right: 5px;
 left: 1125px;
-top: 10px;
+top: 22px;
 font-family: Roboto;
 font-weight: normal;
 font-size: 15px;
 text-align: center;
   padding: 5px;
   border: 1px solid #000000;
+  color: black;
 }
 
 #cadastre:hover{
@@ -73,7 +74,7 @@ text-align: center;
   width: 50px;
 position: absolute;
 left: 1222px;
-top: 10px;
+top: 22px;
 font-family: Roboto;
 
 font-weight: normal;
@@ -266,7 +267,7 @@ font-size: 15px;
   height: 70px;
   left: 300px;
   bottom: 0px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
   right: 210px;
   z-index:999;
   text-align: center;
