@@ -3,82 +3,83 @@ html, body {
   padding: 0;
   height: 100%;
 }
+
 @media only screen and (max-device-width: 1200px) {
   /* .menu { width:1200px; } */
 }
 
-.cabecalho{
-background-color: white;
-position: fixed;
-width: 1300px;
-height: 70px;
-left: 300px;
+.cabecalho {
+  background-color: white;
+  position: fixed;
+  width: 1300px;
+  height: 70px;
+  left: 300px;
   right: 210px;
-top: 0px;
-z-index:999;
+  top: 0px;
+  z-index: 999;
 
 }
 
-#logo{
-position: absolute;
-width: 30px;
-height: 25px;
-left: 40px;
-top: -15px;
-font-family: Saira Condensed;
-font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 57px;
-color: #000000;
+#logo {
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  left: 40px;
+  top: -15px;
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 57px;
+  color: #000000;
 }
 
-#empresa{
- position: absolute;
-width: 111px;
-height: 57px;
-left: 600px;
-top: -15px;
-font-family: Saira Condensed;
-font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 57px;
-color: #000000;
+#empresa {
+  position: absolute;
+  width: 111px;
+  height: 57px;
+  left: 600px;
+  top: -15px;
+  font-family: Saira Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 57px;
+  color: #000000;
 }
 
-#cadastre{
-position: absolute;
-margin-left: 5px;
+#cadastre {
+  position: absolute;
+  margin-left: 5px;
   margin-right: 5px;
-left: 1125px;
-top: 22px;
-font-family: Roboto;
-font-weight: normal;
-font-size: 15px;
-text-align: center;
+  left: 1125px;
+  top: 22px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: center;
   padding: 5px;
   border: 1px solid #000000;
   color: black;
 }
 
-#cadastre:hover{
+#cadastre:hover {
   background-color: #79b3f6;
   color: black;
-  cursor:pointer ;
+  cursor: pointer;
 }
 
-#login{
+#login {
   margin-right: 5px;
   margin-left: 5px;
   width: 50px;
-position: absolute;
-left: 1222px;
-top: 22px;
-font-family: Roboto;
+  position: absolute;
+  left: 1222px;
+  top: 22px;
+  font-family: Roboto;
 
-font-weight: normal;
-font-size: 15px;
+  font-weight: normal;
+  font-size: 15px;
 
   color: black;
   text-align: center;
@@ -86,14 +87,14 @@ font-size: 15px;
   border: 1px solid #000000;
 }
 
-#login:hover{
+#login:hover {
   background-color: #79b3f6;
   color: black;
-  cursor:pointer ;
+  cursor: pointer;
 
 }
 
-.assistencia{
+.assistencia {
   position: absolute;
   width: 1300px;
   height: 280px;
@@ -104,7 +105,7 @@ font-size: 15px;
   background: #79b3f6;
 }
 
-#titulo{
+#titulo {
 
   position: absolute;
   width: 304px;
@@ -125,7 +126,7 @@ font-size: 15px;
   color: #0D0C0C;
 }
 
-#icone{
+#icone {
 
   position: absolute;
   width: 400px;
@@ -135,7 +136,7 @@ font-size: 15px;
 
 }
 
-#contrate{
+#contrate {
 
   position: absolute;
   width: 644px;
@@ -155,7 +156,7 @@ font-size: 15px;
   color: #000000;
 }
 
-#etiqueta{
+#etiqueta {
 
   position: absolute;
   width: 30px;
@@ -164,7 +165,7 @@ font-size: 15px;
   top: 425px;
 }
 
-.texto{
+.texto {
   position: absolute;
   width: 1300px;
   height: 500px;
@@ -174,7 +175,7 @@ font-size: 15px;
 
 }
 
-#primeiro-texto{
+#primeiro-texto {
 
   position: absolute;
   width: 600px;
@@ -193,7 +194,7 @@ font-size: 15px;
   color: #000000;
 }
 
-#primeira-imagem{
+#primeira-imagem {
   position: absolute;
   width: 553px;
   height: 369px;
@@ -201,7 +202,7 @@ font-size: 15px;
   top: 80px;
 }
 
-#segunda-imagem{
+#segunda-imagem {
   position: absolute;
   width: 553px;
   height: 369px;
@@ -210,7 +211,7 @@ font-size: 15px;
   top: 500px;
 }
 
-#segundo-texto{
+#segundo-texto {
 
   position: absolute;
   width: 600px;
@@ -231,7 +232,7 @@ font-size: 15px;
 
 }
 
-#terceiro-texto{
+#terceiro-texto {
 
   position: absolute;
   width: 600px;
@@ -252,7 +253,7 @@ font-size: 15px;
 
 }
 
-#terceira-imagem{
+#terceira-imagem {
   position: absolute;
   width: 403px;
   height: 369px;
@@ -260,7 +261,7 @@ font-size: 15px;
   top: 920px;
 }
 
-.rodape{
+.rodape {
   background-color: white;
   position: fixed;
   width: 1300px;
@@ -269,6 +270,6 @@ font-size: 15px;
   bottom: 0px;
   margin-bottom: 0px;
   right: 210px;
-  z-index:999;
+  z-index: 999;
   text-align: center;
 }

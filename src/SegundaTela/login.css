@@ -3,10 +3,12 @@ html, body {
   padding: 0;
   height: 100%;
 }
+
 @media only screen and (max-device-width: 1200px) {
   /* .menu { width:1200px; } */
 }
-.caixa-login{
+
+.caixa-login {
   position: absolute;
   width: 630px;
   height: 740px;
@@ -16,7 +18,7 @@ html, body {
   border-radius: 25px;
 }
 
-#icone-user{
+#icone-user {
   height: 200px;
   width: 200px;
   position: absolute;
@@ -26,15 +28,16 @@ html, body {
   bottom: 60px;
 }
 
-#formulario{
-position: absolute;
+#formulario {
+  position: absolute;
   width: 530px;
   height: 330px;
   top: 350px;
   left: 50px;
 
 }
-#email{
+
+#email {
   margin-left: 70px;
   width: 400px;
   height: 40px;
@@ -42,7 +45,7 @@ position: absolute;
   outline: none;
 }
 
-#senha{
+#senha {
   margin-left: 70px;
   margin-top: 20px;
   width: 400px;
@@ -51,7 +54,7 @@ position: absolute;
   outline: none;
 }
 
-#login{
+#login {
   position: absolute;
   margin-left: -270px;
   top: 150px;
@@ -59,27 +62,27 @@ position: absolute;
   height: 60px;
   background-color: #79b3f6;
   border-radius: 20px;
-  cursor:pointer ;
+  cursor: pointer;
   outline: none;
 }
 
-#esqueceu-senha{
+#esqueceu-senha {
   position: absolute;
   margin-left: -255px;
   margin-top: 200px;
-  cursor:pointer;
+  cursor: pointer;
   color: #79b3f6;
 }
 
-#nao-possui{
+#nao-possui {
   position: absolute;
   margin-left: 160px;
   margin-top: 200px;
 }
 
-#cadastrar{
+#cadastrar {
   color: #79b3f6;
-  cursor:pointer;
+  cursor: pointer;
   outline: none;
 
 }
