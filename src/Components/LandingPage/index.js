@@ -1,11 +1,13 @@
 import React from 'react';
 import './landingPage.css';
+import {Link} from "react-router-dom";
+
 import imageHeader from '../../assets/imageHeader.png';
 import etiqueta from '../../assets/mdi_loyalty.png';
 import primeiraImagem from '../../assets/hide-the-pain-stockphoto-840x560 1.png';
 import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
 import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
-import {Link} from "react-router-dom";
+import menu from '../../assets/menu.svg';
 
 const LandingPage = props => {
 
@@ -13,8 +15,8 @@ const LandingPage = props => {
         <div>
             <header>
                 <div className={'cabecalho-landing'}>
-                    <h2 id={'logo-landing'}>Logo</h2>
-                    <h2 id={'empresa-landing'}>Empresa</h2>
+                    <img id={'menu-landing'} src={menu}/>
+                    <h2 id={'empresa-landing'}>Tech Center</h2>
                     <Link to='./Components/CadastroPage'> <a id={'cadastre-landing'}>Cadastre-se</a></Link>
                     <Link to='./Components/LoginPage'><a id={'login-landing'}>Login</a></Link>
                 </div>
