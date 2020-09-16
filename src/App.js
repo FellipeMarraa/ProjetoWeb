@@ -1,15 +1,12 @@
 import React from 'react';
 import './App.css';
-import LoginPage from "./Components/LoginPage";
+import CadastroPage from "./Components/CadastroPage";
 
 function App() {
   return (
       <div className="App">
-          <LoginPage nome='Bruno'>
+          <CadastroPage></CadastroPage>
 
-              <h2>está é uma children</h2>
-
-          </LoginPage>
       </div>
   );
 }
