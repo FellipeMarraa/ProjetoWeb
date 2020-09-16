@@ -1,0 +1,271 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    /* .menu { width:1200px; } */
+}
+
+.cabecalho {
+    background-color: white;
+    position: fixed;
+    width: 1300px;
+    height: 70px;
+    left: 300px;
+    right: 210px;
+    top: 0px;
+    z-index: 999;
+
+}
+
+#logo {
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    left: 40px;
+    top: -15px;
+    font-family: Saira Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 57px;
+    color: #000000;
+}
+
+#empresa {
+    position: absolute;
+    width: 111px;
+    height: 57px;
+    left: 600px;
+    top: -15px;
+    font-family: Saira Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 57px;
+    color: #000000;
+}
+
+#cadastre {
+    position: absolute;
+    margin-left: 5px;
+    margin-right: 5px;
+    left: 1125px;
+    top: 22px;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000000;
+    color: black;
+}
+
+#cadastre:hover {
+    background-color: #79b3f6;
+    color: black;
+    cursor: pointer;
+}
+
+#login {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 50px;
+    position: absolute;
+    left: 1222px;
+    top: 22px;
+    font-family: Roboto;
+
+    font-weight: normal;
+    font-size: 15px;
+
+    color: black;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+
+#login:hover {
+    background-color: #79b3f6;
+    color: black;
+    cursor: pointer;
+
+}
+
+.assistencia {
+    position: absolute;
+    width: 1300px;
+    height: 280px;
+    left: 300px;
+    margin-right: 340px;
+    top: 70px;
+
+    background: #79b3f6;
+}
+
+#titulo {
+
+    position: absolute;
+    width: 304px;
+    height: 115.74px;
+    left: 150px;
+    top: 30px;
+
+    font-family: Saira Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 63px;
+    /* or 98% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #0D0C0C;
+}
+
+#icone {
+
+    position: absolute;
+    width: 400px;
+    height: 200px;
+    left: 800px;
+    top: 50px;
+
+}
+
+#contrate {
+
+    position: absolute;
+    width: 644px;
+    height: 67px;
+    left: 608px;
+    top: 350px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 67px;
+    /* identical to box height */
+
+    text-decoration-line: underline;
+
+    color: #000000;
+}
+
+#etiqueta {
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 1075px;
+    top: 425px;
+}
+
+.texto {
+    position: absolute;
+    width: 1300px;
+    height: 500px;
+    left: 300px;
+    top: 450px;
+
+
+}
+
+#primeiro-texto {
+
+    position: absolute;
+    width: 600px;
+    height: 125px;
+    left: 0px;
+    top: 0px;
+    margin-top: 80px;
+    margin-left: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: justify;
+    color: #000000;
+}
+
+#primeira-imagem {
+    position: absolute;
+    width: 553px;
+    height: 369px;
+    left: 670px;
+    top: 80px;
+}
+
+#segunda-imagem {
+    position: absolute;
+    width: 553px;
+    height: 369px;
+    left: 0px;
+    margin-left: 20px;
+    top: 500px;
+}
+
+#segundo-texto {
+
+    position: absolute;
+    width: 600px;
+    height: 178px;
+    left: 630px;
+    top: 520px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-right: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+#terceiro-texto {
+
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    left: 0px;
+    top: 1000px;
+    margin-left: 20px;
+    margin-bottom: 150px;
+    margin-top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 28px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+#terceira-imagem {
+    position: absolute;
+    width: 403px;
+    height: 369px;
+    left: 770px;
+    top: 920px;
+}
+
+.rodape {
+    background-color: white;
+    position: fixed;
+    width: 1300px;
+    height: 70px;
+    left: 300px;
+    bottom: -20px;
+    right: 210px;
+    z-index: 999;
+    text-align: center;
+}

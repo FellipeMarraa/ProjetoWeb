@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import CadastroPage from "./Components/CadastroPage";
+import LandingPage from "./Components/LandingPage";
 
 function App() {
   return (
       <div className="App">
-          <CadastroPage></CadastroPage>
+          <LandingPage></LandingPage>
 
       </div>
   );
