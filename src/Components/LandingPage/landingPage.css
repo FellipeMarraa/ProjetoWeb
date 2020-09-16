@@ -8,7 +8,7 @@ html, body {
     /* .menu { width:1200px; } */
 }
 
-.cabecalho {
+.cabecalho-landing {
     background-color: white;
     position: fixed;
     width: 1300px;
@@ -20,7 +20,7 @@ html, body {
 
 }
 
-#logo {
+#logo-landing {
     position: absolute;
     width: 30px;
     height: 25px;
@@ -34,7 +34,7 @@ html, body {
     color: #000000;
 }
 
-#empresa {
+#empresa-landing {
     position: absolute;
     width: 111px;
     height: 57px;
@@ -48,7 +48,7 @@ html, body {
     color: #000000;
 }
 
-#cadastre {
+#cadastre-landing {
     position: absolute;
     margin-left: 5px;
     margin-right: 5px;
@@ -63,13 +63,13 @@ html, body {
     color: black;
 }
 
-#cadastre:hover {
+#cadastre-landing:hover {
     background-color: #79b3f6;
     color: black;
     cursor: pointer;
 }
 
-#login {
+#login-landing {
     margin-right: 5px;
     margin-left: 5px;
     width: 50px;
@@ -87,14 +87,14 @@ html, body {
     border: 1px solid #000000;
 }
 
-#login:hover {
+#login-landing:hover {
     background-color: #79b3f6;
     color: black;
     cursor: pointer;
 
 }
 
-.assistencia {
+.assistencia-landing {
     position: absolute;
     width: 1300px;
     height: 280px;
@@ -105,7 +105,7 @@ html, body {
     background: #79b3f6;
 }
 
-#titulo {
+#titulo-landing {
 
     position: absolute;
     width: 304px;
@@ -126,7 +126,7 @@ html, body {
     color: #0D0C0C;
 }
 
-#icone {
+#icone-landing {
 
     position: absolute;
     width: 400px;
@@ -136,7 +136,7 @@ html, body {
 
 }
 
-#contrate {
+#contrate-landing {
 
     position: absolute;
     width: 644px;
@@ -156,7 +156,7 @@ html, body {
     color: #000000;
 }
 
-#etiqueta {
+#etiqueta-landing {
 
     position: absolute;
     width: 30px;
@@ -165,7 +165,7 @@ html, body {
     top: 425px;
 }
 
-.texto {
+.texto-landing {
     position: absolute;
     width: 1300px;
     height: 500px;
@@ -175,7 +175,7 @@ html, body {
 
 }
 
-#primeiro-texto {
+#primeiro-texto-landing {
 
     position: absolute;
     width: 600px;
@@ -193,7 +193,7 @@ html, body {
     color: #000000;
 }
 
-#primeira-imagem {
+#primeira-imagem-landing {
     position: absolute;
     width: 553px;
     height: 369px;
@@ -201,7 +201,7 @@ html, body {
     top: 80px;
 }
 
-#segunda-imagem {
+#segunda-imagem-landing {
     position: absolute;
     width: 553px;
     height: 369px;
@@ -210,7 +210,7 @@ html, body {
     top: 500px;
 }
 
-#segundo-texto {
+#segundo-texto-landing {
 
     position: absolute;
     width: 600px;
@@ -230,7 +230,7 @@ html, body {
 
 }
 
-#terceiro-texto {
+#terceiro-texto-landing {
 
     position: absolute;
     width: 600px;
@@ -250,7 +250,7 @@ html, body {
 
 }
 
-#terceira-imagem {
+#terceira-imagem-landing {
     position: absolute;
     width: 403px;
     height: 369px;
@@ -258,7 +258,7 @@ html, body {
     top: 920px;
 }
 
-.rodape {
+.rodape-landing {
     background-color: white;
     position: fixed;
     width: 1300px;
