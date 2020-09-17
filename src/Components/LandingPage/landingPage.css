@@ -1,15 +1,5 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-@media only screen and (max-device-width: 1200px) {
-    /* .menu { width:1200px; } */
-}
-
 .cabecalho-landing {
-    background-color: #000000;
+    background-color: #49998d;
     position: fixed;
     width: 100%;
     height: 70px;
@@ -34,9 +24,9 @@ html, body {
 
 #empresa-landing {
     position: absolute;
-    left: 47%;
+    left: 45%;
     top: -15px;
-    font-family: SansSerif;
+    font-family: fantasy;
     font-style: normal;
     font-size: 35px;
     color: #FFFFFF;
@@ -49,16 +39,16 @@ html, body {
 
 #cadastre-landing {
     position: absolute;
-    left: 88%;
+    left: 89%;
     top: 25px;
-    font-family: sans-serif;
-    font-size: 17px;
+    font-family: fantasy;
+    font-size: 18px;
     text-align: center;
     color: white;
 }
 
 #cadastre-landing:hover {
-    color: #79b3f6;
+    color: #3b7f75;
     cursor: pointer;
 }
 
@@ -67,8 +57,8 @@ html, body {
     position: absolute;
     left: 95%;
     top: 25px;
-    font-family: sans-serif;
-    font-size: 17px;
+    font-family: fantasy;
+    font-size: 18px;
     color: white;
     text-align: center;
 }
@@ -78,13 +68,16 @@ html, body {
     cursor: pointer;
 
 }
+/*Fim da NAV *****************************************************************************/
+
+/*Inicio do header ***********************************************************************/
 
 .assistencia-landing {
     position: absolute;
     width: 100%;
     height: 280px;
     top: 70px;
-    background: #333333;
+    background: #5bc4b5;
 }
 
 #titulo-landing {
@@ -92,7 +85,7 @@ html, body {
     position: absolute;
     left: 30%;
     top: 50px;
-    font-family: SansSerif;
+    font-family: fantasy;
     font-size: 50px;
     color: white;
 }
@@ -106,115 +99,67 @@ html, body {
     opacity: 35%;
 }
 
-#contrate-landing {
+/*Fim do header ****************************************************************************/
 
+/*Inicio da section ************************************************************************/
+
+.texto-landing {
     position: absolute;
-    width: 644px;
-    height: 67px;
-    left: 608px;
-    top: 350px;
+    width: 100%;
+    height: 100%;
+    margin-top: 355px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+}
+
+#conheca-landing {
+    margin-top: 10px;
+    margin-left: 798px;
+    font-family: fantasy;
     font-size: 30px;
-    line-height: 67px;
-    /* identical to box height */
-
-    text-decoration-line: underline;
-
     color: #000000;
 }
 
 #etiqueta-landing {
-
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 1075px;
-    top: 425px;
-}
-
-.texto-landing {
-    position: absolute;
-    width: 1300px;
-    height: 500px;
-    left: 300px;
-    top: 450px;
-
-
-}
-
-#primeiro-texto-landing {
-
-    position: absolute;
-    width: 600px;
-    height: 125px;
-    left: 0px;
-    top: 0px;
-    margin-top: 80px;
-    margin-left: 20px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 28px;
-    text-align: justify;
-    color: #000000;
 }
 
 #primeira-imagem-landing {
     position: absolute;
-    width: 553px;
-    height: 369px;
-    left: 670px;
-    top: 80px;
+    margin-top: -250px;
+    margin-left: 220px;
+    width: 100px;
+    height: 100px;
 }
+
+#primeiro-texto-landing {
+    margin-top: 200px;
+    margin-left: 40px;
+    width: 450px;
+    height: 125px;
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: justify;
+    color: #000000;
+}
+
 
 #segunda-imagem-landing {
     position: absolute;
-    width: 553px;
-    height: 369px;
-    left: 0px;
-    margin-left: 20px;
-    top: 500px;
+    margin-top: -250px;
+    margin-left: 900px;
+    width: 100px;
+    height: 100px;
 }
 
 #segundo-texto-landing {
-
-    position: absolute;
-    width: 600px;
-    height: 178px;
-    left: 630px;
-    top: 520px;
-    margin-left: 20px;
-    margin-top: 0px;
-    margin-right: 20px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
+    margin-top: -123px;
+    margin-left: 720px;
+    width: 450px;
+    height: 125px;
+    font-family: fantasy;
     font-size: 25px;
-    line-height: 28px;
-    text-align: justify;
-    color: #000000;
-
-}
-
-#terceiro-texto-landing {
-
-    position: absolute;
-    width: 600px;
-    height: 200px;
-    left: 0px;
-    top: 1000px;
-    margin-left: 20px;
-    margin-bottom: 150px;
-    margin-top: 0px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    line-height: 28px;
     text-align: justify;
     color: #000000;
 
@@ -222,20 +167,34 @@ html, body {
 
 #terceira-imagem-landing {
     position: absolute;
-    width: 403px;
-    height: 369px;
-    left: 770px;
-    top: 920px;
+    margin-top: -250px;
+    margin-left: 83%;
+    width: 100px;
+    height: 100px;
 }
 
+#terceiro-texto-landing {
+
+    margin-top: -123px;
+    margin-left: 1400px;
+    width: 450px;
+    height: 125px;
+    font-family: fantasy;
+    font-size: 25px;
+    text-align: justify;
+    color: #000000;
+
+}
+
+/*Fim da section ************************************************************************/
+
+/*Inicio do footer **********************************************************************/
 .rodape-landing {
     background-color: white;
     position: fixed;
-    width: 1300px;
+    width: 100%;
     height: 70px;
-    left: 300px;
     bottom: -20px;
-    right: 210px;
     z-index: 999;
     text-align: center;
 }
