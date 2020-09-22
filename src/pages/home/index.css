@@ -1,4 +1,4 @@
-.cabecalho-landing {
+#cabecalho-landing {
     background-color: #49998d;
     position: fixed;
     width: 100%;
@@ -7,44 +7,117 @@
     z-index: 999;
 }
 
-#menu-landing {
+#home-landing {
     position: absolute;
-    width: 50px;
-    height: 30px;
-    left: 40px;
-    top: 20px;
+    left: 42%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
 }
 
-#menu-landing:hover {
-    width: 55px;
-    height: 35px;
+#home-landing:hover {
+    color: #5bc4b5;
     cursor: pointer;
-    top: 18px;
+}
+
+#sobre-landing{
+    position: absolute;
+    left: 46%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#sobre-landing:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#catalogo-landing{
+    position: absolute;
+    left: 50%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#catalogo-landing:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#contato-landing{
+    position: absolute;
+    left: 55%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#contato-landing:hover {
+    color: #5bc4b5;
+    cursor: pointer;
 }
 
 #empresa-landing {
     position: absolute;
-    left: 45%;
-    top: -15px;
-    font-family: fantasy;
-    font-style: normal;
+    left: 40px;
+    top: 15px;
+    font-family: SansSerif;
+    font-style: italic;
+    text-decoration: none;
     font-size: 35px;
     color: #FFFFFF;
 }
 
 #empresa-landing:hover {
-    color: #79b3f6;
+    color: #5bc4b5;
     cursor: pointer;
+}
+
+#login-landing {
+
+    position: absolute;
+    left: 80%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+#login-landing:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+
 }
 
 #cadastre-landing {
     position: absolute;
-    left: 89%;
-    top: 25px;
-    font-family: fantasy;
+    left: 85%;
+    top: 15px;
+    font-family: SansSerif;
     font-size: 18px;
+    font-style: normal;
     text-align: center;
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 0.5%;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: #5bc4b5;
     color: white;
+    text-decoration: none;
 }
 
 #cadastre-landing:hover {
@@ -52,30 +125,14 @@
     cursor: pointer;
 }
 
-#login-landing {
-    width: 50px;
-    position: absolute;
-    left: 95%;
-    top: 25px;
-    font-family: fantasy;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-}
-
-#login-landing:hover {
-    color: #79b3f6;
-    cursor: pointer;
-
-}
 /*Fim da NAV *****************************************************************************/
 
 /*Inicio do header ***********************************************************************/
 
-.assistencia-landing {
+#assistencia-landing {
     position: absolute;
     width: 100%;
-    height: 280px;
+    height: 400px;
     top: 70px;
     background: #5bc4b5;
 }
@@ -83,19 +140,19 @@
 #titulo-landing {
 
     position: absolute;
-    left: 30%;
-    top: 50px;
-    font-family: fantasy;
-    font-size: 50px;
+    left: 40px;
+    top: 90px;
+    font-family: SansSerif;
+    font-size: 30px;
     color: white;
 }
 
 #icone-landing {
     position: absolute;
-    width: 650px;
-    height: 250px;
+    width: 680px;
+    height: 280px;
     left: 60%;
-    top: 20px;
+    top: 90px;
     opacity: 35%;
 }
 
@@ -103,18 +160,18 @@
 
 /*Inicio da section ************************************************************************/
 
-.texto-landing {
+#servicos-landing {
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-top: 355px;
+    margin-top: 470px;
 
 }
 
 #conheca-landing {
-    margin-top: 10px;
-    margin-left: 798px;
-    font-family: fantasy;
+    margin-top: 100px;
+    margin-left: 840px;
+    font-family: SansSerif;
     font-size: 30px;
     color: #000000;
 }
@@ -138,7 +195,7 @@
     margin-left: 40px;
     width: 450px;
     height: 125px;
-    font-family: fantasy;
+    font-family: SansSerif;
     font-size: 25px;
     text-align: justify;
     color: #000000;
@@ -158,7 +215,7 @@
     margin-left: 720px;
     width: 450px;
     height: 125px;
-    font-family: fantasy;
+    font-family: SansSerif;
     font-size: 25px;
     text-align: justify;
     color: #000000;
@@ -179,7 +236,7 @@
     margin-left: 1400px;
     width: 450px;
     height: 125px;
-    font-family: fantasy;
+    font-family: SansSerif;
     font-size: 25px;
     text-align: justify;
     color: #000000;
@@ -189,12 +246,11 @@
 /*Fim da section ************************************************************************/
 
 /*Inicio do footer **********************************************************************/
-.rodape-landing {
+#rodape-landing {
     background-color: white;
-    position: fixed;
+    position: absolute;
+    margin-top: 100%;
     width: 100%;
     height: 70px;
-    bottom: -20px;
-    z-index: 999;
     text-align: center;
 }

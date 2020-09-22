@@ -1,5 +1,5 @@
 import React from 'react';
-import './loginPage.css';
+import './index.css';
 import iconeUser from '../../assets/IconeUser.png';
 import {Link} from "react-router-dom";
 import {Form, Input} from 'reactstrap';
