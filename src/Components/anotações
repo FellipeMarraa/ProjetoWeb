@@ -1,5 +1,2 @@
-import React, {userState} from 'react';
 
-//variavel    //metodo        //valor inicial
-    const [nome, setNome] = userState("Fellipe");
 

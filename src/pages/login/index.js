@@ -1,6 +1,5 @@
 import React from 'react';
 import './index.css';
-import iconeUser from '../../assets/IconeUser.png';
 import {Link} from "react-router-dom";
 import {Form, Input} from 'reactstrap';
 
@@ -8,7 +7,7 @@ const LoginPage = props => {
 
     return (
         <div className={'caixa-login-login'}>
-            <img id={'icone-user-login'} src={iconeUser}/>
+
             <Form id={'formulario-login'}>
 
                 <Input id={'email-login'} type={'email'} name="email" placeholder={'Email: '}/>

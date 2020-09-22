@@ -1,12 +1,11 @@
 #cabecalho-landing {
-    background-color: #49998d;
+    background-color: #418e89;
     position: fixed;
     width: 100%;
     height: 70px;
     top: 0px;
     z-index: 999;
 }
-
 #home-landing {
     position: absolute;
     left: 42%;
@@ -22,9 +21,25 @@
     cursor: pointer;
 }
 
-#sobre-landing{
+
+#como-funciona-landing{
     position: absolute;
     left: 46%;
+    top: 25px;
+    font-family: SansSerif;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+}
+
+#como-funciona--landing:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#sobre-landing{
+    position: absolute;
+    left: 54%;
     top: 25px;
     font-family: SansSerif;
     font-size: 18px;
@@ -37,24 +52,9 @@
     cursor: pointer;
 }
 
-#catalogo-landing{
-    position: absolute;
-    left: 50%;
-    top: 25px;
-    font-family: SansSerif;
-    font-size: 18px;
-    text-align: center;
-    color: white;
-}
-
-#catalogo-landing:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
 #contato-landing{
     position: absolute;
-    left: 55%;
+    left: 58%;
     top: 25px;
     font-family: SansSerif;
     font-size: 18px;
@@ -125,132 +125,396 @@
     cursor: pointer;
 }
 
-/*Fim da NAV *****************************************************************************/
+/*Fim do cabecalho ********************************************************/
 
-/*Inicio do header ***********************************************************************/
+/*Inicio do header ********************************************************/
 
-#assistencia-landing {
+#header {
     position: absolute;
     width: 100%;
-    height: 400px;
-    top: 70px;
-    background: #5bc4b5;
+    height: 78%;
+    background: #4eada7;
+    padding-bottom: 20px;
+
 }
 
-#titulo-landing {
-
+.caixa-cadastro {
     position: absolute;
-    left: 40px;
-    top: 90px;
-    font-family: SansSerif;
-    font-size: 30px;
+    width: 430px;
+    height: 540px;
+    left: 350px;
+    top: 150px;
+
+}
+
+#formulario-cadastro {
+    position: absolute;
+    width: 400px;
+    height: 330px;
+    top: 200px;
+    left: 15px;
+
+}
+
+#titulo-formulario-cadastro {
+    margin-left: 30px;
+    font-family: Helvetica;
+    font-size: 35px;
+}
+
+#subtitulo-formulario-cadastro {
+    margin-left: 30px;
+    margin-top: -20px;
+    font-family: Helvetica;
+    font-size: 20px;
     color: white;
 }
 
-#icone-landing {
-    position: absolute;
-    width: 680px;
-    height: 280px;
-    left: 60%;
-    top: 90px;
-    opacity: 35%;
+#mais-clientes {
+    color: white;
 }
 
-/*Fim do header ****************************************************************************/
+#nome-cadastro {
+    margin-left: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
 
-/*Inicio da section ************************************************************************/
+#email-cadastro {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
 
-#servicos-landing {
+#senha-cadastro {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
+
+#repetir-senha-cadastro {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
+
+#cadastro-cadastro {
+    margin-top: 30px;
+    margin-left: 14px;
+    width: 350px;
+    height: 40px;
+    background-color: #4eada7;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid black;
+    outline: none;
+    font-size: 20px;
+    color: white;
+}
+
+#login-cadastro {
+    color: white;
+    cursor: pointer;
+}
+
+#header-image {
     position: absolute;
+    margin-left: 900px;
+    margin-top: 150px;
+}
+
+/*Fim do header ****************************************/
+
+/*Inicio body ******************************************/
+
+#explicacao-cadastro {
+    position: absolute;
+    margin-top: 750px;
     width: 100%;
-    height: 100%;
-    margin-top: 470px;
+    height: 24%;
+    background: white;
+}
+
+#notificacao-image {
+    width: 150px;
+    height: 130px;
+    margin-left: 520px;
+}
+
+#texto-notificacao {
+    position: absolute;
+    text-align: center;
+    margin-left: 400px;
+}
+
+#economia-image {
+    margin-top: 15px;
+    width: 150px;
+    height: 130px;
+    margin-left: 200px;
+}
+
+#texto-economia {
+    position: absolute;
+    text-align: center;
+    margin-left: 800px;
+}
+
+#seguranca-image {
+    width: 110px;
+    height: 90px;
+    margin-left: 200px;
+}
+
+#texto-seguranca {
+    position: absolute;
+    text-align: center;
+    margin-left: 1150px;
+}
+
+#como-funciona-cadastro {
+    position: absolute;
+    margin-top: 980px;
+    width: 100%;
+    height: 23%;
+    background: #4eada7;
+}
+
+#como-funciona-image {
+    margin-top: -200px;
+    margin-left: 1000px;
+    width: 400px;
+    height: 200px;
+}
+
+#titulo-como-funciona-cadastro {
+    margin-top: 50px;
+    margin-left: 480px;
+    font-size: 35px;
+    font-family: Helvetica;
+    color: white;
+    opacity: 90%;
+}
+
+
+#texto-como-funciona-cadastro {
+    margin-left: 480px;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: white;
+    opacity: 90%;
+}
+
+#quanto-custa-cadastro {
+    position: absolute;
+    margin-top: 1200px;
+    width: 100%;
+    height: 23%;
+    background: white;
+}
+
+#quanto-custa-image {
+    margin-top: -200px;
+    margin-left: 1200px;
+    width: 200px;
+    height: 200px;;
+}
+
+#titulo-quanto-custa-cadastro {
+    margin-top: 50px;
+    margin-left: 480px;
+    font-size: 35px;
+    font-family: Helvetica;
+    color: #34464f;
+    opacity: 90%;
+}
+
+
+#texto-quanto-custa-cadastro {
+    margin-left: 480px;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: #34464f;
 
 }
 
-#conheca-landing {
-    margin-top: 100px;
-    margin-left: 840px;
-    font-family: SansSerif;
-    font-size: 30px;
-    color: #000000;
+#sobre-nos-cadastro {
+    position: absolute;
+    margin-top: 1420px;
+    width: 100%;
+    height: 85%;
+    background-color: #4eada7;
+
 }
 
-#etiqueta-landing {
+#titulo-sobre-nos-cadastro {
+    margin-left: 90px;
+    font-size: 35px;
+    font-family: Helvetica;
+    color: white;
+}
+
+#texto-sobre-nos-cadastro {
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: white;
+}
+
+#sobre-nos-image {
+    margin-top: 180px;
+    margin-left: 20px;
+}
+/*Fim body ******************************************/
+
+/*Inicio Rodape**************************************/
+
+#informacoes-landing {
+    position: absolute;
+    margin-top: 2230px;
+    width: 100%;
+    height: 30%;
+    background-color: #282c34;
+}
+
+#servicos-informacoes{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 150px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+}
+
+dt{
+    font-size: 15px;
+}
+
+#rede-social-informacoes{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 650px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+}
+
+#instagram-icon{
     position: absolute;
     width: 30px;
     height: 30px;
+    margin-left: 650px;
+    margin-top: 100px;
+
 }
 
-#primeira-imagem-landing {
+#facebook-icon{
     position: absolute;
-    margin-top: -250px;
-    margin-left: 220px;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
+    margin-left: 650px;
+    margin-top: 140px
 }
 
-#primeiro-texto-landing {
-    margin-top: 200px;
+#whatsapp-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 650px;
+    margin-top: 180px
+}
+
+#instagram, #facebook, #whatsapp{
     margin-left: 40px;
-    width: 450px;
-    height: 125px;
-    font-family: SansSerif;
-    font-size: 25px;
-    text-align: justify;
-    color: #000000;
+    padding: 2px;
 }
 
-
-#segunda-imagem-landing {
+#downloads-informacoes{
     position: absolute;
-    margin-top: -250px;
-    margin-left: 900px;
-    width: 100px;
+    margin-top: 70px;
+    margin-left: 1050px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+}
+
+#baixar-icon{
+    position: absolute;
+    width: 150px;
     height: 100px;
+    margin-left: 1025px;
+    margin-top: 100px
 }
 
-#segundo-texto-landing {
-    margin-top: -123px;
-    margin-left: 720px;
-    width: 450px;
-    height: 125px;
-    font-family: SansSerif;
-    font-size: 25px;
-    text-align: justify;
-    color: #000000;
-
-}
-
-#terceira-imagem-landing {
+#mais-informacoes{
     position: absolute;
-    margin-top: -250px;
-    margin-left: 83%;
-    width: 100px;
-    height: 100px;
+    margin-top: 70px;
+    margin-left: 1500px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
 }
 
-#terceiro-texto-landing {
-
-    margin-top: -123px;
-    margin-left: 1400px;
-    width: 450px;
-    height: 125px;
-    font-family: SansSerif;
-    font-size: 25px;
-    text-align: justify;
-    color: #000000;
-
-}
-
-/*Fim da section ************************************************************************/
-
-/*Inicio do footer **********************************************************************/
-#rodape-landing {
-    background-color: white;
+#email-informacoes{
     position: absolute;
-    margin-top: 100%;
-    width: 100%;
-    height: 70px;
+    margin-top: 108px;
+    margin-left: 1545px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+}
+
+#email-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1502px;
+    margin-top: 105px
+}
+
+#telefone-informacoes{
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 1545px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
+}
+
+#telefone-icon{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1502px;
+    margin-top: 155px
+}
+
+#empresa{
+
+    margin-top: 255px;
+
+    font-family: Helvetica;
+    font-size: 20px;
+    color: white;
     text-align: center;
 }
