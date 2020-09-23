@@ -27,7 +27,7 @@ const CadastroPage = props => {
                 <AnchorLink id={'home-landing'} href='#header'>Home</AnchorLink>
                 <AnchorLink id={'como-funciona-landing'} href='#texto-notificacao'>Como funciona</AnchorLink>
                 <AnchorLink id={'sobre-landing'} href='#texto-quanto-custa-cadastro'>Sobre</AnchorLink>
-                <AnchorLink id={'contato-landing'} href='#rodape-landing'>Contato</AnchorLink>
+                <AnchorLink id={'contato-landing'} href='#telefone-informacoes'>Contato</AnchorLink>
                 <Link id={'empresa-landing'} to="/"><b>Tech Center</b></Link>
                 <Link id={'login-landing'} to="/login">Entrar</Link>
                 <AnchorLink id={'cadastre-landing'} href="#header">Cadastre sua empresa</AnchorLink>
