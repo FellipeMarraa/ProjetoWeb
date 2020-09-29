@@ -6,6 +6,7 @@
     top: 0px;
     z-index: 999;
 }
+
 #home-landing {
     position: absolute;
     left: 42%;
@@ -22,7 +23,7 @@
 }
 
 
-#como-funciona-landing{
+#como-funciona-landing {
     position: absolute;
     left: 46%;
     top: 25px;
@@ -37,7 +38,7 @@
     cursor: pointer;
 }
 
-#sobre-landing{
+#sobre-landing {
     position: absolute;
     left: 54%;
     top: 25px;
@@ -52,7 +53,7 @@
     cursor: pointer;
 }
 
-#contato-landing{
+#contato-landing {
     position: absolute;
     left: 58%;
     top: 25px;
@@ -385,6 +386,7 @@
     margin-top: 180px;
     margin-left: 20px;
 }
+
 /*Fim body ******************************************/
 
 /*Inicio Rodape**************************************/
@@ -397,7 +399,7 @@
     background-color: #282c34;
 }
 
-#servicos-informacoes{
+#servicos-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 150px;
@@ -406,11 +408,11 @@
     color: white;
 }
 
-dt{
+dt {
     font-size: 15px;
 }
 
-#rede-social-informacoes{
+#rede-social-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 650px;
@@ -419,7 +421,7 @@ dt{
     color: white;
 }
 
-#instagram-icon{
+#instagram-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -428,7 +430,7 @@ dt{
 
 }
 
-#facebook-icon{
+#facebook-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -436,7 +438,7 @@ dt{
     margin-top: 140px
 }
 
-#whatsapp-icon{
+#whatsapp-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -444,12 +446,12 @@ dt{
     margin-top: 180px
 }
 
-#instagram, #facebook, #whatsapp{
+#instagram, #facebook, #whatsapp {
     margin-left: 40px;
     padding: 2px;
 }
 
-#downloads-informacoes{
+#downloads-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 1050px;
@@ -458,7 +460,7 @@ dt{
     color: white;
 }
 
-#baixar-icon{
+#baixar-icon {
     position: absolute;
     width: 150px;
     height: 100px;
@@ -466,7 +468,7 @@ dt{
     margin-top: 100px
 }
 
-#mais-informacoes{
+#mais-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 1500px;
@@ -475,7 +477,7 @@ dt{
     color: white;
 }
 
-#email-informacoes{
+#email-informacoes {
     position: absolute;
     margin-top: 108px;
     margin-left: 1545px;
@@ -484,7 +486,7 @@ dt{
     color: white;
 }
 
-#email-icon{
+#email-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -492,7 +494,7 @@ dt{
     margin-top: 105px
 }
 
-#telefone-informacoes{
+#telefone-informacoes {
     position: absolute;
     margin-top: 160px;
     margin-left: 1545px;
@@ -501,7 +503,7 @@ dt{
     color: white;
 }
 
-#telefone-icon{
+#telefone-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -509,7 +511,7 @@ dt{
     margin-top: 155px
 }
 
-#empresa{
+#empresa {
 
     margin-top: 255px;
 

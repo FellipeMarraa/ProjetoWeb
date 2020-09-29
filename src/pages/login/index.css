@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #4eada7;
 }
 
@@ -17,14 +17,14 @@ body{
     cursor: pointer;
 }
 
-#fundoLogin{
+#fundoLogin {
     margin-left: 110px;
     margin-top: 150px;
     width: 800px;
     height: 700px;
 }
 
-#icone-user{
+#icone-user {
     margin-left: 200px;
     margin-top: 50px;
     width: 250px;
