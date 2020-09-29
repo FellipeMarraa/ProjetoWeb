@@ -1,2 +1,36 @@
 
 
+let retorno = await fetch('http://localhost:5000/users', {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                }
+            });
+
+
+
+
+
+async function testBackEnd() {
+
+        try {//tente executar as linhas de 25 até 37
+
+            let retorno = await fetch('http://localhost:5000/users', {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                }
+            });
+            // let json = await retorno.json();
+            console.log(retorno);
+
+            return retorno;
+
+        } catch (error) { //em caso de erro, faça um print do erro
+            console.error(error);
+        }
+    }
