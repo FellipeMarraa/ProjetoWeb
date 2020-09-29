@@ -1,7 +1,6 @@
 import React from 'react';
 import './index.css';
 import {Link} from "react-router-dom";
-import {article, body, div, footer, form, header, img, input, nav, p} from 'reactstrap';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
@@ -18,6 +17,10 @@ import Whatsapp from '../../assets/whatsapp.png';
 import Baixar from '../../assets/baixar.png';
 import Email from '../../assets/email.png';
 import Telefone from '../../assets/telefone.png';
+
+import primeiraImagem from '../../assets/hide-the-pain-stockphoto-840x560 1.png';
+import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
+import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
 
 const CadastroPage = props => {
 
@@ -82,12 +85,42 @@ const CadastroPage = props => {
             <img id={'sobre-nos-image'} src={JogandoImage}/>
         </article>
 
+        <artcile id={'primeiro-texto-landing'}>A Tech Center oferece Assistência Técnica em Informática para manutenção
+            de
+            computadores
+            e notebooks, criação de sites/aplicativos e quaisquer outras
+            necessidades relacionadas à tecnologia. Nossos colaboradores prestam serviços de assistência técnica em
+            informática
+            baseada em vasta experiência no ramo, sempre com garantia, segurança e
+            alta qualidade, para empresas e residências em Uberlândia.
+            <img id={'primeira-imagem-landing'} src={primeiraImagem}/>
+        </artcile>
+
+
+        <article id={'segundo-texto-landing'}>Seja qual for o problema apresentado pelo seu computador, temos a
+            certeza que
+            podemos apresentar uma solução. Os profissionais vao ate sua empresa ou residência, sanando
+            o defeito no local. Nosso objetivo é sempre deixar nossos clientes plenamente satisfeitos, pois
+            nossa melhor propaganda é a própria indicação deles.
+            <img id={'segunda-imagem-landing'} src={segundaImagem}/>
+        </article>
+
+        <article id={'terceiro-texto-landing'}>Compreendemos que quando acontecem problemas com seus computadores você
+            ou
+            sua empresa pode ficar sem produzir e perder dinheiro. Portanto procuramos
+            atender e solucionar seus problemas o mais rápido possível para que sua produtividade volte ao
+            normal.
+            <img id={'terceira-imagem-landing'} src={terceiraImagem}/>
+        </article>
+
+
         <footer id={'informacoes-landing'}>
             <dl id={'servicos-informacoes'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>
                 <dt><br/>Criação de sites e aplicativos</dt>
                 <dt><br/>Design e criação de banners</dt>
             </dl>
+
             <img id={'instagram-icon'} src={Instagram}/>
             <img id={'facebook-icon'} src={Facebook}/>
             <img id={'whatsapp-icon'} src={Whatsapp}/>

@@ -159,14 +159,14 @@
 
 #titulo-formulario-cadastro {
     margin-left: 30px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 35px;
 }
 
 #subtitulo-formulario-cadastro {
     margin-left: 30px;
     margin-top: -20px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -301,7 +301,7 @@
 }
 
 #como-funciona-image {
-    margin-top: -200px;
+    margin-top: -170px;
     margin-left: 1000px;
     width: 400px;
     height: 200px;
@@ -311,7 +311,7 @@
     margin-top: 50px;
     margin-left: 480px;
     font-size: 35px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: white;
     opacity: 90%;
 }
@@ -320,7 +320,7 @@
 #texto-como-funciona-cadastro {
     margin-left: 480px;
     font-size: 20px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: white;
     opacity: 90%;
 }
@@ -344,7 +344,7 @@
     margin-top: 50px;
     margin-left: 480px;
     font-size: 35px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: #34464f;
     opacity: 90%;
 }
@@ -353,7 +353,7 @@
 #texto-quanto-custa-cadastro {
     margin-left: 480px;
     font-size: 20px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: #34464f;
 
 }
@@ -368,23 +368,87 @@
 }
 
 #titulo-sobre-nos-cadastro {
-    margin-left: 90px;
+    margin-top: 60px;
+    margin-left: 105px;
     font-size: 35px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: white;
 }
 
 #texto-sobre-nos-cadastro {
+
     margin-top: 20px;
     margin-left: 100px;
     font-size: 20px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     color: white;
 }
 
 #sobre-nos-image {
-    margin-top: 180px;
+    margin-top: 155px;
     margin-left: 20px;
+}
+
+#primeiro-texto-landing {
+    position: absolute;
+    width: 350px;
+    text-align: justify;
+    margin-top: 1600px;
+    margin-left: 900px;
+    font-size: 18px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+}
+
+#primeira-imagem-landing {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 125px;
+    top: -150px;
+}
+
+
+#segundo-texto-landing {
+
+    position: absolute;
+    width: 350px;
+    text-align: justify;
+    margin-top: 1600px;
+    margin-left: 1400px;
+    font-size: 18px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+
+}
+
+#segunda-imagem-landing {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    top: -150px;
+}
+
+#terceiro-texto-landing {
+
+    position: absolute;
+    width: 350px;
+    text-align: justify;
+    margin-top: 2000px;
+    margin-left: 1150px;
+    font-size: 18px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+
+}
+
+#terceira-imagem-landing {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 130px;
+    top: -100px;
 }
 
 /*Fim body ******************************************/
@@ -395,7 +459,7 @@
     position: absolute;
     margin-top: 2230px;
     width: 100%;
-    height: 30%;
+    height: 31%;
     background-color: #282c34;
 }
 
@@ -403,7 +467,7 @@
     position: absolute;
     margin-top: 70px;
     margin-left: 150px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -412,11 +476,16 @@ dt {
     font-size: 15px;
 }
 
+dt:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
 #rede-social-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 650px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -426,7 +495,7 @@ dt {
     width: 30px;
     height: 30px;
     margin-left: 650px;
-    margin-top: 100px;
+    margin-top: 115px;
 
 }
 
@@ -435,7 +504,7 @@ dt {
     width: 30px;
     height: 30px;
     margin-left: 650px;
-    margin-top: 140px
+    margin-top: 165px
 }
 
 #whatsapp-icon {
@@ -443,7 +512,12 @@ dt {
     width: 30px;
     height: 30px;
     margin-left: 650px;
-    margin-top: 180px
+    margin-top: 215px
+}
+
+#instagram:hover, #facebook:hover, #whatsapp:hover {
+    color: #5bc4b5;
+    cursor: pointer;
 }
 
 #instagram, #facebook, #whatsapp {
@@ -455,7 +529,7 @@ dt {
     position: absolute;
     margin-top: 70px;
     margin-left: 1050px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -472,7 +546,7 @@ dt {
     position: absolute;
     margin-top: 70px;
     margin-left: 1500px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -481,7 +555,7 @@ dt {
     position: absolute;
     margin-top: 108px;
     margin-left: 1545px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -498,7 +572,7 @@ dt {
     position: absolute;
     margin-top: 160px;
     margin-left: 1545px;
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
 }
@@ -514,8 +588,7 @@ dt {
 #empresa {
 
     margin-top: 255px;
-
-    font-family: Helvetica;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
     color: white;
     text-align: center;
