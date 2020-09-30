@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './index.css';
-import {Link} from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 
@@ -22,7 +22,52 @@ import primeiraImagem from '../../assets/hide-the-pain-stockphoto-840x560 1.png'
 import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
 import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
 
-const CadastroPage = props => {
+
+function SignIn() {
+
+    const [login, setLogin] = useState("");
+    const [senha, setSenha] = useState("");
+    const [nome, setNome] = useState("");
+    const [tipo, setTipo] = useState("Cliente");
+    const [cpf, setCpf] = useState("");
+    const [instrucaoSenha, setIntrucaoSenha] = useState("");
+    const history = useHistory();
+
+    const routeChange = (name) => {
+        let path = `/`.concat(name);
+        history.push(path);
+    }
+
+    async function sendInput() {
+
+        try {//tente executar as linhas de 25 até 37
+
+            let retorno = await fetch('http://localhost:5000/users', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+
+                body: JSON.stringify(
+                    {
+                        login: login, //variavel de estado
+                        senha: senha,//variavel de estado
+                        nome: nome, //variavel de estado
+                        tipo: tipo, //variavel de estado
+                        cpf: cpf//variavel de estado
+                    }
+                )
+            });
+
+            let json = await retorno.json()
+            console.log(json);
+            return retorno;
+        } catch (error) { //em caso de erro, faça um print do erro
+            console.error(error);
+        }
+    }
 
     return (
         <body id={'conteudo'}>
@@ -42,12 +87,13 @@ const CadastroPage = props => {
                 <p id={'subtitulo-formulario-cadastro'}><b>Cadastre-se e veja todos os serviços disponíveis para
                     você!</b></p>
                 <form id={'formulario-cadastro'}>
-                    <input id={'nome-cadastro'} type={'text'} name="nome" placeholder={'Nome: '}/>
                     <input id={'email-cadastro'} type={'email'} name="email" placeholder={'Email: '}/>
                     <input id={'senha-cadastro'} type={'password'} name="senha" placeholder={'Senha: '}/>
-                    <input id={'repetir-senha-cadastro'} type={'password'} name="repetir-senha"
-                           placeholder={'Repetir senha: '}/>
-                    <input id={'cadastro-cadastro'} type={'submit'} name="cadastro" value={'Cadastrar'}/>
+                    <input id={'nome-cadastro'} type={'text'} name="nome" placeholder={'Nome: '}/>
+                    <input id={'nome-cadastro2'} type={'text'} name="nome" placeholder={'Tipo: '}/>
+                    <input id={'repetir-senha-cadastro'} type={'password'} name="cpf"
+                           placeholder={'CPF: '}/>
+                    <button id={'cadastro-cadastro'} onClick={() => sendInput()}> Cadastrar </button>
                 </form>
             </div>
             <img id={'header-image'} src={HeaderImage}/>
@@ -85,7 +131,8 @@ const CadastroPage = props => {
             <img id={'sobre-nos-image'} src={JogandoImage}/>
         </article>
 
-        <artcile id={'primeiro-texto-landing'}>A Tech Center oferece Assistência Técnica em Informática para manutenção
+        <artcile id={'primeiro-texto-landing'}>A Tech Center oferece Assistência Técnica em Informática para
+            manutenção
             de
             computadores
             e notebooks, criação de sites/aplicativos e quaisquer outras
@@ -105,7 +152,8 @@ const CadastroPage = props => {
             <img id={'segunda-imagem-landing'} src={segundaImagem}/>
         </article>
 
-        <article id={'terceiro-texto-landing'}>Compreendemos que quando acontecem problemas com seus computadores você
+        <article id={'terceiro-texto-landing'}>Compreendemos que quando acontecem problemas com seus computadores
+            você
             ou
             sua empresa pode ficar sem produzir e perder dinheiro. Portanto procuramos
             atender e solucionar seus problemas o mais rápido possível para que sua produtividade volte ao
@@ -144,5 +192,4 @@ const CadastroPage = props => {
 
     );
 }
-
-export default CadastroPage;
+export default SignIn;

@@ -34,3 +34,37 @@ async function testBackEnd() {
             console.error(error);
         }
     }
+
+
+
+
+CADASTRO FUNCAO
+
+async function sendInput() {
+
+        try {//tente executar as linhas de 25 até 37
+
+            let retorno = await fetch('http://localhost:5000/users/cadastro', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+
+                body: JSON.stringify(
+                    {
+                        login: login, //variavel de estado
+                        senha : senha,//variavel de estado
+                        nome: nome, //variavel de estado
+                        tipo: tipo, //variavel de estado
+                        cpf:   cpf//variavel de estado
+                    }
+                    )
+            });
+
+            let json = await retorno.json()
+            console.log(json);
+            return retorno;
+        } catch (error) { //em caso de erro, faça um print do erro
+            console.er

@@ -560,6 +560,11 @@ dt:hover {
     color: white;
 }
 
+#email-informacoes:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
 #email-icon {
     position: absolute;
     width: 30px;
