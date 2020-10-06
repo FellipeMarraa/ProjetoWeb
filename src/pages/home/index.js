@@ -80,10 +80,9 @@ function SignIn() {
             <AnchorLink id={'contato-cabecalho'} href='#rodape-telefone'>Contato</AnchorLink>
             <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
             <Link id={'login-cabecalho'} to="/login">Entrar</Link>
-            <AnchorLink id={'cadastre-cabecalho'} href="#header">Cadastre sua empresa</AnchorLink>
         </Nav>
 
-        {/*Começo do Header*/}
+        {/*======================================Começo do Header======================================================*/}
 
         <header id={'header'}>
 
@@ -99,11 +98,11 @@ function SignIn() {
 
                 <Form id={'formulario-cadastro'}>
 
-                    <input id={'email'} type={'email'} name="email" placeholder={'Email: '}/>
-                    <input id={'senha'} type={'password'} name="senha" placeholder={'Senha: '}/>
-                    <input id={'nome'} type={'text'} name="nome" placeholder={'Nome: '}/>
-                    <input id={'tipo'} type={'text'} name="nome" placeholder={'Tipo: '}/>
-                    <input id={'repetir-senha'} type={'password'} name="cpf" placeholder={'CPF: '}/>
+                    <input id={'email-cadastro'} type={'email'} name="email" placeholder={'Email: '}/>
+                    <input id={'senha-cadastro'} type={'password'} name="senha" placeholder={'Senha: '}/>
+                    <input id={'nome-cadastro'} type={'text'} name="nome" placeholder={'Nome: '}/>
+                    <input id={'tipo-cadastro'} type={'text'} name="nome" placeholder={'Tipo: '}/>
+                    <input id={'cpf-cadastro'} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={15}/>
 
                     <button id={'cadastrar'} onClick={() => sendInput()}> Cadastrar</button>
                 </Form>

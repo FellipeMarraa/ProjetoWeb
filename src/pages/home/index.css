@@ -84,18 +84,18 @@
     cursor: pointer;
 }
 
-#login-cabecalho {
+/*#login-cabecalho {*/
 
-    position: absolute;
-    left: 80%;
-    top: 25px;
-    font-family: SansSerif;
-    font-size: 18px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
+/*    position: absolute;*/
+/*    left: 80%;*/
+/*    top: 25px;*/
+/*    font-family: SansSerif;*/
+/*    font-size: 18px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
 
-}
+/*}*/
 
 #login-cabecalho:hover {
     color: #5bc4b5;
@@ -103,28 +103,28 @@
 
 }
 
-#cadastre-cabecalho {
+#login-cabecalho {
     position: absolute;
-    left: 85%;
-    top: 15px;
+    left: 91.5%;
+    top: 20px;
     font-family: SansSerif;
     font-size: 18px;
     font-style: normal;
     text-align: center;
     border: 0px solid black;
     border-radius: 20px;
-    padding: 0.5%;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 0.2%;
+    padding-left: 40px;
+    padding-right: 40px;
     background: #5bc4b5;
     color: white;
     text-decoration: none;
 }
 
-#cadastre-landing:hover {
-    color: #3b7f75;
-    cursor: pointer;
-}
+/*#cadastre-landing:hover {*/
+/*    color: #3b7f75;*/
+/*    cursor: pointer;*/
+/*}*/
 
 /*Fim do cabecalho ********************************************************/
 
@@ -163,13 +163,13 @@
 }
 
 #titulo-formulario {
-    margin-left: 30px;
+    margin-left: 15px;
     font-family: SansSerif, Helvetica, Arial;
     font-size: 35px;
 }
 
 #subtitulo-formulario {
-    margin-left: 30px;
+    margin-left: 15px;
     margin-top: -20px;
     font-family: SansSerif, Helvetica, Arial;
     font-size: 20px;
@@ -180,7 +180,7 @@
     color: white;
 }
 
-#email {
+#email-cadastro {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -191,7 +191,7 @@
     padding-left: 5px;
 }
 
-#senha {
+#senha-cadastro {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -202,7 +202,7 @@
     padding-left: 5px;
 }
 
-#tipo {
+#tipo-cadastro {
     margin-left: 10px;
     margin-top: 20px;
     width: 350px;
@@ -213,7 +213,7 @@
     padding-left: 5px;
 }
 
-#nome {
+#nome-cadastro {
     margin-left: 10px;
     margin-top: 20px;
     width: 350px;
@@ -224,7 +224,7 @@
     padding-left: 5px;
 }
 
-#repetir-senha {
+#cpf-cadastro {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -237,7 +237,7 @@
 
 #cadastrar {
     margin-top: 30px;
-    margin-left: 14px;
+    margin-left: 10px;
     width: 350px;
     height: 40px;
     background-color: #4eada7;

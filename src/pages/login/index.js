@@ -17,7 +17,7 @@ function Login(props) {
     }
 
     return (
-        <div className={'body'}>
+        <div>
 
             <div className={'caixa-login'}>
                 <img id={'icone-user'} src={IconeUser}/>

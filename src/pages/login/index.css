@@ -1,4 +1,4 @@
-.body {
+html {
     background-color: #4eada7;
 }
 
@@ -13,7 +13,7 @@
     position: absolute;
     width: 630px;
     height: 740px;
-    left: 30%;
+    left: 33%;
     top: 100px;
     border: 1px solid black;
     border-radius: 25px;
