@@ -1,4 +1,4 @@
-#cabecalho-landing {
+#cabecalho {
     background-color: #418e89;
     position: fixed;
     width: 100%;
@@ -7,7 +7,7 @@
     z-index: 999;
 }
 
-#home-landing {
+#home-cabecalho {
     position: absolute;
     left: 42%;
     top: 25px;
@@ -17,13 +17,13 @@
     color: white;
 }
 
-#home-landing:hover {
+#home-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
 
-#como-funciona-landing {
+#como-funciona-cabecalho {
     position: absolute;
     left: 46%;
     top: 25px;
@@ -33,12 +33,12 @@
     color: white;
 }
 
-#como-funciona-landing:hover {
+#como-funciona-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#sobre-landing {
+#sobre-cabecalho {
     position: absolute;
     left: 54%;
     top: 25px;
@@ -48,12 +48,12 @@
     color: white;
 }
 
-#sobre-landing:hover {
+#sobre-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#contato-landing {
+#contato-cabecalho {
     position: absolute;
     left: 58%;
     top: 25px;
@@ -63,12 +63,12 @@
     color: white;
 }
 
-#contato-landing:hover {
+#contato-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#empresa-landing {
+#empresa-cabecalho {
     position: absolute;
     left: 40px;
     top: 15px;
@@ -79,12 +79,12 @@
     color: #FFFFFF;
 }
 
-#empresa-landing:hover {
+#empresa-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#login-landing {
+#login-cabecalho {
 
     position: absolute;
     left: 80%;
@@ -97,13 +97,13 @@
 
 }
 
-#login-landing:hover {
+#login-cabecalho:hover {
     color: #5bc4b5;
     cursor: pointer;
 
 }
 
-#cadastre-landing {
+#cadastre-cabecalho {
     position: absolute;
     left: 85%;
     top: 15px;
@@ -136,7 +136,12 @@
     height: 78%;
     background: #4eada7;
     padding-bottom: 20px;
+}
 
+#header-image {
+    position: absolute;
+    margin-left: 900px;
+    margin-top: 150px;
 }
 
 .caixa-cadastro {
@@ -148,7 +153,7 @@
 
 }
 
-#formulario-cadastro {
+#formulario {
     position: absolute;
     width: 400px;
     height: 330px;
@@ -157,13 +162,13 @@
 
 }
 
-#titulo-formulario-cadastro {
+#titulo-formulario {
     margin-left: 30px;
     font-family: SansSerif, Helvetica, Arial;
     font-size: 35px;
 }
 
-#subtitulo-formulario-cadastro {
+#subtitulo-formulario {
     margin-left: 30px;
     margin-top: -20px;
     font-family: SansSerif, Helvetica, Arial;
@@ -175,17 +180,7 @@
     color: white;
 }
 
-#nome-cadastro {
-    margin-left: 10px;
-    width: 350px;
-    height: 40px;
-    border-radius: 15px;
-    border: 2px solid black;
-    outline: none;
-    padding-left: 5px;
-}
-
-#email-cadastro {
+#email {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -196,7 +191,7 @@
     padding-left: 5px;
 }
 
-#senha-cadastro {
+#senha {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -207,7 +202,29 @@
     padding-left: 5px;
 }
 
-#repetir-senha-cadastro {
+#tipo {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
+
+#nome {
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 5px;
+}
+
+#repetir-senha {
     margin-top: 20px;
     margin-left: 10px;
     width: 350px;
@@ -218,7 +235,7 @@
     padding-left: 5px;
 }
 
-#cadastro-cadastro {
+#cadastrar {
     margin-top: 30px;
     margin-left: 14px;
     width: 350px;
@@ -232,22 +249,16 @@
     color: white;
 }
 
-#login-cadastro {
-    color: white;
-    cursor: pointer;
-}
-
-#header-image {
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 150px;
-}
+/*#login {*/
+/*    color: white;*/
+/*    cursor: pointer;*/
+/*}*/
 
 /*Fim do header ****************************************/
 
 /*Inicio body ******************************************/
 
-#explicacao-cadastro {
+#explicacao {
     position: absolute;
     margin-top: 750px;
     width: 100%;
@@ -255,49 +266,66 @@
     background: white;
 }
 
-#notificacao-image {
+#explicacao-notificacao-image {
     width: 150px;
     height: 130px;
     margin-left: 520px;
 }
 
-#texto-notificacao {
+#explicacao-texto-notificacao {
     position: absolute;
     text-align: center;
     margin-left: 400px;
 }
 
-#economia-image {
+#explicacao-economia-image {
     margin-top: 15px;
     width: 150px;
     height: 130px;
     margin-left: 200px;
 }
 
-#texto-economia {
+#explicacao-texto-economia {
     position: absolute;
     text-align: center;
     margin-left: 800px;
 }
 
-#seguranca-image {
+#explicacao-seguranca-image {
     width: 110px;
     height: 90px;
     margin-left: 200px;
 }
 
-#texto-seguranca {
+#explicacao-texto-seguranca {
     position: absolute;
     text-align: center;
     margin-left: 1150px;
 }
 
-#como-funciona-cadastro {
+#como-funciona {
     position: absolute;
     margin-top: 980px;
     width: 100%;
     height: 23%;
     background: #4eada7;
+}
+
+#titulo-como-funciona {
+    margin-top: 50px;
+    margin-left: 480px;
+    font-size: 35px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+    opacity: 90%;
+}
+
+#texto-como-funciona {
+    margin-left: 480px;
+    font-size: 20px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+    opacity: 90%;
 }
 
 #como-funciona-image {
@@ -307,30 +335,30 @@
     height: 200px;
 }
 
-#titulo-como-funciona-cadastro {
-    margin-top: 50px;
-    margin-left: 480px;
-    font-size: 35px;
-    font-family: SansSerif, Helvetica, Arial;
-    color: white;
-    opacity: 90%;
-}
 
-
-#texto-como-funciona-cadastro {
-    margin-left: 480px;
-    font-size: 20px;
-    font-family: SansSerif, Helvetica, Arial;
-    color: white;
-    opacity: 90%;
-}
-
-#quanto-custa-cadastro {
+#quanto-custa {
     position: absolute;
     margin-top: 1200px;
     width: 100%;
     height: 23%;
     background: white;
+}
+
+#titulo-quanto-custa {
+    margin-top: 50px;
+    margin-left: 480px;
+    font-size: 35px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: #34464f;
+    opacity: 90%;
+}
+
+#texto-quanto-custa {
+    margin-left: 480px;
+    font-size: 20px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: #34464f;
+
 }
 
 #quanto-custa-image {
@@ -340,23 +368,6 @@
     height: 200px;;
 }
 
-#titulo-quanto-custa-cadastro {
-    margin-top: 50px;
-    margin-left: 480px;
-    font-size: 35px;
-    font-family: SansSerif, Helvetica, Arial;
-    color: #34464f;
-    opacity: 90%;
-}
-
-
-#texto-quanto-custa-cadastro {
-    margin-left: 480px;
-    font-size: 20px;
-    font-family: SansSerif, Helvetica, Arial;
-    color: #34464f;
-
-}
 
 #sobre-nos-cadastro {
     position: absolute;
@@ -367,7 +378,7 @@
 
 }
 
-#titulo-sobre-nos-cadastro {
+#titulo-sobre-nos {
     margin-top: 60px;
     margin-left: 105px;
     font-size: 35px;
@@ -375,7 +386,7 @@
     color: white;
 }
 
-#texto-sobre-nos-cadastro {
+#texto-sobre-nos {
 
     margin-top: 20px;
     margin-left: 100px;
@@ -389,7 +400,8 @@
     margin-left: 20px;
 }
 
-#primeiro-texto-landing {
+
+#primeiro-texto {
     position: absolute;
     width: 350px;
     text-align: justify;
@@ -400,7 +412,7 @@
     color: white;
 }
 
-#primeira-imagem-landing {
+#primeira-imagem {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -409,7 +421,7 @@
 }
 
 
-#segundo-texto-landing {
+#segundo-texto {
 
     position: absolute;
     width: 350px;
@@ -422,7 +434,7 @@
 
 }
 
-#segunda-imagem-landing {
+#segunda-imagem {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -430,7 +442,7 @@
     top: -150px;
 }
 
-#terceiro-texto-landing {
+#terceiro-texto {
 
     position: absolute;
     width: 350px;
@@ -443,7 +455,7 @@
 
 }
 
-#terceira-imagem-landing {
+#terceira-imagem {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -455,7 +467,7 @@
 
 /*Inicio Rodape**************************************/
 
-#informacoes-landing {
+#rodape {
     position: absolute;
     margin-top: 2230px;
     width: 100%;
@@ -463,7 +475,7 @@
     background-color: #282c34;
 }
 
-#servicos-informacoes {
+#rodape-servicos {
     position: absolute;
     margin-top: 70px;
     margin-left: 150px;
@@ -481,7 +493,7 @@ dt:hover {
     cursor: pointer;
 }
 
-#rede-social-informacoes {
+#rodape-rede-social {
     position: absolute;
     margin-top: 70px;
     margin-left: 650px;
@@ -490,7 +502,7 @@ dt:hover {
     color: white;
 }
 
-#instagram-icon {
+#rodape-instagram-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -499,7 +511,7 @@ dt:hover {
 
 }
 
-#facebook-icon {
+#rodape-facebook-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -507,7 +519,7 @@ dt:hover {
     margin-top: 165px
 }
 
-#whatsapp-icon {
+#rodape-whatsapp-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -515,17 +527,17 @@ dt:hover {
     margin-top: 215px
 }
 
-#instagram:hover, #facebook:hover, #whatsapp:hover {
+#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#instagram, #facebook, #whatsapp {
+#rodape-instagram, #rodape-facebook, #rodape-whatsapp {
     margin-left: 40px;
     padding: 2px;
 }
 
-#downloads-informacoes {
+#rodape-downloads {
     position: absolute;
     margin-top: 70px;
     margin-left: 1050px;
@@ -534,7 +546,7 @@ dt:hover {
     color: white;
 }
 
-#baixar-icon {
+#rodape-baixar-icon {
     position: absolute;
     width: 150px;
     height: 100px;
@@ -542,7 +554,7 @@ dt:hover {
     margin-top: 100px
 }
 
-#mais-informacoes {
+#rodape-mais-informacoes {
     position: absolute;
     margin-top: 70px;
     margin-left: 1500px;
@@ -551,7 +563,7 @@ dt:hover {
     color: white;
 }
 
-#email-informacoes {
+#rodape-email {
     position: absolute;
     margin-top: 108px;
     margin-left: 1545px;
@@ -560,12 +572,12 @@ dt:hover {
     color: white;
 }
 
-#email-informacoes:hover {
+#rodape-email:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#email-icon {
+#rodape-email-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -573,7 +585,7 @@ dt:hover {
     margin-top: 105px
 }
 
-#telefone-informacoes {
+#rodape-telefone {
     position: absolute;
     margin-top: 160px;
     margin-left: 1545px;
@@ -582,7 +594,7 @@ dt:hover {
     color: white;
 }
 
-#telefone-icon {
+#rodape-telefone-icon {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -590,7 +602,7 @@ dt:hover {
     margin-top: 155px
 }
 
-#empresa {
+#rodape-empresa {
 
     margin-top: 255px;
     font-family: SansSerif, Helvetica, Arial;

@@ -21,6 +21,8 @@ import Telefone from '../../assets/telefone.png';
 import primeiraImagem from '../../assets/hide-the-pain-stockphoto-840x560 1.png';
 import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
 import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
+import Nav from "reactstrap/es/Nav";
+import Form from "reactstrap/es/Form";
 
 
 function SignIn() {
@@ -40,9 +42,9 @@ function SignIn() {
 
     async function sendInput() {
 
-        try {//tente executar as linhas de 25 até 37
+        try {
 
-            let retorno = await fetch('http://localhost:5000/users', {
+            let retorno = await fetch('http://localhost:5000/users/cadastro', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -52,11 +54,11 @@ function SignIn() {
 
                 body: JSON.stringify(
                     {
-                        login: login, //variavel de estado
-                        senha: senha,//variavel de estado
-                        nome: nome, //variavel de estado
-                        tipo: tipo, //variavel de estado
-                        cpf: cpf//variavel de estado
+                        login: login,
+                        senha: senha,
+                        nome: nome,
+                        tipo: tipo,
+                        cpf: cpf
                     }
                 )
             });
@@ -64,132 +66,210 @@ function SignIn() {
             let json = await retorno.json()
             console.log(json);
             return retorno;
-        } catch (error) { //em caso de erro, faça um print do erro
+        } catch (error) {
             console.error(error);
         }
     }
 
     return (
         <body id={'conteudo'}>
-        <nav id={'cabecalho-landing'}>
-            <AnchorLink id={'home-landing'} href='#header'>Home</AnchorLink>
-            <AnchorLink id={'como-funciona-landing'} href='#texto-notificacao'>Como funciona</AnchorLink>
-            <AnchorLink id={'sobre-landing'} href='#texto-quanto-custa-cadastro'>Sobre</AnchorLink>
-            <AnchorLink id={'contato-landing'} href='#telefone-informacoes'>Contato</AnchorLink>
-            <Link id={'empresa-landing'} to="/"><b>Tech Center</b></Link>
-            <Link id={'login-landing'} to="/login">Entrar</Link>
-            <AnchorLink id={'cadastre-landing'} href="#header">Cadastre sua empresa</AnchorLink>
-        </nav>
+        <Nav id={'cabecalho'}>
+            <AnchorLink id={'home-cabecalho'} href='#header'>Home</AnchorLink>
+            <AnchorLink id={'como-funciona-cabecalho'} href='#texto-notificacao'>Como funciona</AnchorLink>
+            <AnchorLink id={'sobre-cabecalho'} href='#texto-quanto-custa-cadastro'>Sobre</AnchorLink>
+            <AnchorLink id={'contato-cabecalho'} href='#telefone-informacoes'>Contato</AnchorLink>
+            <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
+            <Link id={'login-cabecalho'} to="/login">Entrar</Link>
+            <AnchorLink id={'cadastre-cabecalho'} href="#header">Cadastre sua empresa</AnchorLink>
+        </Nav>
+
+        {/*Começo do Header*/}
+
         <header id={'header'}>
-            <div className={'caixa-cadastro'}>
-                <p id={'titulo-formulario-cadastro'}><b>Consiga <span
-                    id={'mais-clientes'}> mais clientes </span> para seu negócio</b></p>
-                <p id={'subtitulo-formulario-cadastro'}><b>Cadastre-se e veja todos os serviços disponíveis para
-                    você!</b></p>
-                <form id={'formulario-cadastro'}>
-                    <input id={'email-cadastro'} type={'email'} name="email" placeholder={'Email: '}/>
-                    <input id={'senha-cadastro'} type={'password'} name="senha" placeholder={'Senha: '}/>
-                    <input id={'nome-cadastro'} type={'text'} name="nome" placeholder={'Nome: '}/>
-                    <input id={'nome-cadastro2'} type={'text'} name="nome" placeholder={'Tipo: '}/>
-                    <input id={'repetir-senha-cadastro'} type={'password'} name="cpf"
-                           placeholder={'CPF: '}/>
-                    <button id={'cadastro-cadastro'} onClick={() => sendInput()}> Cadastrar </button>
-                </form>
-            </div>
+
             <img id={'header-image'} src={HeaderImage}/>
+
+            <div className={'caixa-cadastro'}>
+
+                <p id={'titulo-formulario'}><b>Consiga <span id={'mais-clientes'}> mais clientes </span> para seu
+                    negócio</b></p>
+                <p id={'subtitulo-formulario'}><b>Cadastre-se e veja todos os serviços disponíveis para você!</b></p>
+
+                {/*Formulario de Cadastro*/}
+
+                <Form id={'formulario-cadastro'}>
+
+                    <input id={'email'} type={'email'} name="email" placeholder={'Email: '}/>
+                    <input id={'senha'} type={'password'} name="senha" placeholder={'Senha: '}/>
+                    <input id={'nome'} type={'text'} name="nome" placeholder={'Nome: '}/>
+                    <input id={'tipo'} type={'text'} name="nome" placeholder={'Tipo: '}/>
+                    <input id={'repetir-senha'} type={'password'} name="cpf" placeholder={'CPF: '}/>
+
+                    <button id={'cadastrar'} onClick={() => sendInput()}> Cadastrar</button>
+                </Form>
+
+            </div>
+
+            {/*Fim do formulário*/}
         </header>
-        <article id={'explicacao-cadastro'}>
-            <img id={'notificacao-image'} src={NotificacaoImage}/>
-            <p id={'texto-notificacao'}>Receba alertas de serviços no seu aparelho <br/> de onde estiver</p>
-            <img id={'economia-image'} src={EconomiaImage}/>
-            <p id={'texto-economia'}>100% do valor do serviço é seu e nós <br/>não cobramos mensalidade! </p>
-            <img id={'seguranca-image'} src={SegurancaImage}/>
-            <p id={'texto-seguranca'}>Tenha segurança com seus dados e <br/> fique longe de possíveis golpes </p>
+
+        {/*Fim do Header*/}
+
+
+        {/*Inicio das Informações*/}
+
+        <article id={'explicacao'}>
+
+            <img id={'explicacao-notificacao-image'} src={NotificacaoImage}/>
+            <p id={'explicacao-texto-notificacao'}>Receba alertas de serviços no seu aparelho <br/> de onde estiver</p>
+            <img id={'explicacao-economia-image'} src={EconomiaImage}/>
+            <p id={'explicacao-texto-economia'}>100% do valor do serviço é seu e nós <br/>não cobramos mensalidade! </p>
+            <img id={'explicacao-seguranca-image'} src={SegurancaImage}/>
+            <p id={'explicacao-texto-seguranca'}>Tenha segurança com seus dados e <br/> fique longe de possíveis golpes
+            </p>
+
         </article>
 
-        <article id={'como-funciona-cadastro'}>
-            <h2 id={'titulo-como-funciona-cadastro'}>Como funciona</h2>
-            <p id={'texto-como-funciona-cadastro'}>Todos os clientes que pedem por serviço aparecem no<br/> seu
-                aplicativo</p>
+        {/*Fim da explicação*/}
+
+
+        {/*Inicio do texto de Como funciona*/}
+
+        <article id={'como-funciona'}>
+
+            <h2 id={'titulo-como-funciona'}>Como funciona</h2>
+            <p id={'texto-como-funciona'}>Todos os clientes que pedem por serviço aparecem no<br/> seu aplicativo</p>
             <img id={'como-funciona-image'} src={ComoFuncionaImage}/>
 
         </article>
 
-        <article id={'quanto-custa-cadastro'}>
-            <h2 id={'titulo-quanto-custa-cadastro'}>Quanto custa?</h2>
-            <p id={'texto-quanto-custa-cadastro'}>A Tech Center não tem mensalidade, e não paga nada para se
-                cadastrar.<br/>
-                Você só investe em serviços que te interessar, <b>e fica com 100% do<br/>valor do serviço.</b></p>
+        {/*Fim do texto de Como Funciona*/}
+
+
+        {/*Inicio do texto de Quanto custa*/}
+
+        <article id={'quanto-custa'}>
+
+            <h2 id={'titulo-quanto-custa'}>Quanto custa?</h2>
+            <p id={'texto-quanto-custa'}>A Tech Center não tem mensalidade, e não paga nada para se cadastrar.<br/> Você
+                só investe em serviços que te interessar,
+                <b>e fica com 100% do<br/>valor do serviço.</b></p>
             <img id={'quanto-custa-image'} src={SemCustoImage}/>
 
         </article>
 
+
+        {/*Fim do texto de Quanto custa*/}
+
+
+        {/*Inicio do texto Sobre a empresa*/}
+
         <article id={'sobre-nos-cadastro'}>
-            <h2 id={'titulo-sobre-nos-cadastro'}>O que nos torna a melhor plataforma</h2>
-            <p id={'texto-sobre-nos-cadastro'}>São profissionais que transformaram sua carreira em um sucesso,<br/>
+
+            <h2 id={'titulo-sobre-nos'}>O que nos torna a melhor plataforma</h2>
+            <p id={'texto-sobre-nos'}>São profissionais que transformaram sua carreira em um sucesso,<br/>
                 que tornaram a Tech Center a melhor plataforma de serviços.</p>
+
             <img id={'sobre-nos-image'} src={JogandoImage}/>
+
         </article>
 
-        <artcile id={'primeiro-texto-landing'}>A Tech Center oferece Assistência Técnica em Informática para
-            manutenção
-            de
-            computadores
-            e notebooks, criação de sites/aplicativos e quaisquer outras
-            necessidades relacionadas à tecnologia. Nossos colaboradores prestam serviços de assistência técnica em
-            informática
-            baseada em vasta experiência no ramo, sempre com garantia, segurança e
-            alta qualidade, para empresas e residências em Uberlândia.
-            <img id={'primeira-imagem-landing'} src={primeiraImagem}/>
+        {/*Inicio Primeiro texto */}
+
+        <artcile id={'primeiro-texto'}>
+
+            <p>A Tech Center oferece Assistência Técnica em Informática para
+                manutenção
+                de
+                computadores
+                e notebooks, criação de sites/aplicativos e quaisquer outras
+                necessidades relacionadas à tecnologia. Nossos colaboradores prestam serviços de assistência técnica em
+                informática
+                baseada em vasta experiência no ramo, sempre com garantia, segurança e
+                alta qualidade, para empresas e residências em Uberlândia.</p>
+
+            <img id={'primeira-imagem'} src={primeiraImagem}/>
+
         </artcile>
 
+        {/*Inicio Segundo texto */}
 
-        <article id={'segundo-texto-landing'}>Seja qual for o problema apresentado pelo seu computador, temos a
-            certeza que
-            podemos apresentar uma solução. Os profissionais vao ate sua empresa ou residência, sanando
-            o defeito no local. Nosso objetivo é sempre deixar nossos clientes plenamente satisfeitos, pois
-            nossa melhor propaganda é a própria indicação deles.
-            <img id={'segunda-imagem-landing'} src={segundaImagem}/>
+
+        <article id={'segundo-texto'}>
+
+            <p>Seja qual for o problema apresentado pelo seu computador, temos a
+                certeza que
+                podemos apresentar uma solução. Os profissionais vao ate sua empresa ou residência, sanando
+                o defeito no local. Nosso objetivo é sempre deixar nossos clientes plenamente satisfeitos, pois
+                nossa melhor propaganda é a própria indicação deles.</p>
+
+            <img id={'segunda-imagem'} src={segundaImagem}/>
         </article>
 
-        <article id={'terceiro-texto-landing'}>Compreendemos que quando acontecem problemas com seus computadores
-            você
-            ou
-            sua empresa pode ficar sem produzir e perder dinheiro. Portanto procuramos
-            atender e solucionar seus problemas o mais rápido possível para que sua produtividade volte ao
-            normal.
-            <img id={'terceira-imagem-landing'} src={terceiraImagem}/>
+        {/*Inicio Terceiro texto*/}
+
+        <article id={'terceiro-texto'}>
+            <p>Compreendemos que quando acontecem problemas com seus computadores
+                você
+                ou
+                sua empresa pode ficar sem produzir e perder dinheiro. Portanto procuramos
+                atender e solucionar seus problemas o mais rápido possível para que sua produtividade volte ao
+                normal.</p>
+
+            <img id={'terceira-imagem'} src={terceiraImagem}/>
         </article>
 
+        {/*Fim dos textos Sobre a empresa*/}
 
-        <footer id={'informacoes-landing'}>
-            <dl id={'servicos-informacoes'}>Serviços
+        {/*Inicio do Rodapé*/}
+
+        {/*LInks de serviços prestados*/}
+
+        <footer id={'rodape'}>
+
+            <dl id={'rodape-servicos'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>
                 <dt><br/>Criação de sites e aplicativos</dt>
                 <dt><br/>Design e criação de banners</dt>
+
             </dl>
 
-            <img id={'instagram-icon'} src={Instagram}/>
-            <img id={'facebook-icon'} src={Facebook}/>
-            <img id={'whatsapp-icon'} src={Whatsapp}/>
-            <img id={'baixar-icon'} src={Baixar}/>
-            <dl id={'rede-social-informacoes'}>Redes Sociais
-                <dt id={'instagram'}><br/>Instagram</dt>
-                <dt id={'facebook'}><br/>Facebook</dt>
-                <dt id={'whatsapp'}><br/>Whatsapp</dt>
-            </dl>
-            <p id={'downloads-informacoes'}>Downloads</p>
+            {/*Icones do rodape*/}
 
-            <p id={'mais-informacoes'}>Mais informações</p>
-            <img id={'email-icon'} src={Email}/>
-            <p id={'email-informacoes'}>contact@contactus.com.br</p>
-            <img id={'telefone-icon'} src={Telefone}/>
-            <p id={'telefone-informacoes'}>(34) 3232-3232</p>
-            <p id={'empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
+            <img id={'rodape-instagram-icon'} src={Instagram}/>
+            <img id={'rodape-facebook-icon'} src={Facebook}/>
+            <img id={'rodape-whatsapp-icon'} src={Whatsapp}/>
+            <img id={'rodape-baixar-icon'} src={Baixar}/>
+
+
+            {/*Redes sociais            */}
+
+            <dl id={'rodape-rede-social'}>Redes Sociais
+                <dt id={'rodape-instagram'}><br/>Instagram</dt>
+                <dt id={'rodape-facebook'}><br/>Facebook</dt>
+                <dt id={'rodape-whatsapp'}><br/>Whatsapp</dt>
+            </dl>
+
+            {/*Downloads*/}
+
+            <p id={'rodape-downloads'}>Downloads</p>
+            <p id={'rodape-mais-informacoes'}>Mais informações</p>
+
+            <img id={'rodape-email-icon'} src={Email}/>
+
+            <p id={'rodape-email-informacoes'}>contact@contactus.com.br</p>
+
+            <img id={'rodape-telefone-icon'} src={Telefone}/>
+
+            <p id={'rodape-telefone'}>(34) 3232-3232</p>
+            <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
         </footer>
+
+        {/*Fim do rodape*/}
 
         </body>
 
     );
 }
+
 export default SignIn;
