@@ -1,27 +1,5 @@
-#body {
+.body {
     background-color: #4eada7;
-}
-
-#empresa-login {
-    position: absolute;
-    left: 40px;
-    top: 15px;
-    font-family: SansSerif;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 50px;
-    color: #FFFFFF;
-}
-
-#empresa-login:hover {
-    cursor: pointer;
-}
-
-#fundoLogin {
-    margin-left: 110px;
-    margin-top: 150px;
-    width: 800px;
-    height: 700px;
 }
 
 #icone-user {
@@ -31,18 +9,18 @@
     height: 250px;
 }
 
-.caixa-login-login {
+.caixa-login {
     position: absolute;
     width: 630px;
     height: 740px;
-    left: 1150px;
+    left: 30%;
     top: 100px;
     border: 1px solid black;
     border-radius: 25px;
     background-color: whitesmoke;
 }
 
-#formulario-login {
+#formulario {
     position: absolute;
     width: 530px;
     height: 330px;
@@ -51,7 +29,7 @@
 
 }
 
-#email-login {
+#email {
     margin-left: 70px;
     width: 400px;
     height: 40px;
@@ -60,7 +38,7 @@
     outline: none;
 }
 
-#senha-login {
+#senha {
     margin-left: 70px;
     margin-top: 20px;
     width: 400px;
@@ -70,7 +48,7 @@
     outline: none;
 }
 
-#login-login {
+#login {
     position: absolute;
     margin-left: -270px;
     top: 150px;
@@ -85,7 +63,7 @@
     outline: none;
 }
 
-#esqueceu-senha-login {
+#esqueceu-senha {
     position: absolute;
     margin-left: -260px;
     margin-top: 200px;

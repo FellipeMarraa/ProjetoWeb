@@ -75,9 +75,9 @@ function SignIn() {
         <body id={'conteudo'}>
         <Nav id={'cabecalho'}>
             <AnchorLink id={'home-cabecalho'} href='#header'>Home</AnchorLink>
-            <AnchorLink id={'como-funciona-cabecalho'} href='#texto-notificacao'>Como funciona</AnchorLink>
-            <AnchorLink id={'sobre-cabecalho'} href='#texto-quanto-custa-cadastro'>Sobre</AnchorLink>
-            <AnchorLink id={'contato-cabecalho'} href='#telefone-informacoes'>Contato</AnchorLink>
+            <AnchorLink id={'como-funciona-cabecalho'} href='#explicacao-texto-notificacao'>Como funciona</AnchorLink>
+            <AnchorLink id={'sobre-cabecalho'} href='#texto-quanto-custa'>Sobre</AnchorLink>
+            <AnchorLink id={'contato-cabecalho'} href='#rodape-telefone'>Contato</AnchorLink>
             <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
             <Link id={'login-cabecalho'} to="/login">Entrar</Link>
             <AnchorLink id={'cadastre-cabecalho'} href="#header">Cadastre sua empresa</AnchorLink>
@@ -257,7 +257,7 @@ function SignIn() {
 
             <img id={'rodape-email-icon'} src={Email}/>
 
-            <p id={'rodape-email-informacoes'}>contact@contactus.com.br</p>
+            <p id={'rodape-email'}>contact@contactus.com.br</p>
 
             <img id={'rodape-telefone-icon'} src={Telefone}/>
 
