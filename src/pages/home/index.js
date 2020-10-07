@@ -23,6 +23,7 @@ import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
 import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
 import Nav from "reactstrap/es/Nav";
 import Form from "reactstrap/es/Form";
+import passwordValidator from "password-validator";
 
 
 function SignIn() {
@@ -30,7 +31,7 @@ function SignIn() {
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
     const [nome, setNome] = useState("");
-    const [tipo, setTipo] = useState("Cliente");
+    const [tipo, setTipo] = useState("");
     const [cpf, setCpf] = useState("");
     const [instrucaoSenha, setIntrucaoSenha] = useState("");
     const history = useHistory();
@@ -39,6 +40,17 @@ function SignIn() {
         let path = `/`.concat(name);
         history.push(path);
     }
+
+    // var schema = new passwordValidator();
+    // schema
+    //     .is().min(8)                                    // Minimum length 8
+    //     .is().max(100)                                  // Maximum length 100
+    //     .has().uppercase()                              // Must have uppercase letters
+    //     .has().lowercase()                              // Must have lowercase letters
+    //     .has().digits(2)                                // Must have at least 2 digits
+    //     .has().not().spaces()                           // Should not have spaces
+    //     .is().not().oneOf(['Passw0rd', 'Password123', '123']); // Blacklist these values
+    // return schema.validate(senha);
 
     async function sendInput() {
 
@@ -90,32 +102,39 @@ function SignIn() {
 
             <div className={'caixa-cadastro'}>
 
-                <p id={'titulo-formulario'}><b>Consiga <span id={'mais-clientes'}> mais clientes </span> para seu
+                <p id={'titulo-formulario'}><b> Consiga <span id={'mais-clientes'}> mais clientes </span> para seu
                     negócio</b></p>
                 <p id={'subtitulo-formulario'}><b>Cadastre-se e veja todos os serviços disponíveis para você!</b></p>
 
-                {/*Formulario de Cadastro*/}
+                {/*======================================Formulario de Cadastro======================================*/}
 
                 <Form id={'formulario-cadastro'}>
 
-                    <input id={'email-cadastro'} type={'email'} name="email" placeholder={'Email: '}/>
-                    <input id={'senha-cadastro'} type={'password'} name="senha" placeholder={'Senha: '}/>
-                    <input id={'nome-cadastro'} type={'text'} name="nome" placeholder={'Nome: '}/>
-                    <input id={'tipo-cadastro'} type={'text'} name="nome" placeholder={'Tipo: '}/>
-                    <input id={'cpf-cadastro'} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={15}/>
+                    <input id={'email-cadastro'} value={login} type={'email'} name="email" placeholder={'Email: '} maxLength={256} onChange={(textLogin)=>setLogin(textLogin.target.value)} />
+                    <input id={'senha-cadastro'} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=>setSenha(textSenha.target.value)}/>
+                    <input id={'nome-cadastro'} value={nome} type={'text'} name="nome" placeholder={'Nome: '} maxLength={256} onChange={(textNome)=>setNome(textNome.target.value)}/>
 
-                    <button id={'cadastrar'} onClick={() => sendInput()}> Cadastrar</button>
+                    <select value={tipo} id={'tipo-cadastro'} onChange={(textTipo)=>setTipo(textTipo.target.value)}>
+                        <option value="Selecione uma opcao">Selecione uma opcao</option>
+                        <option value="cliente">Cliente</option>
+                        <option value="profissional">Profissional</option>
+                    </select>
+
+                    {/*<input id={'tipo-cadastro'} type={'text'} name="nome" placeholder={'Tipo: '} maxLength={256}/>*/}
+                    <input value={cpf} id={'cpf-cadastro'} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={14} mask={"999.999.999-99"} onChange={(textCpf)=>setCpf(textCpf.target.value)}/>
+
+                    <button id={'cadastrar'} type={"submit"} onClick={() => sendInput()}> Cadastrar</button>
                 </Form>
 
             </div>
 
-            {/*Fim do formulário*/}
+            {/*======================================Fim do formulário======================================*/}
         </header>
 
-        {/*Fim do Header*/}
+        {/*======================================Fim do Header======================================*/}
 
 
-        {/*Inicio das Informações*/}
+        {/*======================================Inicio das Informações======================================*/}
 
         <article id={'explicacao'}>
 
@@ -129,7 +148,7 @@ function SignIn() {
 
         </article>
 
-        {/*Fim da explicação*/}
+        {/*======================================Fim da explicação======================================*/}
 
 
         {/*Inicio do texto de Como funciona*/}
@@ -142,10 +161,10 @@ function SignIn() {
 
         </article>
 
-        {/*Fim do texto de Como Funciona*/}
+        {/*======================================Fim do texto de Como Funciona======================================*/}
 
 
-        {/*Inicio do texto de Quanto custa*/}
+        {/*======================================Inicio do texto de Quanto custa======================================*/}
 
         <article id={'quanto-custa'}>
 
@@ -158,10 +177,10 @@ function SignIn() {
         </article>
 
 
-        {/*Fim do texto de Quanto custa*/}
+        {/*======================================Fim do texto de Quanto custa======================================*/}
 
 
-        {/*Inicio do texto Sobre a empresa*/}
+        {/*======================================Inicio do texto Sobre a empresa======================================*/}
 
         <article id={'sobre-nos-cadastro'}>
 
@@ -173,7 +192,7 @@ function SignIn() {
 
         </article>
 
-        {/*Inicio Primeiro texto */}
+        {/*======================================Inicio Primeiro texto====================================== */}
 
         <artcile id={'primeiro-texto'}>
 
@@ -191,7 +210,7 @@ function SignIn() {
 
         </artcile>
 
-        {/*Inicio Segundo texto */}
+        {/*======================================Inicio Segundo texto====================================== */}
 
 
         <article id={'segundo-texto'}>
@@ -205,7 +224,7 @@ function SignIn() {
             <img id={'segunda-imagem'} src={segundaImagem}/>
         </article>
 
-        {/*Inicio Terceiro texto*/}
+        {/*======================================Inicio Terceiro texto======================================*/}
 
         <article id={'terceiro-texto'}>
             <p>Compreendemos que quando acontecem problemas com seus computadores
@@ -218,11 +237,10 @@ function SignIn() {
             <img id={'terceira-imagem'} src={terceiraImagem}/>
         </article>
 
-        {/*Fim dos textos Sobre a empresa*/}
+        {/*======================================Fim dos textos Sobre a empresa======================================*/}
 
-        {/*Inicio do Rodapé*/}
 
-        {/*LInks de serviços prestados*/}
+        {/*======================================Inicio do Rodapé======================================*/}
 
         <footer id={'rodape'}>
 
@@ -233,7 +251,7 @@ function SignIn() {
 
             </dl>
 
-            {/*Icones do rodape*/}
+            {/*======================================Icones do rodape======================================*/}
 
             <img id={'rodape-instagram-icon'} src={Instagram}/>
             <img id={'rodape-facebook-icon'} src={Facebook}/>
@@ -241,7 +259,7 @@ function SignIn() {
             <img id={'rodape-baixar-icon'} src={Baixar}/>
 
 
-            {/*Redes sociais            */}
+            {/*======================================Redes sociais======================================*/}
 
             <dl id={'rodape-rede-social'}>Redes Sociais
                 <dt id={'rodape-instagram'}><br/>Instagram</dt>
@@ -249,7 +267,7 @@ function SignIn() {
                 <dt id={'rodape-whatsapp'}><br/>Whatsapp</dt>
             </dl>
 
-            {/*Downloads*/}
+            {/*======================================Downloads======================================*/}
 
             <p id={'rodape-downloads'}>Downloads</p>
             <p id={'rodape-mais-informacoes'}>Mais informações</p>
@@ -264,7 +282,7 @@ function SignIn() {
             <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
         </footer>
 
-        {/*Fim do rodape*/}
+        {/*======================================Fim do rodape======================================*/}
 
         </body>
 

@@ -11,7 +11,7 @@
     position: absolute;
     left: 42%;
     top: 25px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -27,7 +27,7 @@
     position: absolute;
     left: 46%;
     top: 25px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -42,7 +42,7 @@
     position: absolute;
     left: 54%;
     top: 25px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -57,7 +57,7 @@
     position: absolute;
     left: 58%;
     top: 25px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 18px;
     text-align: center;
     color: white;
@@ -72,7 +72,7 @@
     position: absolute;
     left: 40px;
     top: 15px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-style: italic;
     text-decoration: none;
     font-size: 35px;
@@ -84,30 +84,11 @@
     cursor: pointer;
 }
 
-/*#login-cabecalho {*/
-
-/*    position: absolute;*/
-/*    left: 80%;*/
-/*    top: 25px;*/
-/*    font-family: SansSerif;*/
-/*    font-size: 18px;*/
-/*    color: white;*/
-/*    text-align: center;*/
-/*    text-decoration: none;*/
-
-/*}*/
-
-#login-cabecalho:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-
-}
-
 #login-cabecalho {
     position: absolute;
     left: 91.5%;
     top: 20px;
-    font-family: SansSerif;
+    font-family: SansSerif, Helvetica, Arial;
     font-size: 18px;
     font-style: normal;
     text-align: center;
@@ -121,10 +102,9 @@
     text-decoration: none;
 }
 
-/*#cadastre-landing:hover {*/
-/*    color: #3b7f75;*/
-/*    cursor: pointer;*/
-/*}*/
+#login-cabecalho:hover {
+    cursor: pointer;
+}
 
 /*Fim do cabecalho ********************************************************/
 
@@ -210,7 +190,7 @@
     border-radius: 15px;
     border: 2px solid black;
     outline: none;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 
 #nome-cadastro {
@@ -249,14 +229,9 @@
     color: white;
 }
 
-/*#login {*/
-/*    color: white;*/
-/*    cursor: pointer;*/
-/*}*/
+/*======================================Fim do header ======================================*/
 
-/*Fim do header ****************************************/
-
-/*Inicio body ******************************************/
+/*======================================Inicio body ======================================*/
 
 #explicacao {
     position: absolute;
@@ -463,9 +438,9 @@
     top: -100px;
 }
 
-/*Fim body ******************************************/
+/*======================================Fim body ======================================*/
 
-/*Inicio Rodape**************************************/
+/*======================================Inicio Rodape======================================*/
 
 #rodape {
     position: absolute;
