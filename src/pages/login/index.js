@@ -2,14 +2,14 @@ import React, {useState} from 'react';
 import './index.css';
 import {Link, useHistory} from "react-router-dom";
 import IconeUser from '../../assets/iconeuser.png';
-import { useForm } from "react-hook-form";
+import auth from "../../services/auth";
 
 
 function Login(props) {
 
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
-    const [instrucaoSenha, setInstrucaoSenha] = useState("");
+    const [instrucaoLogin, setInstrucaoLogin] = useState(false);
 
     const history = useHistory();
 
@@ -18,25 +18,28 @@ function Login(props) {
         history.push(path);
     }
 
-    async function testeBackEnd() {
+    async function efetuarLogin(email, senha) {
+        let isAuthorization = false;
+
         try {
-            let retorno = await fetch('http://localhost:5000/users', {
-                method: 'GET',
-                headers: {
-                    'Accept': 'application/json',
-                    'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*'
-                }
-            });
-            console.log(retorno)
-            let json = await retorno.json();
-            return json;
+            let response = await auth.post('/users/login', {email, senha});
+
+            if (response.data.authorization == true){
+                isAuthorization = true;
+            }
+            console.log(response)
         } catch (error) {
             console.error(error);
         }
+
+        if(isAuthorization){
+            history.push('/profissional');
+        } else{
+            setInstrucaoLogin(true);
+        }
     }
 
-    // function checaCredenciais(email, senha) {
+    // function checaCredenciais(login, password) {
     //     if (email == "fellipemarra@hotmail.com" && senha=="123"){
     //         routeChange("cliente");
     //     }else
@@ -60,25 +63,10 @@ function Login(props) {
                            onChange={textSenha => { setSenha(textSenha); setSenha(textSenha.target.value);
                            }}/>
 
-                           <alert value={instrucaoSenha} onChange={(textAlert)=>setInstrucaoSenha(textAlert.target.value)}/>
+                           <alert value={instrucaoLogin} onChange={(textAlert)=>setInstrucaoLogin(textAlert.target.value)}/>
 
 
-                    <button id={'login'} onClick={() => { testeBackEnd();
-                        // let checagem = checaCredenciais(email, senha);
-                        // if (checagem[0]) {
-                        //     console.log("Seu token ", checagem[0])
-                        //     if (checagem[1] == 'cliente') {
-                        //         routeChange("/cliente")
-                        //     }else if (checagem[1] == 'profissional') {
-                        //         routeChange("/profissional")
-                        //     }else {
-                        //         alert("Login e/ou senha incorretos");
-                        //         setEmail("");
-                        //         setSenha("");
-                        //     }
-                        // }
-                    }}> Login
-                    </button>
+                    <button id={'login'} onClick={event => efetuarLogin(email, senha)}> Login </button>
 
                     <a id={'esqueceu-senha'}>Esqueceu a senha</a>
 
