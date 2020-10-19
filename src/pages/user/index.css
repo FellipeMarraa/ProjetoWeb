@@ -23,16 +23,112 @@
     cursor: pointer;
 }
 
-#bem-vindo{
-    color: white;
-    text-align: center;
-    font-family: SansSerif;
+#perfil{
+    margin-left: 95%;
+    margin-top: 5px;
+    position: absolute;
+    float: right;
+    height: 60px;
+    width: 60px;
 }
+
+#perfil:hover{
+    cursor: pointer;
+}
+
+#titulo{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 150px;
+    font-family: SansSerif, Helvetica, Arial;
+    color: white;
+}
+
+#servicos{
+    position: absolute;
+    margin-left: 485px;
+    margin-top: 250px;
+    width: 950px;
+    height: 400px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#caixa-manutencao{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+#manutencao{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+
+#texto-manutencao{
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 200px;
+    text-align: center;
+}
+
+#caixa-site{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 50px;
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+#site{
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 200px;
+    height: 150px;
+}
+#texto-site{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 200px;
+}
+
+#caixa-design{
+    position: absolute;
+    margin-left: 650px;
+    margin-top: 50px;
+    width: 250px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+#design{
+    position: absolute;
+    margin-left: 37px;
+    margin-top: 30px;
+    width: 180px;
+    height: 150px;
+}
+
+#texto-design{
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 200px;
+}
+
 /*======================================Inicio Rodape======================================*/
 
 #rodape {
     position: absolute;
-    margin-top: 2230px;
+    margin-top: 900px;
     width: 100%;
     height: 31%;
     background-color: #282c34;
