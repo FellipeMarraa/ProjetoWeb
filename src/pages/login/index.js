@@ -3,6 +3,8 @@ import './index.css';
 import {Link, useHistory} from "react-router-dom";
 import IconeUser from '../../assets/iconeuser.png';
 import auth from "../../services/auth";
+import Alert from "reactstrap/lib/Alert";
+
 
 
 function Login(props) {
@@ -10,6 +12,7 @@ function Login(props) {
     const [email, setEmail] = useState("");
     const [senha, setSenha] = useState("");
     const [instrucaoLogin, setInstrucaoLogin] = useState(false);
+    const [tipo, setTipo] = useState("");
 
     const history = useHistory();
 
@@ -26,6 +29,11 @@ function Login(props) {
 
             if (response.data.authorization == true){
                 isAuthorization = true;
+                if (tipo == "profissional"){
+                    routeChange("/profissional")
+                }else{
+                    routeChange("/user")
+                }
             }
             console.log(response)
         } catch (error) {
@@ -39,12 +47,12 @@ function Login(props) {
         }
     }
 
-    // function checaCredenciais(login, password) {
-    //     if (email == "fellipemarra@hotmail.com" && senha=="123"){
-    //         routeChange("cliente");
-    //     }else
-    //         return alert ("Login incorreto");
-    // }
+    function checaCredenciais(email, senha) {
+        if (email == email.body.email && senha == senha.body.senha){
+            routeChange("cliente");
+        }else
+            return alert ("Login incorreto");
+    }
 
     return (
         <div>
@@ -63,10 +71,22 @@ function Login(props) {
                            onChange={textSenha => { setSenha(textSenha); setSenha(textSenha.target.value);
                            }}/>
 
-                           <alert value={instrucaoLogin} onChange={(textAlert)=>setInstrucaoLogin(textAlert.target.value)}/>
+                           {/*<Alert value={instrucaoLogin} onChange={(textAlert)=>setInstrucaoLogin(textAlert.target.value)}/>*/}
 
 
-                    <button id={'login'} onClick={event => efetuarLogin(email, senha)}> Login </button>
+                    <button id={'login'} onClick={() => { efetuarLogin(email, senha);
+                        let checagem = checaCredenciais(email, senha);
+                        if (checagem[0]) {
+                            console.log("Seu token ", checagem[0])
+                            if (checagem[1] == 'cliente') {
+                                routeChange("/user")
+                            }
+                        } else {
+                            alert("Login e/ou senha incorretos");
+                            setEmail("");
+                            setSenha("");
+                        }
+                    }}> Login </button>
 
                     <a id={'esqueceu-senha'}>Esqueceu a senha</a>
 
