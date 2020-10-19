@@ -80,7 +80,7 @@ function Login(props) {
 
                     <a id={'esqueceu-senha'}>Esqueceu a senha</a>
 
-                    <p id={'nao-possui-login'}>Não possui login? <Link id={'cadastro'} to="/">Cadastre-se</Link></p>
+                    <p id={'nao-possui-login'}>Não possui login? <Link id={'cadastro'} to="/user">Cadastre-se</Link></p>
 
                 </form>
             </div>

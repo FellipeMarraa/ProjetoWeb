@@ -1,14 +1,63 @@
 import React from 'react';
 import './index.css';
 import {Link} from "react-router-dom";
+import Nav from "reactstrap/es/Nav";
+
+import Imgperfil from "../../assets/mdi_person.png";
+import Instagram from "../../assets/instagram.png";
+import Facebook from "../../assets/facebook.png";
+import Whatsapp from "../../assets/whatsapp.png";
+import Baixar from "../../assets/baixar.png";
+import Email from "../../assets/email.png";
+import Telefone from "../../assets/telefone.png";
 
 const User = props => {
 
     return (
-        <div>
-        <h1> Esta e a pagina de cliente</h1>
-        <h2><Link to={'/'}>Home</Link></h2>
-        </div>
+        <body id={'conteudo'}>
+        <Nav id={'cabecalho'}>
+            <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
+        </Nav>
+
+        <article>
+            <h2 id={'bem-vindo'}>Bem vindo, quais dos nossos serviços você deseja?</h2>
+        </article>
+
+            <footer id={'rodape'}>
+
+            <dl id={'rodape-servicos'}>Serviços
+                <dt><br/>Montagem e manutenção de computadores</dt>
+                <dt><br/>Criação de sites e aplicativos</dt>
+                <dt><br/>Design e criação de banners</dt>
+
+            </dl>
+
+            <img id={'rodape-instagram-icon'} src={Instagram}/>
+            <img id={'rodape-facebook-icon'} src={Facebook}/>
+            <img id={'rodape-whatsapp-icon'} src={Whatsapp}/>
+            <img id={'rodape-baixar-icon'} src={Baixar}/>
+
+
+            <dl id={'rodape-rede-social'}>Redes Sociais
+                <dt id={'rodape-instagram'}><br/>Instagram</dt>
+                <dt id={'rodape-facebook'}><br/>Facebook</dt>
+                <dt id={'rodape-whatsapp'}><br/>Whatsapp</dt>
+            </dl>
+
+            <p id={'rodape-downloads'}>Downloads</p>
+            <p id={'rodape-mais-informacoes'}>Mais informações</p>
+
+            <img id={'rodape-email-icon'} src={Email}/>
+
+            <p id={'rodape-email'}>contact@contactus.com.br</p>
+
+            <img id={'rodape-telefone-icon'} src={Telefone}/>
+
+            <p id={'rodape-telefone'}>(34) 3232-3232</p>
+            <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
+        </footer>
+
+        </body>
             );
 
 }
