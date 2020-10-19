@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+/*=================================================Fim da Nav===============================================*/
+
+/*======================================================Inicio Header========================================*/
+
 #titulo{
     position: absolute;
     margin-left: 500px;
@@ -64,8 +68,13 @@
     border-radius: 25px;
 }
 
+#caixa-manutencao:hover{
+    padding-top: 25px;
+    padding-bottom: 50px;
+    cursor: pointer;
+}
+
 #manutencao{
-    position: absolute;
     margin-left: 30px;
     margin-top: 30px;
     width: 200px;
@@ -73,9 +82,7 @@
 }
 
 #texto-manutencao{
-    position: absolute;
-    margin-left: 35px;
-    margin-top: 200px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -88,17 +95,22 @@
     border-radius: 25px;
 }
 
+#caixa-site:hover{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
+}
+
 #site{
-    position: absolute;
     margin-left: 30px;
     margin-top: 30px;
     width: 200px;
     height: 150px;
 }
 #texto-site{
-    position: absolute;
+
     margin-left: 25px;
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 #caixa-design{
@@ -108,10 +120,16 @@
     width: 250px;
     height: 300px;
     border-radius: 25px;
+
+}
+
+#caixa-design:hover{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    cursor: pointer;
 }
 
 #design{
-    position: absolute;
     margin-left: 37px;
     margin-top: 30px;
     width: 180px;
@@ -119,9 +137,8 @@
 }
 
 #texto-design{
-    position: absolute;
     margin-left: 25px;
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 /*======================================Inicio Rodape======================================*/
