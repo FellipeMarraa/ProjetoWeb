@@ -120,7 +120,7 @@ function SignIn() {
                         <option value="profissional">Profissional</option>
                     </select>
 
-                    {/*<input id={'tipo-cadastro'} type={'text'} name="nome" placeholder={'Tipo: '} maxLength={256}/>*/}
+                    <input id={'tipo-cadastro'} type={'text'} name="nome" placeholder={'Tipo: '} maxLength={256}/>
                     <input value={cpf} id={'cpf-cadastro'} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={14} mask={"999.999.999-99"} onChange={(textCpf)=>setCpf(textCpf.target.value)}/>
 
                     <button id={'cadastrar'} type={"submit"} onClick={() => sendInput()}> Cadastrar</button>

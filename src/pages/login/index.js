@@ -36,12 +36,12 @@ function Login(props) {
         }
     }
 
-    function checaCredenciais(email, senha) {
-        if (email=="fellipemarra@hotmail.com" && senha=="123"){
-            routeChange("cliente");
-        }else
-            return alert ("Login incorreto");
-    }
+    // function checaCredenciais(email, senha) {
+    //     if (email == "fellipemarra@hotmail.com" && senha=="123"){
+    //         routeChange("cliente");
+    //     }else
+    //         return alert ("Login incorreto");
+    // }
 
     return (
         <div>
@@ -64,17 +64,19 @@ function Login(props) {
 
 
                     <button id={'login'} onClick={() => { testeBackEnd();
-                        let checagem = checaCredenciais(email, senha);
-                        if (checagem[0]) {
-                            console.log("Seu token ", checagem[0])
-                            if (checagem[1] == 'cliente') {
-                                routeChange("/cliente")
-                            }
-                        } else {
-                            alert("Login e/ou senha incorretos");
-                            setEmail("");
-                            setSenha("");
-                        }
+                        // let checagem = checaCredenciais(email, senha);
+                        // if (checagem[0]) {
+                        //     console.log("Seu token ", checagem[0])
+                        //     if (checagem[1] == 'cliente') {
+                        //         routeChange("/cliente")
+                        //     }else if (checagem[1] == 'profissional') {
+                        //         routeChange("/profissional")
+                        //     }else {
+                        //         alert("Login e/ou senha incorretos");
+                        //         setEmail("");
+                        //         setSenha("");
+                        //     }
+                        // }
                     }}> Login
                     </button>
 
