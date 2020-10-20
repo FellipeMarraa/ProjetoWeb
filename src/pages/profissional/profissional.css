@@ -1,0 +1,200 @@
+#cabecalho-profissional{
+    background-color: #418e89;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    z-index: 999;
+}
+
+#empresa-cabecalho {
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-style: italic;
+    text-decoration: none;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+#empresa-cabecalho:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#perfil{
+    margin-left: 95%;
+    margin-top: 5px;
+    position: absolute;
+    float: right;
+    height: 60px;
+    width: 60px;
+}
+
+#perfil:hover{
+    cursor: pointer;
+}
+
+/*=================================================Fim da Nav===============================================*/
+
+/*======================================================Inicio Header========================================*/
+
+#servicos{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 200px;
+    padding-top: 20px;
+    width: 1600px;
+    height: 600px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+
+/*======================================Inicio Rodape======================================*/
+
+#rodape {
+    position: absolute;
+    margin-top: 900px;
+    width: 100%;
+    height: 31%;
+    background-color: #282c34;
+}
+
+#rodape-servicos {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 150px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+dt {
+    font-size: 15px;
+}
+
+dt:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#rodape-rede-social {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 650px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+#rodape-instagram-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 650px;
+    margin-top: 115px;
+
+}
+
+#rodape-facebook-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 650px;
+    margin-top: 165px
+}
+
+#rodape-whatsapp-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 650px;
+    margin-top: 215px
+}
+
+#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#rodape-instagram, #rodape-facebook, #rodape-whatsapp {
+    margin-left: 40px;
+    padding: 2px;
+}
+
+#rodape-downloads {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 1050px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+#rodape-baixar-icon {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    margin-left: 1025px;
+    margin-top: 100px
+}
+
+#rodape-mais-informacoes {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 1500px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+#rodape-email {
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 1545px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+#rodape-email:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#rodape-email-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1502px;
+    margin-top: 105px
+}
+
+#rodape-telefone {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 1545px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+}
+
+#rodape-telefone-icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    margin-left: 1502px;
+    margin-top: 155px
+}
+
+#rodape-empresa {
+
+    margin-top: 255px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}

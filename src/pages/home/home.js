@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './index.css';
+import './home.css';
 import {Link, useHistory} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
@@ -241,7 +241,7 @@ function SignIn() {
 
         {/*======================================Inicio do Rodapé======================================*/}
 
-        <footer id={'rodape'}>
+        <footer id={'rodape-home'}>
 
             <dl id={'rodape-servicos'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>
