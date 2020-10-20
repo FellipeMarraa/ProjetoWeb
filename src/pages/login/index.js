@@ -2,30 +2,22 @@ import React, {useState} from 'react';
 import './index.css';
 import {Link, useHistory} from "react-router-dom";
 import IconeUser from '../../assets/iconeuser.png';
-import auth from "../../services/auth";
-import Alert from "reactstrap/lib/Alert";
-
-
 
 function Login(props) {
 
-    const [email, setEmail] = useState("");
+    const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
-    const [instrucaoLogin, setInstrucaoLogin] = useState(false);
-    const [tipo, setTipo] = useState("");
 
     const history = useHistory();
 
     const routeChange = (name) => {
-        let path = `/`.concat(name);
+        let path = '/'.concat(name);
         history.push(path);
     }
 
-    async function efetuarLogin(email, senha) {
-        let isAuthorization = false;
-
+    async function efetuarLogin(login, senha) {
         try {
-            console.log("Enctrou no processo de envio para o back end")
+            console.log("Entrou no processo de envio para o back end")
             let response = await fetch('http://localhost:5000/users/login', {
                 method: 'POST',
                 headers: {
@@ -36,40 +28,24 @@ function Login(props) {
 
                 body: JSON.stringify(
                     {
-                        login: email,
+                        login: login,
                         senha: senha
                     }
                 )
             })
-
-
-            if (response.data.authorization == true){
-                isAuthorization = true;
-                if (tipo == "profissional"){
-                    routeChange("/profissional")
-                }else{
-                    routeChange("/user")
-                }
-            }
             console.log(response)
         } catch (error) {
             console.error(error);
         }
-
-        if(isAuthorization){
-            history.push('/profissional');
-        } else{
-            setInstrucaoLogin(true);
+    }
+    function checaCredenciais(req){
+        const tipo = req.body.tipo;
+        if(tipo == 'profissional'){
+            routeChange('profissional');
+        }else if (tipo == 'cliente'){
+            routeChange('user');
         }
     }
-
-    function checaCredenciais(email, senha) {
-        if (email == email.body.email && senha == senha.body.senha){
-            routeChange("/user");
-        }else
-            return alert ("Login incorreto");
-    }
-
     return (
         <div>
 
@@ -78,8 +54,8 @@ function Login(props) {
 
                 <form id={'formulario'}>
 
-                    <input id={'email'} value={email} type={'email'} name="email" placeholder={'Email:'}
-                           onChange={textEmail => {setEmail(textEmail.target.value);
+                    <input id={'email'} value={login} type={'email'} name="email" placeholder={'Email:'}
+                           onChange={textEmail => {setLogin(textEmail.target.value);
                            }}/>
 
 
@@ -87,21 +63,18 @@ function Login(props) {
                            onChange={textSenha => { setSenha(textSenha); setSenha(textSenha.target.value);
                            }}/>
 
-                           {/*<Alert value={instrucaoLogin} onChange={(textAlert)=>setInstrucaoLogin(textAlert.target.value)}/>*/}
-
-
-                    <button id={'login'} onClick={() => { efetuarLogin(email, senha);
-                        let checagem = checaCredenciais(email, senha);
-                        if (checagem[0]) {
-                            console.log("Seu token ", checagem[0])
-                            if (checagem[1] == 'cliente') {
-                                routeChange("/user")
-                            }
-                        } else {
-                            alert("Login e/ou senha incorretos");
-                            setEmail("");
-                            setSenha("");
-                        }
+                    <button id={'login'} onClick={() => {efetuarLogin(login, senha); routeChange()
+                    // let checagem = checaCredenciais();
+                    // if(checagem[0]){
+                    //     console.log(checagem[0])
+                    //     if(checagem[1] == 'cliente'){
+                    //         routeChange("/user")
+                    //     }else if(checagem[1] == 'profissional'){
+                    //         routeChange("/profissional")
+                    //     }else{
+                    //         alert("login incorreto");
+                    //     }
+                    // }
                     }}> Login </button>
 
                     <a id={'esqueceu-senha'}>Esqueceu a senha</a>
