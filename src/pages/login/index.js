@@ -25,7 +25,23 @@ function Login(props) {
         let isAuthorization = false;
 
         try {
-            let response = await auth.post('/users/login', {email, senha});
+            console.log("Enctrou no processo de envio para o back end")
+            let response = await fetch('http://localhost:5000/users/login', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+
+                body: JSON.stringify(
+                    {
+                        login: email,
+                        senha: senha
+                    }
+                )
+            })
+
 
             if (response.data.authorization == true){
                 isAuthorization = true;
@@ -49,7 +65,7 @@ function Login(props) {
 
     function checaCredenciais(email, senha) {
         if (email == email.body.email && senha == senha.body.senha){
-            routeChange("cliente");
+            routeChange("/user");
         }else
             return alert ("Login incorreto");
     }
@@ -63,7 +79,7 @@ function Login(props) {
                 <form id={'formulario'}>
 
                     <input id={'email'} value={email} type={'email'} name="email" placeholder={'Email:'}
-                           onChange={textEmail => {setEmail(textEmail);setEmail(console.log(textEmail.target.value));
+                           onChange={textEmail => {setEmail(textEmail.target.value);
                            }}/>
 
 

@@ -112,10 +112,7 @@ function SignIn() {
                 <Form id={'formulario-cadastro'}>
 
                     <input id={'email-cadastro'} value={login} type={'email'} name="email" placeholder={'Email: '} maxLength={256} onChange={(textLogin)=>setLogin(textLogin.target.value)} />
-                    {/*<input id={'senha-cadastro'} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value); let checarSenha = passwordValidator();*/}
-                    {/*if(checarSenha){*/}
-                    {/*    console.log("A senha n'ao pode ser essa");*/}
-                    {/*}}}/>*/}
+                    <input id={'senha-cadastro'} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value) }}/>
                     <input id={'nome-cadastro'} value={nome} type={'text'} name="nome" placeholder={'Nome: '} maxLength={256} onChange={(textNome)=>setNome(textNome.target.value)}/>
 
                     <select value={tipo} id={'tipo-cadastro'} onChange={(textTipo)=>setTipo(textTipo.target.value)}>
