@@ -40,7 +40,63 @@
 
 /*======================================================Inicio Header========================================*/
 
+#botoes{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 100px;
+    width: 1600px;
+    height: 70px;
+
+    text-align: center;
+}
+
+#botao-faturamento{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#botao-servicos{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#botao-visualizacao{
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+
 #servicos{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 200px;
+    padding-top: 20px;
+    width: 1600px;
+    height: 600px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#faturamentos{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 200px;
+    padding-top: 20px;
+    width: 1600px;
+    height: 600px;
+    background: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+#visualizacao{
     position: absolute;
     margin-left: 170px;
     margin-top: 200px;
@@ -55,7 +111,7 @@
 
 /*======================================Inicio Rodape======================================*/
 
-#rodape {
+#rodape-profissional {
     position: absolute;
     margin-top: 900px;
     width: 100%;

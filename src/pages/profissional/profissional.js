@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './profissional.css'
 import {Link} from "react-router-dom";
 import Nav from "reactstrap/es/Nav";
@@ -11,11 +11,16 @@ import Whatsapp from "../../assets/whatsapp.png";
 import Baixar from "../../assets/baixar.png";
 import Email from "../../assets/email.png";
 import Telefone from "../../assets/telefone.png";
+import Button from "reactstrap/lib/Button";
 
 function Profissional() {
 
-        const [options, setOptions] = useState({title: 'Faturamento da empresa GSI Informática'})
-        const [data, setData] = useState([
+        const [faturamento, setFaturamento] = useState(false)
+        const [visualizacao, setVisualizacao] = useState(false)
+        const [servicos, setServicos] = useState(false)
+
+        const [graficoFaturamento, setGraficoFaturamento] = useState({title: 'Faturamento da empresa GSI Informática'})
+        const [dataFaturamento, setDataFaturamento] = useState([
             ['Mes', 'Faturamento'],
             ['Janeiro', 0],
             ['Fevereiro', 20],
@@ -31,6 +36,75 @@ function Profissional() {
             ['Dezembro', 90],
         ])
 
+    const [graficoServicos, setGraficoServicos] = useState({title: 'Servicos da empresa GSI Informática'})
+    const [dataServicos, setDataServicos] = useState([
+        ['Mes', 'Servicos'],
+        ['Janeiro', 50],
+        ['Fevereiro', 20],
+        ['Março', 30],
+
+    ])
+
+    const [graficoVisualizacoes, setGraficoVisualizacoes] = useState({title: 'Vizualizacoes da empresa GSI Informática'})
+    const [dataVisualizacoes, setDataVisualizacoes] = useState([
+        ['Mes', 'Visualizacoes'],
+        ['Janeiro', 50],
+        ['Fevereiro', 20],
+        ['Março', 30],
+
+    ])
+
+    useEffect(()=>{
+
+        document.getElementById('visualizacao');
+
+            if (visualizacao == false){
+                document.getElementById("visualizacao").style.display = "none";
+            }else
+                if (visualizacao  == true){
+                document.getElementById("visualizacao").style.display = "block";
+            }
+
+        }, //efeito
+
+        [visualizacao] // gatilho
+
+    );
+
+    useEffect(()=>{
+
+            document.getElementById('faturamentos');
+
+            if (faturamento == false){
+                document.getElementById("faturamentos").style.display = "none";
+            }else
+            if (faturamento  == true){
+                document.getElementById("faturamentos").style.display = "block";
+            }
+
+        }, //efeito
+
+        [faturamento] // gatilho
+
+    );
+
+    useEffect(()=>{
+
+            document.getElementById('servicos');
+
+            if (servicos == false){
+                document.getElementById("servicos").style.display = "none";
+            }else
+            if (servicos  == true){
+                document.getElementById("servicos").style.display = "block";
+            }
+
+        }, //efeito
+
+        [servicos] // gatilho
+
+    );
+
     return (
         <body>
         <Nav id={'cabecalho-profissional'}>
@@ -39,13 +113,27 @@ function Profissional() {
             <img id={'perfil'} src={Imgperfil}/>
         </Nav>
         <header id={'header'}>
-            <div id={'servicos'}>
-                <Chart width={'1550px'} height={'500px'} chartType="LineChart" data={data} options={options}/>
 
+            <div id={'botoes'}>
+            <Button id={'botao-faturamento'} onClick={() => setFaturamento(true)}> Faturamento </Button>
+            <Button id={'botao-visualizacao'}onClick={() => setVisualizacao(true)}> Visualizacoes </Button>
+            <Button id={'botao-servicos'}onClick={() => setServicos(true)}> Servicos </Button>
+            </div>
+
+            <div id={'faturamentos'}>
+                <Chart width={'1550px'} height={'500px'} chartType="LineChart" data={dataFaturamento} options={graficoFaturamento}/>
+            </div>
+
+            <div id={'servicos'}>
+                <Chart width={'1550px'} height={'500px'} chartType="PieChart" data={dataServicos} options={graficoServicos}/>
+            </div>
+
+            <div id={'visualizacao'}>
+                <Chart width={'1550px'} height={'500px'} chartType="BarChart" data={dataVisualizacoes} options={graficoVisualizacoes}/>
             </div>
         </header>
 
-        <footer id={'rodape'}>
+        <footer id={'rodape-profissional'}>
 
             <dl id={'rodape-servicos'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>

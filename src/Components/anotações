@@ -67,3 +67,35 @@ var schema = new passwordValidator();
 //     .has().not().spaces()                           // Should not have spaces
 //     .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
 //     return schema.validate(senha)
+
+
+
+
+
+
+==============================================use effectcs=========================================
+
+funcao - efeito que vai ser desencadeado
+array - indica os conteudos que vao ser monitorados para disparar a funcao
+
+useEffect(
+
+()=>{
+
+document.title = contador;
+
+}, //efeito
+
+[] // gatilho
+
+);
+
+
+
+
+
+
+
+
+
+
