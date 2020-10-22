@@ -2,17 +2,24 @@ import React, {useState} from 'react';
 import './login.css';
 import {Link, useHistory} from "react-router-dom";
 import IconeUser from '../../assets/iconeuser.png';
+import Home from "../home/home";
 
-function Login(props) {
+const Login = props =>  {
 
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
 
     const history = useHistory();
 
-    const routeChange = (name) => {
-        let path = '/'.concat(name);
-        history.push(path);
+    const routeChange = (cliente = "cliente", profissional = "profissional" ) => {
+        if(cliente){
+            let path = '/'.concat("cliente");
+            history.push(path);
+        }else if(profissional){
+            let path = '/'.concat("profissional");
+            history.push(path);
+        }
+
     }
 
     async function efetuarLogin(login, senha) {
@@ -34,10 +41,13 @@ function Login(props) {
                 )
             })
             console.log(response)
-        } catch (error) {
+        }
+        catch (error) {
             console.error(error);
         }
+
     }
+
     function checaCredenciais(req){
         const tipo = req.body.tipo;
         if(tipo == 'profissional'){

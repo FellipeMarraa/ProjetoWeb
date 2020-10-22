@@ -14,7 +14,7 @@ import Baixar from "../../assets/baixar.png";
 import Email from "../../assets/email.png";
 import Telefone from "../../assets/telefone.png";
 
-const User = props => {
+const Cliente = props => {
 
     return (
         <div>
@@ -25,7 +25,7 @@ const User = props => {
         <header id={'header'}>
             <h1 id={'titulo'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
 
-            <div id={'servicos'}>
+            <div id={'servicos-cliente'}>
 
                 <div id={'caixa-manutencao'}>
                 <img id={'manutencao'} src={ImgManu}/>
@@ -83,4 +83,4 @@ const User = props => {
             );
 
 }
-export default User;
+export default Cliente;
