@@ -4,7 +4,8 @@ import {Link} from "react-router-dom";
 import Nav from "reactstrap/es/Nav";
 import {Chart} from "react-google-charts";
 
-import Imgperfil from "../../assets/mdi_person.png";
+import ImgPerfil from "../../assets/perfil.png";
+import ImgAlert from "../../assets/alert.png";
 import Instagram from "../../assets/instagram.png";
 import Facebook from "../../assets/facebook.png";
 import Whatsapp from "../../assets/whatsapp.png";
@@ -15,26 +16,9 @@ import Button from "reactstrap/lib/Button";
 
 function Profissional() {
 
-        const [faturamento, setFaturamento] = useState(false)
-        const [visualizacao, setVisualizacao] = useState(false)
-        const [servicos, setServicos] = useState(false)
-
-        const [graficoFaturamento, setGraficoFaturamento] = useState({title: 'Faturamento da empresa GSI Informática'})
-        const [dataFaturamento, setDataFaturamento] = useState([
-            ['Mes', 'Faturamento'],
-            ['Janeiro', 0],
-            ['Fevereiro', 20],
-            ['Março', 30],
-            ['Abril', 40],
-            ['Maio', 50],
-            ['Junho', 60],
-            ['Julho', 40],
-            ['Agosto', 70],
-            ['Setembro', 30],
-            ['Outubro', 80],
-            ['Novembro', 100],
-            ['Dezembro', 90],
-        ])
+    const [servicos, setServicos] = useState(true)
+    const [faturamento, setFaturamento] = useState(false)
+    const [visualizacao, setVisualizacao] = useState(false)
 
     const [graficoServicos, setGraficoServicos] = useState({title: 'Servicos da empresa GSI Informática'})
     const [dataServicos, setDataServicos] = useState([
@@ -43,6 +27,23 @@ function Profissional() {
         ['Fevereiro', 20],
         ['Março', 30],
 
+    ])
+
+    const [graficoFaturamento, setGraficoFaturamento] = useState({title: 'Faturamento da empresa GSI Informática'})
+    const [dataFaturamento, setDataFaturamento] = useState([
+        ['Mes', 'Faturamento'],
+        ['Janeiro', 0],
+        ['Fevereiro', 20],
+        ['Março', 30],
+        ['Abril', 40],
+        ['Maio', 50],
+        ['Junho', 60],
+        ['Julho', 40],
+        ['Agosto', 70],
+        ['Setembro', 30],
+        ['Outubro', 80],
+        ['Novembro', 100],
+        ['Dezembro', 90],
     ])
 
     const [graficoVisualizacoes, setGraficoVisualizacoes] = useState({title: 'Vizualizacoes da empresa GSI Informática'})
@@ -54,20 +55,21 @@ function Profissional() {
 
     ])
 
-    useEffect(()=>{
+    useEffect(() => {
 
-        document.getElementById('visualizacao');
+            document.getElementById('servicos');
 
-            if (visualizacao == false){
-                document.getElementById("visualizacao").style.display = "none";
-            }else
-                if (visualizacao  == true){
-                document.getElementById("visualizacao").style.display = "block";
+            if (servicos == false) {
+                document.getElementById("servicos").style.display = "none";
+            } else if (servicos == true) {
+                document.getElementById("servicos").style.display = "block";
+                return setVisualizacao(false), setFaturamento(false);
             }
+
 
         }, //efeito
 
-        [visualizacao] // gatilho
+        [servicos] // gatilho
 
     );
 
@@ -80,6 +82,7 @@ function Profissional() {
             }else
             if (faturamento  == true){
                 document.getElementById("faturamentos").style.display = "block";
+                return setServicos(false), setVisualizacao(false);
             }
 
         }, //efeito
@@ -88,20 +91,20 @@ function Profissional() {
 
     );
 
-    useEffect(()=>{
+    useEffect(() => {
 
-            document.getElementById('servicos');
+            document.getElementById('visualizacao');
 
-            if (servicos == false){
-                document.getElementById("servicos").style.display = "none";
-            }else
-            if (servicos  == true){
-                document.getElementById("servicos").style.display = "block";
+            if (visualizacao == false) {
+                document.getElementById("visualizacao").style.display = "none";
+            } else if (visualizacao == true) {
+                document.getElementById("visualizacao").style.display = "block";
+                return setServicos(false), setFaturamento(false);
             }
 
         }, //efeito
 
-        [servicos] // gatilho
+        [visualizacao] // gatilho
 
     );
 
@@ -109,15 +112,30 @@ function Profissional() {
         <body>
         <Nav id={'cabecalho-profissional'}>
             <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
-            {/*<img id={'notificacao'} src={}/>*/}
-            <img id={'perfil'} src={Imgperfil}/>
+            <img id={'alert-img'} src={ImgAlert}/>
+            <img id={'perfil-img'} src={ImgPerfil}/>
         </Nav>
         <header id={'header'}>
 
             <div id={'botoes'}>
-            <Button id={'botao-faturamento'} onClick={() => setFaturamento(true)}> Faturamento </Button>
-            <Button id={'botao-visualizacao'}onClick={() => setVisualizacao(true)}> Visualizacoes </Button>
-            <Button id={'botao-servicos'}onClick={() => setServicos(true)}> Servicos </Button>
+                <Button id={'botao-servicos'} onClick={() => {
+                    setServicos(true);
+                    if (servicos == true) {
+                        setServicos(false);
+                    }
+                }}> Serviços </Button>
+                <Button id={'botao-faturamento'} onClick={() => {
+                    setFaturamento(true);
+                    if (faturamento == true) {
+                        setFaturamento(false);
+                    }
+                }}> Faturamento </Button>
+                <Button id={'botao-visualizacao'} onClick={() => {
+                    setVisualizacao(true);
+                    if (visualizacao == true) {
+                        setVisualizacao(false);
+                    }
+                }}> Visualizações </Button>
             </div>
 
             <div id={'faturamentos'}>

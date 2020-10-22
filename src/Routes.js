@@ -4,6 +4,8 @@ import Home from "./pages/home/home";
 import Login from "./pages/login/login";
 import Cliente from "./pages/cliente/cliente";
 import Profissional from "./pages/profissional/profissional";
+import PerfilCliente from "./pages/home/perfil-cliente/perfil.cliente";
+import PerfilProfissional from "./pages/home/perfil-profissional/perfil.profissional";
 
 function Routes() {
     return (
@@ -12,6 +14,8 @@ function Routes() {
             <Route exact path='/login' component={Login}/>
             <Route exact path='/cliente' component={Cliente}/>}/>
             <Route exact path='/profissional' component={Profissional}/>
+            <Route exact path='/perfil-cliente' component={PerfilCliente}/>
+            <Route exact path='/perfil-profissional' component={PerfilProfissional}/>
         </Switch>
     )
 }

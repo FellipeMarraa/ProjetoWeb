@@ -27,33 +27,21 @@ import passwordValidator from "password-validator";
 
 
 
-function SignIn() {
+function Home() {
 
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
     const [nome, setNome] = useState("");
     const [tipo, setTipo] = useState("");
     const [cpf, setCpf] = useState("");
-    const [instrucaoSenha, setIntrucaoSenha] = useState("");
     const history = useHistory();
 
     const routeChange = (name) => {
-        let path = `/`.concat(name);
+        let path = '/'.concat(name);
         history.push(path);
     }
 
-    // var schema = new passwordValidator();
-    // schema
-    //     .is().min(8)                                    // Minimum length 8
-    //     .is().max(100)                                  // Maximum length 100
-    //     .has().uppercase()                              // Must have uppercase letters
-    //     .has().lowercase()                              // Must have lowercase letters
-    //     .has().digits(2)                                // Must have at least 2 digits
-    //     .has().not().spaces()                           // Should not have spaces
-    //     .is().not().oneOf(['Passw0rd', 'Password123', '123']); // Blacklist these values
-    // return schema.validate(senha);
-
-    async function sendInput() {
+    async function efetuarCadastro() {
 
         try {
 
@@ -85,7 +73,7 @@ function SignIn() {
     }
 
     return (
-        <body id={'conteudo'}>
+        <div id={'conteudo'}>
         <Nav id={'cabecalho'}>
             <AnchorLink id={'home-cabecalho'} href='#header'>Home</AnchorLink>
             <AnchorLink id={'como-funciona-cabecalho'} href='#explicacao-texto-notificacao'>Como funciona</AnchorLink>
@@ -111,18 +99,24 @@ function SignIn() {
 
                 <Form id={'formulario-cadastro'}>
 
-                    <input id={'email-cadastro'} value={login} type={'email'} name="email" placeholder={'Email: '} maxLength={256} onChange={(textLogin)=>setLogin(textLogin.target.value)} />
-                    <input id={'senha-cadastro'} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value) }}/>
-                    <input id={'nome-cadastro'} value={nome} type={'text'} name="nome" placeholder={'Nome: '} maxLength={256} onChange={(textNome)=>setNome(textNome.target.value)}/>
+                    <input id={'email-cadastro'} required={true} value={login} type={'email'} name="email" placeholder={'Email: '} maxLength={256} onChange={(textLogin)=>setLogin(textLogin.target.value)} />
+                    <input id={'senha-cadastro'} required={true} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value) }}/>
+                    <input id={'nome-cadastro'} required={true} value={nome} type={'text'} name="nome" placeholder={'Nome: '} maxLength={256} onChange={(textNome)=>setNome(textNome.target.value)}/>
 
-                    <select value={tipo} id={'tipo-cadastro'} onChange={(textTipo)=>setTipo(textTipo.target.value)}>
+                    <select required={true} value={tipo} id={'tipo-cadastro'} onChange={(textTipo)=>setTipo(textTipo.target.value)}>
                         <option value="Selecione uma opcao">Selecione um tipo</option>
                         <option value="cliente">Cliente</option>
                         <option value="profissional">Profissional</option>
                     </select>
-                    <input value={cpf} id={'cpf-cadastro'} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={14} mask={"999.999.999-99"} onChange={(textCpf)=>setCpf(textCpf.target.value)}/>
+                    <input value={cpf} id={'cpf-cadastro'} required={true} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={14} mask={"999.999.999-99"} onChange={(textCpf)=>setCpf(textCpf.target.value)}/>
 
-                    <button id={'cadastrar'} type={"submit"} onClick={() => sendInput()}> Cadastrar</button>
+                    <button id={'cadastrar'} type={"submit"} onClick={() => {efetuarCadastro();
+                        if(tipo.equals('cliente')){
+                           return <Link to='/perfil-cliente'/>
+                        }else {
+                            return <Link to='/perfil-profissional'/>
+                        }
+                    }}> Cadastrar</button>
                 </Form>
 
             </div>
@@ -135,7 +129,7 @@ function SignIn() {
 
         {/*======================================Inicio das Informações======================================*/}
 
-        <article id={'explicacao'}>
+        <div id={'explicacao'}>
 
             <img id={'explicacao-notificacao-image'} src={NotificacaoImage}/>
             <p id={'explicacao-texto-notificacao'}>Receba alertas de serviços no seu aparelho <br/> de onde estiver</p>
@@ -145,27 +139,27 @@ function SignIn() {
             <p id={'explicacao-texto-seguranca'}>Tenha segurança com seus dados e <br/> fique longe de possíveis golpes
             </p>
 
-        </article>
+        </div>
 
         {/*======================================Fim da explicação======================================*/}
 
 
         {/*Inicio do texto de Como funciona*/}
 
-        <article id={'como-funciona'}>
+        <div id={'como-funciona'}>
 
             <h2 id={'titulo-como-funciona'}>Como funciona</h2>
             <p id={'texto-como-funciona'}>Todos os clientes que pedem por serviço aparecem no<br/> seu aplicativo</p>
             <img id={'como-funciona-image'} src={ComoFuncionaImage}/>
 
-        </article>
+        </div>
 
         {/*======================================Fim do texto de Como Funciona======================================*/}
 
 
         {/*======================================Inicio do texto de Quanto custa======================================*/}
 
-        <article id={'quanto-custa'}>
+        <div id={'quanto-custa'}>
 
             <h2 id={'titulo-quanto-custa'}>Quanto custa?</h2>
             <p id={'texto-quanto-custa'}>A Tech Center não tem mensalidade, e não paga nada para se cadastrar.<br/> Você
@@ -173,7 +167,7 @@ function SignIn() {
                 <b>e fica com 100% do<br/>valor do serviço.</b></p>
             <img id={'quanto-custa-image'} src={SemCustoImage}/>
 
-        </article>
+        </div>
 
 
         {/*======================================Fim do texto de Quanto custa======================================*/}
@@ -181,7 +175,7 @@ function SignIn() {
 
         {/*======================================Inicio do texto Sobre a empresa======================================*/}
 
-        <article id={'sobre-nos-cadastro'}>
+        <div id={'sobre-nos-cadastro'}>
 
             <h2 id={'titulo-sobre-nos'}>O que nos torna a melhor plataforma</h2>
             <p id={'texto-sobre-nos'}>São profissionais que transformaram sua carreira em um sucesso,<br/>
@@ -189,11 +183,11 @@ function SignIn() {
 
             <img id={'sobre-nos-image'} src={JogandoImage}/>
 
-        </article>
+        </div>
 
         {/*======================================Inicio Primeiro texto====================================== */}
 
-        <artcile id={'primeiro-texto'}>
+        <div id={'primeiro-texto'}>
 
             <p>A Tech Center oferece Assistência Técnica em Informática para
                 manutenção
@@ -207,12 +201,12 @@ function SignIn() {
 
             <img id={'primeira-imagem'} src={primeiraImagem}/>
 
-        </artcile>
+        </div>
 
         {/*======================================Inicio Segundo texto====================================== */}
 
 
-        <article id={'segundo-texto'}>
+        <div id={'segundo-texto'}>
 
             <p>Seja qual for o problema apresentado pelo seu computador, temos a
                 certeza que
@@ -221,11 +215,11 @@ function SignIn() {
                 nossa melhor propaganda é a própria indicação deles.</p>
 
             <img id={'segunda-imagem'} src={segundaImagem}/>
-        </article>
+        </div>
 
         {/*======================================Inicio Terceiro texto======================================*/}
 
-        <article id={'terceiro-texto'}>
+        <div id={'terceiro-texto'}>
             <p>Compreendemos que quando acontecem problemas com seus computadores
                 você
                 ou
@@ -234,7 +228,7 @@ function SignIn() {
                 normal.</p>
 
             <img id={'terceira-imagem'} src={terceiraImagem}/>
-        </article>
+        </div>
 
         {/*======================================Fim dos textos Sobre a empresa======================================*/}
 
@@ -283,9 +277,9 @@ function SignIn() {
 
         {/*======================================Fim do rodape======================================*/}
 
-        </body>
+        </div>
 
     );
 }
 
-export default SignIn;
+export default Home;

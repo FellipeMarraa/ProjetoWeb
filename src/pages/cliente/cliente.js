@@ -3,10 +3,10 @@ import './cliente.css'
 import {Link} from "react-router-dom";
 import Nav from "reactstrap/es/Nav";
 
-import Imgperfil from "../../assets/mdi_person.png";
-import Imgmanu from "../../assets/manutencao-computadores-notebooks-sjc.png";
-import Imgsite from "../../assets/criação-sites-desenvolvimento-sites-2.svg";
-import Imgdesign from "../../assets/Vector.png";
+import ImgPerfil from "../../assets/perfil.png";
+import ImgManu from "../../assets/manutencao-computadores-notebooks-sjc.png";
+import ImgSite from "../../assets/criação-sites-desenvolvimento-sites-2.svg";
+import ImgDesign from "../../assets/Vector.png";
 import Instagram from "../../assets/instagram.png";
 import Facebook from "../../assets/facebook.png";
 import Whatsapp from "../../assets/whatsapp.png";
@@ -17,10 +17,10 @@ import Telefone from "../../assets/telefone.png";
 const User = props => {
 
     return (
-        <body>
+        <div>
         <Nav id={'cabecalho'}>
             <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
-            <img id={'perfil'} src={Imgperfil}/>
+            <img id={'perfil'} src={ImgPerfil}/>
         </Nav>
         <header id={'header'}>
             <h1 id={'titulo'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
@@ -28,17 +28,17 @@ const User = props => {
             <div id={'servicos'}>
 
                 <div id={'caixa-manutencao'}>
-                <img id={'manutencao'} src={Imgmanu}/>
+                <img id={'manutencao'} src={ImgManu}/>
                 <p id={'texto-manutencao'}>Montagem e manutenção<br/> de computadores</p>
                 </div>
 
                 <div id={'caixa-site'}>
-                <img id={'site'} src={Imgsite}/>
+                <img id={'site'} src={ImgSite}/>
                 <p id={'texto-site'}>Criação de sites e aplicativos</p>
                 </div>
 
                 <div id={'caixa-design'}>
-                <img id={'design'} src={Imgdesign}/>
+                <img id={'design'} src={ImgDesign}/>
                 <p id={'texto-design'}>Design e criação de banners</p>
                 </div>
 
@@ -79,7 +79,7 @@ const User = props => {
             <p id={'rodape-telefone'}>(34) 3232-3232</p>
             <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
         </footer>
-        </body>
+        </div>
             );
 
 }
