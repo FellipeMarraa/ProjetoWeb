@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './home.css';
 import {Link, useHistory} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import passwordValidator from 'password-validator';
 
 
 import HeaderImage from '../../assets/cliente.png';
@@ -23,7 +24,6 @@ import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
 import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
 import Nav from "reactstrap/es/Nav";
 import Form from "reactstrap/es/Form";
-import passwordValidator from "password-validator";
 
 
 
@@ -36,8 +36,20 @@ const Home = props =>{
     const [cpf, setCpf] = useState("");
     const history = useHistory();
 
+    var schema = new passwordValidator();
+    schema
+    .is().min(8)                                    // Minimum length 8
+    .is().max(100)                                  // Maximum length 100
+    .has().uppercase()                              // Must have uppercase letters
+    .has().lowercase()                              // Must have lowercase letters
+    .has().digits(2)                                // Must have at least 2 digits
+    .has().not().spaces()                           // Should not have spaces
+    .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
+    return schema.validate(senha)
+
+
     const routeChange = (name) => {
-        let path = '/'.concat(name);
+        let path = '/perfil-'.concat(name);
         history.push(path);
     }
 
@@ -64,9 +76,17 @@ const Home = props =>{
                 )
             });
 
-            let json = await retorno.json()
-            console.log(json);
-            return retorno;
+            let json = await retorno.json();
+
+            localStorage.setItem('token', json.token);
+
+            console.log(localStorage.getItem("token"));
+
+            if (json.tipo) {
+                routeChange(json.tipo);
+            } else {
+                alert("Usuario nao autorizado")
+            }
         } catch (error) {
             console.error(error);
         }
@@ -100,7 +120,7 @@ const Home = props =>{
                 <Form id={'formulario-cadastro'}>
 
                     <input id={'email-cadastro'} required={true} value={login} type={'email'} name="email" placeholder={'Email: '} maxLength={256} onChange={(textLogin)=>setLogin(textLogin.target.value)} />
-                    <input id={'senha-cadastro'} required={true} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value) }}/>
+                    <input id={'senha-cadastro'} required={true} value={senha} type={'password'} name="senha" placeholder={'Senha: '} maxLength={256} onChange={(textSenha)=> {setSenha(textSenha.target.value); passwordValidator() }}/>
                     <input id={'nome-cadastro'} required={true} value={nome} type={'text'} name="nome" placeholder={'Nome: '} maxLength={256} onChange={(textNome)=>setNome(textNome.target.value)}/>
 
                     <select required={true} value={tipo} id={'tipo-cadastro'} onChange={(textTipo)=>setTipo(textTipo.target.value)}>
@@ -110,12 +130,7 @@ const Home = props =>{
                     </select>
                     <input value={cpf} id={'cpf-cadastro'} required={true} type={'text'} name="cpf" placeholder={'CPF: '} maxLength={14} mask={"999.999.999-99"} onChange={(textCpf)=>setCpf(textCpf.target.value)}/>
 
-                    <button id={'cadastrar'} type={"submit"} onClick={() => {efetuarCadastro();
-                        if(tipo.equals('cliente')){
-                           return <Link to='/perfil-cliente'/>
-                        }else {
-                            return <Link to='/perfil-profissional'/>
-                        }
+                    <button id={'cadastrar'} type={"submit"} onClick={() => {efetuarCadastro(); routeChange()
                     }}> Cadastrar</button>
                 </Form>
 

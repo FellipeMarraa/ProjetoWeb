@@ -75,17 +75,6 @@ const Login = props => {
                     <button id={'login'} onClick={() => {
                         efetuarLogin(login, senha);
                         routeChange()
-                        // let checagem = checaCredenciais();
-                        // if(checagem[0]){
-                        //     console.log(checagem[0])
-                        //     if(checagem[1] == 'cliente'){
-                        //         routeChange("/user")
-                        //     }else if(checagem[1] == 'profissional'){
-                        //         routeChange("/profissional")
-                        //     }else{
-                        //         alert("login incorreto");
-                        //     }
-                        // }
                     }}> Login
                     </button>
 
