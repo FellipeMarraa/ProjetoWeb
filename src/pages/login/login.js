@@ -2,30 +2,24 @@ import React, {useState} from 'react';
 import './login.css';
 import {Link, useHistory} from "react-router-dom";
 import IconeUser from '../../assets/iconeuser.png';
-import Home from "../home/home";
 
-const Login = props =>  {
+const Login = props => {
 
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
+    // const [token, setToken] = useState("");
 
     const history = useHistory();
 
-    const routeChange = (cliente = "cliente", profissional = "profissional" ) => {
-        if(cliente){
-            let path = '/'.concat("cliente");
-            history.push(path);
-        }else if(profissional){
-            let path = '/'.concat("profissional");
-            history.push(path);
-        }
-
+    const routeChange = (name) => {
+        let path = '/'.concat(name);
+        history.push(path);
     }
 
     async function efetuarLogin(login, senha) {
         try {
             console.log("Entrou no processo de envio para o back end")
-            let response = await fetch('http://localhost:5000/users/login', {
+            let retorno = await fetch('http://localhost:5000/users/login', {
                 method: 'POST',
                 headers: {
                     'Accept': 'application/json',
@@ -39,23 +33,25 @@ const Login = props =>  {
                         senha: senha
                     }
                 )
-            })
-            console.log(response)
-        }
-        catch (error) {
+            });
+
+            let json = await retorno.json();
+
+            localStorage.setItem('token', json.token);
+
+            console.log(localStorage.getItem("token"));
+
+            if (json.tipo) {
+                routeChange(json.tipo);
+            } else {
+                alert("Usuario nao autorizado")
+            }
+        } catch (error) {
             console.error(error);
         }
 
     }
 
-    function checaCredenciais(req){
-        const tipo = req.body.tipo;
-        if(tipo == 'profissional'){
-            routeChange('profissional');
-        }else if (tipo == 'cliente'){
-            routeChange('user');
-        }
-    }
     return (
         <div>
 
@@ -65,27 +61,33 @@ const Login = props =>  {
                 <form id={'formulario'}>
 
                     <input id={'email'} value={login} type={'email'} name="email" placeholder={'Email:'}
-                           onChange={textEmail => {setLogin(textEmail.target.value);
+                           onChange={textEmail => {
+                               setLogin(textEmail.target.value);
                            }}/>
 
 
                     <input id={'senha'} value={senha} type={'password'} name="senha" placeholder={'Senha: '}
-                           onChange={textSenha => { setSenha(textSenha); setSenha(textSenha.target.value);
+                           onChange={textSenha => {
+                               setSenha(textSenha);
+                               setSenha(textSenha.target.value);
                            }}/>
 
-                    <button id={'login'} onClick={() => {efetuarLogin(login, senha); routeChange()
-                    // let checagem = checaCredenciais();
-                    // if(checagem[0]){
-                    //     console.log(checagem[0])
-                    //     if(checagem[1] == 'cliente'){
-                    //         routeChange("/user")
-                    //     }else if(checagem[1] == 'profissional'){
-                    //         routeChange("/profissional")
-                    //     }else{
-                    //         alert("login incorreto");
-                    //     }
-                    // }
-                    }}> Login </button>
+                    <button id={'login'} onClick={() => {
+                        efetuarLogin(login, senha);
+                        routeChange()
+                        // let checagem = checaCredenciais();
+                        // if(checagem[0]){
+                        //     console.log(checagem[0])
+                        //     if(checagem[1] == 'cliente'){
+                        //         routeChange("/user")
+                        //     }else if(checagem[1] == 'profissional'){
+                        //         routeChange("/profissional")
+                        //     }else{
+                        //         alert("login incorreto");
+                        //     }
+                        // }
+                    }}> Login
+                    </button>
 
                     <a id={'esqueceu-senha'}>Esqueceu a senha</a>
 
