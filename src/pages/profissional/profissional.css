@@ -7,7 +7,7 @@
     z-index: 999;
 }
 
-#empresa-cabecalho {
+#empresa-cabecalho-profissional {
     position: absolute;
     left: 40px;
     top: 15px;
@@ -18,12 +18,12 @@
     color: #FFFFFF;
 }
 
-#empresa-cabecalho:hover {
+#empresa-cabecalho-profissional:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#perfil-img{
+#perfil-img-profissional{
     margin-left: 95%;
     margin-top: 5px;
     position: absolute;
@@ -32,11 +32,11 @@
     width: 60px;
 }
 
-#perfil-img:hover{
+#perfil-img-profissional:hover{
     cursor: pointer;
 }
 
-#alert-img{
+#alert-img-profissional{
     margin-left: 91%;
     margin-top: 20px;
     position: absolute;
@@ -45,7 +45,7 @@
     width: 32px;
 }
 
-#alert-img:hover{
+#alert-img-profissional:hover{
     cursor: pointer;
 }
 
@@ -53,7 +53,7 @@
 
 /*======================================================Inicio Header========================================*/
 
-#botoes{
+#botoes-profissional{
     position: absolute;
     margin-left: 170px;
     margin-top: 100px;
@@ -63,21 +63,21 @@
     text-align: center;
 }
 
-#botao-faturamento{
+#botao-faturamento-profissional{
     width: 150px;
     margin-top: 10px;
     margin-left: 20px;
     padding: 10px;
 }
 
-#botao-servicos{
+#botao-servicos-profissional{
     width: 150px;
     margin-top: 10px;
     margin-left: 20px;
     padding: 10px;
 }
 
-#botao-visualizacao{
+#botao-visualizacao-profissional{
     width: 150px;
     margin-top: 10px;
     margin-left: 20px;
@@ -85,7 +85,7 @@
 }
 
 
-#servicos{
+#servicos-profissional{
     position: absolute;
     margin-left: 170px;
     margin-top: 200px;
@@ -97,7 +97,7 @@
     border-radius: 25px;
 }
 
-#faturamentos{
+#faturamentos-profissional{
     position: absolute;
     margin-left: 170px;
     margin-top: 200px;
@@ -109,7 +109,7 @@
     border-radius: 25px;
 }
 
-#visualizacao{
+#visualizacao-profissional{
     position: absolute;
     margin-left: 170px;
     margin-top: 200px;
@@ -132,7 +132,7 @@
     background-color: #282c34;
 }
 
-#rodape-servicos {
+#rodape-servicos-profissional {
     position: absolute;
     margin-top: 70px;
     margin-left: 150px;
@@ -150,7 +150,7 @@ dt:hover {
     cursor: pointer;
 }
 
-#rodape-rede-social {
+#rodape-rede-social-profissional {
     position: absolute;
     margin-top: 70px;
     margin-left: 650px;
@@ -159,7 +159,7 @@ dt:hover {
     color: white;
 }
 
-#rodape-instagram-icon {
+#rodape-instagram-icon-profissional {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -168,7 +168,7 @@ dt:hover {
 
 }
 
-#rodape-facebook-icon {
+#rodape-facebook-icon-profissional {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -176,7 +176,7 @@ dt:hover {
     margin-top: 165px
 }
 
-#rodape-whatsapp-icon {
+#rodape-whatsapp-icon-profissional {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -184,17 +184,17 @@ dt:hover {
     margin-top: 215px
 }
 
-#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {
+#rodape-instagram-profissional:hover, #rodape-facebook-profissional:hover, #rodape-whatsapp-profissional:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#rodape-instagram, #rodape-facebook, #rodape-whatsapp {
+#rodape-instagram-profissional, #rodape-facebook-profissional, #rodape-whatsapp-profissional {
     margin-left: 40px;
     padding: 2px;
 }
 
-#rodape-downloads {
+#rodape-downloads-profissional {
     position: absolute;
     margin-top: 70px;
     margin-left: 1050px;
@@ -203,7 +203,7 @@ dt:hover {
     color: white;
 }
 
-#rodape-baixar-icon {
+#rodape-baixar-icon-profissional {
     position: absolute;
     width: 150px;
     height: 100px;
@@ -211,7 +211,7 @@ dt:hover {
     margin-top: 100px
 }
 
-#rodape-mais-informacoes {
+#rodape-mais-informacoes-profissional {
     position: absolute;
     margin-top: 70px;
     margin-left: 1500px;
@@ -220,7 +220,7 @@ dt:hover {
     color: white;
 }
 
-#rodape-email {
+#rodape-email-profissional {
     position: absolute;
     margin-top: 108px;
     margin-left: 1545px;
@@ -229,12 +229,12 @@ dt:hover {
     color: white;
 }
 
-#rodape-email:hover {
+#rodape-email-profissional:hover {
     color: #5bc4b5;
     cursor: pointer;
 }
 
-#rodape-email-icon {
+#rodape-email-icon-profissional {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -242,7 +242,7 @@ dt:hover {
     margin-top: 105px
 }
 
-#rodape-telefone {
+#rodape-telefone-profissional {
     position: absolute;
     margin-top: 160px;
     margin-left: 1545px;
@@ -251,7 +251,7 @@ dt:hover {
     color: white;
 }
 
-#rodape-telefone-icon {
+#rodape-telefone-icon-profissional {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -259,7 +259,7 @@ dt:hover {
     margin-top: 155px
 }
 
-#rodape-empresa {
+#rodape-empresa-profissional {
 
     margin-top: 255px;
     font-family: SansSerif, Helvetica, Arial;

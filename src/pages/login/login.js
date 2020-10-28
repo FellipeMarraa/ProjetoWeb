@@ -56,17 +56,17 @@ const Login = props => {
         <div>
 
             <div className={'caixa-login'}>
-                <img id={'icone-user'} src={IconeUser}/>
+                <img id={'icone-user-login'} src={IconeUser}/>
 
-                <form id={'formulario'}>
+                <form id={'formulario-login'}>
 
-                    <input id={'email'} value={login} type={'email'} name="email" placeholder={'Email:'}
+                    <input id={'email-login'} value={login} type={'email'} name="email" placeholder={'Email:'}
                            onChange={textEmail => {
                                setLogin(textEmail.target.value);
                            }}/>
 
 
-                    <input id={'senha'} value={senha} type={'password'} name="senha" placeholder={'Senha: '}
+                    <input id={'senha-login'} value={senha} type={'password'} name="senha" placeholder={'Senha: '}
                            onChange={textSenha => {
                                setSenha(textSenha);
                                setSenha(textSenha.target.value);
@@ -78,9 +78,9 @@ const Login = props => {
                     }}> Login
                     </button>
 
-                    <a id={'esqueceu-senha'}>Esqueceu a senha</a>
+                    <a id={'esqueceu-senha-login'}>Esqueceu a senha</a>
 
-                    <p id={'nao-possui-login'}>Não possui login? <Link id={'cadastro'} to="/">Cadastre-se</Link></p>
+                    <p id={'nao-possui-login'}>Não possui login? <Link id={'cadastro-login'} to="/">Cadastre-se</Link></p>
 
                 </form>
             </div>

@@ -57,12 +57,12 @@ function Profissional() {
 
     useEffect(() => {
 
-            document.getElementById('servicos');
+            document.getElementById('servicos-profissional');
 
             if (servicos == false) {
-                document.getElementById("servicos").style.display = "none";
+                document.getElementById("servicos-profissional").style.display = "none";
             } else if (servicos == true) {
-                document.getElementById("servicos").style.display = "block";
+                document.getElementById("servicos-profissional").style.display = "block";
                 return setVisualizacao(false), setFaturamento(false);
             }
 
@@ -75,13 +75,13 @@ function Profissional() {
 
     useEffect(()=>{
 
-            document.getElementById('faturamentos');
+            document.getElementById('faturamentos-profissional');
 
             if (faturamento == false){
-                document.getElementById("faturamentos").style.display = "none";
+                document.getElementById("faturamentos-profissional").style.display = "none";
             }else
             if (faturamento  == true){
-                document.getElementById("faturamentos").style.display = "block";
+                document.getElementById("faturamentos-profissional").style.display = "block";
                 return setServicos(false), setVisualizacao(false);
             }
 
@@ -93,12 +93,12 @@ function Profissional() {
 
     useEffect(() => {
 
-            document.getElementById('visualizacao');
+            document.getElementById('visualizacao-profissional');
 
             if (visualizacao == false) {
-                document.getElementById("visualizacao").style.display = "none";
+                document.getElementById("visualizacao-profissional").style.display = "none";
             } else if (visualizacao == true) {
-                document.getElementById("visualizacao").style.display = "block";
+                document.getElementById("visualizacao-profissional").style.display = "block";
                 return setServicos(false), setFaturamento(false);
             }
 
@@ -111,26 +111,26 @@ function Profissional() {
     return (
         <body>
         <Nav id={'cabecalho-profissional'}>
-            <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
-            <img id={'alert-img'} src={ImgAlert}/>
-            <img id={'perfil-img'} src={ImgPerfil}/>
+            <Link id={'empresa-cabecalho-profissional'} to="/"><b>Tech Center</b></Link>
+            <img id={'alert-img-profissional'} src={ImgAlert}/>
+            <img id={'perfil-img-profissional'} src={ImgPerfil}/>
         </Nav>
-        <header id={'header'}>
+        <header id={'header-profissional'}>
 
-            <div id={'botoes'}>
-                <Button id={'botao-servicos'} onClick={() => {
+            <div id={'botoes-profissional'}>
+                <Button id={'botao-servicos-profissional'} onClick={() => {
                     setServicos(true);
                     if (servicos == true) {
                         setServicos(false);
                     }
                 }}> Serviços </Button>
-                <Button id={'botao-faturamento'} onClick={() => {
+                <Button id={'botao-faturamento-profissional'} onClick={() => {
                     setFaturamento(true);
                     if (faturamento == true) {
                         setFaturamento(false);
                     }
                 }}> Faturamento </Button>
-                <Button id={'botao-visualizacao'} onClick={() => {
+                <Button id={'botao-visualizacao-profissional'} onClick={() => {
                     setVisualizacao(true);
                     if (visualizacao == true) {
                         setVisualizacao(false);
@@ -138,51 +138,51 @@ function Profissional() {
                 }}> Visualizações </Button>
             </div>
 
-            <div id={'faturamentos'}>
+            <div id={'faturamentos-profissional'}>
                 <Chart width={'1550px'} height={'500px'} chartType="LineChart" data={dataFaturamento} options={graficoFaturamento}/>
             </div>
 
-            <div id={'servicos'}>
+            <div id={'servicos-profissional'}>
                 <Chart width={'1550px'} height={'500px'} chartType="PieChart" data={dataServicos} options={graficoServicos}/>
             </div>
 
-            <div id={'visualizacao'}>
+            <div id={'visualizacao-profissional'}>
                 <Chart width={'1550px'} height={'500px'} chartType="BarChart" data={dataVisualizacoes} options={graficoVisualizacoes}/>
             </div>
         </header>
 
         <footer id={'rodape-profissional'}>
 
-            <dl id={'rodape-servicos'}>Serviços
+            <dl id={'rodape-servicos-profissional'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>
                 <dt><br/>Criação de sites e aplicativos</dt>
                 <dt><br/>Design e criação de banners</dt>
 
             </dl>
 
-            <img id={'rodape-instagram-icon'} src={Instagram}/>
-            <img id={'rodape-facebook-icon'} src={Facebook}/>
-            <img id={'rodape-whatsapp-icon'} src={Whatsapp}/>
-            <img id={'rodape-baixar-icon'} src={Baixar}/>
+            <img id={'rodape-instagram-icon-profissional'} src={Instagram}/>
+            <img id={'rodape-facebook-icon-profissional'} src={Facebook}/>
+            <img id={'rodape-whatsapp-icon-profissional'} src={Whatsapp}/>
+            <img id={'rodape-baixar-icon-profissional'} src={Baixar}/>
 
 
-            <dl id={'rodape-rede-social'}>Redes Sociais
-                <dt id={'rodape-instagram'}><br/>Instagram</dt>
-                <dt id={'rodape-facebook'}><br/>Facebook</dt>
-                <dt id={'rodape-whatsapp'}><br/>Whatsapp</dt>
+            <dl id={'rodape-rede-social-profissional'}>Redes Sociais
+                <dt id={'rodape-instagram-profissional'}><br/>Instagram</dt>
+                <dt id={'rodape-facebook-profissional'}><br/>Facebook</dt>
+                <dt id={'rodape-whatsapp-profissional'}><br/>Whatsapp</dt>
             </dl>
 
-            <p id={'rodape-downloads'}>Downloads</p>
-            <p id={'rodape-mais-informacoes'}>Mais informações</p>
+            <p id={'rodape-downloads-profissional'}>Downloads</p>
+            <p id={'rodape-mais-informacoes-profissional'}>Mais informações</p>
 
-            <img id={'rodape-email-icon'} src={Email}/>
+            <img id={'rodape-email-icon-profissional'} src={Email}/>
 
-            <p id={'rodape-email'}>contact@contactus.com.br</p>
+            <p id={'rodape-email-profissional'}>contact@contactus.com.br</p>
 
-            <img id={'rodape-telefone-icon'} src={Telefone}/>
+            <img id={'rodape-telefone-icon-profissional'} src={Telefone}/>
 
-            <p id={'rodape-telefone'}>(34) 3232-3232</p>
-            <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
+            <p id={'rodape-telefone-profissional'}>(34) 3232-3232</p>
+            <p id={'rodape-empresa-profissional'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
         </footer>
         </body>
     );

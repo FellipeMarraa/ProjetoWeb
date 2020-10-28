@@ -1,8 +1,8 @@
-html {
-    background-color: #4eada7;
-}
+/*html {*/
+/*    background-color: #4eada7;*/
+/*}*/
 
-#icone-user {
+#icone-user-login {
     margin-left: 200px;
     margin-top: 50px;
     width: 250px;
@@ -20,7 +20,7 @@ html {
     background-color: whitesmoke;
 }
 
-#formulario {
+#formulario-login {
     position: absolute;
     width: 530px;
     height: 330px;
@@ -29,7 +29,7 @@ html {
 
 }
 
-#email {
+#email-login {
     margin-left: 70px;
     width: 400px;
     height: 40px;
@@ -38,7 +38,7 @@ html {
     outline: none;
 }
 
-#senha {
+#senha-login {
     margin-left: 70px;
     margin-top: 20px;
     width: 400px;
@@ -48,7 +48,7 @@ html {
     outline: none;
 }
 
-#login {
+#login{
     position: absolute;
     margin-left: -270px;
     top: 150px;
@@ -63,7 +63,7 @@ html {
     outline: none;
 }
 
-#esqueceu-senha {
+#esqueceu-senha-login {
     position: absolute;
     margin-left: -260px;
     margin-top: 200px;
@@ -77,7 +77,7 @@ html {
     margin-top: 200px;
 }
 
-#cadastro {
+#cadastro-login {
     color: #4eada7;
     cursor: pointer;
 

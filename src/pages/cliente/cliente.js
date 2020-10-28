@@ -2,6 +2,7 @@ import React from 'react';
 import './cliente.css'
 import {Link} from "react-router-dom";
 import Nav from "reactstrap/es/Nav";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ImgPerfil from "../../assets/perfil.png";
 import ImgManu from "../../assets/manutencao-computadores-notebooks-sjc.png";
@@ -18,66 +19,66 @@ const Cliente = props => {
 
     return (
         <div>
-        <Nav id={'cabecalho'}>
-            <Link id={'empresa-cabecalho'} to="/"><b>Tech Center</b></Link>
-            <img id={'perfil'} src={ImgPerfil}/>
+        <Nav id={'cabecalho-cliente'}>
+            <Link id={'empresa-cabecalho-cliente'} to="/"><b>Tech Center</b></Link>
+            <img id={'perfil-cliente'} src={ImgPerfil}/>
         </Nav>
-        <header id={'header'}>
-            <h1 id={'titulo'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
+        <header id={'header-cliente'}>
+            <h1 id={'titulo-cliente'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
 
             <div id={'servicos-cliente'}>
 
-                <div id={'caixa-manutencao'}>
-                <img id={'manutencao'} src={ImgManu}/>
-                <p id={'texto-manutencao'}>Montagem e manutenção<br/> de computadores</p>
+                <div id={'caixa-manutencao-cliente'}>
+                <img id={'manutencao-cliente'} src={ImgManu}/>
+                <p id={'texto-manutencao-cliente'}>Montagem e manutenção<br/> de computadores</p>
                 </div>
 
-                <div id={'caixa-site'}>
-                <img id={'site'} src={ImgSite}/>
-                <p id={'texto-site'}>Criação de sites e aplicativos</p>
+                <div id={'caixa-site-cliente'}>
+                <img id={'site-cliente'} src={ImgSite}/>
+                <p id={'texto-site-cliente'}>Criação de sites e aplicativos</p>
                 </div>
 
-                <div id={'caixa-design'}>
-                <img id={'design'} src={ImgDesign}/>
-                <p id={'texto-design'}>Design e criação de banners</p>
+                <div id={'caixa-design-cliente'}>
+                <img id={'design-cliente'} src={ImgDesign}/>
+                <p id={'texto-design-cliente'}>Design e criação de banners</p>
                 </div>
 
             </div>
 
         </header>
 
-            <footer id={'rodape'}>
+            <footer id={'rodape-cliente'}>
 
-            <dl id={'rodape-servicos'}>Serviços
+            <dl id={'rodape-servicos-cliente'}>Serviços
                 <dt><br/>Montagem e manutenção de computadores</dt>
                 <dt><br/>Criação de sites e aplicativos</dt>
                 <dt><br/>Design e criação de banners</dt>
 
             </dl>
 
-            <img id={'rodape-instagram-icon'} src={Instagram}/>
-            <img id={'rodape-facebook-icon'} src={Facebook}/>
-            <img id={'rodape-whatsapp-icon'} src={Whatsapp}/>
-            <img id={'rodape-baixar-icon'} src={Baixar}/>
+            <img id={'rodape-instagram-icon-cliente'} src={Instagram}/>
+            <img id={'rodape-facebook-icon-cliente'} src={Facebook}/>
+            <img id={'rodape-whatsapp-icon-cliente'} src={Whatsapp}/>
+            <img id={'rodape-baixar-icon-cliente'} src={Baixar}/>
 
 
-            <dl id={'rodape-rede-social'}>Redes Sociais
-                <dt id={'rodape-instagram'}><br/>Instagram</dt>
-                <dt id={'rodape-facebook'}><br/>Facebook</dt>
-                <dt id={'rodape-whatsapp'}><br/>Whatsapp</dt>
+            <dl id={'rodape-rede-social-cliente'}>Redes Sociais
+                <dt id={'rodape-instagram-cliente'}><br/>Instagram</dt>
+                <dt id={'rodape-facebook-cliente'}><br/>Facebook</dt>
+                <dt id={'rodape-whatsapp-cliente'}><br/>Whatsapp</dt>
             </dl>
 
-            <p id={'rodape-downloads'}>Downloads</p>
-            <p id={'rodape-mais-informacoes'}>Mais informações</p>
+            <p id={'rodape-downloads-cliente'}>Downloads</p>
+            <p id={'rodape-mais-informacoes-cliente'}>Mais informações</p>
 
-            <img id={'rodape-email-icon'} src={Email}/>
+            <img id={'rodape-email-icon-cliente'} src={Email}/>
 
-            <p id={'rodape-email'}>contact@contactus.com.br</p>
+            <p id={'rodape-email-cliente'}>contact@contactus.com.br</p>
 
-            <img id={'rodape-telefone-icon'} src={Telefone}/>
+            <img id={'rodape-telefone-icon-cliente'} src={Telefone}/>
 
-            <p id={'rodape-telefone'}>(34) 3232-3232</p>
-            <p id={'rodape-empresa'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
+            <p id={'rodape-telefone-cliente'}>(34) 3232-3232</p>
+            <p id={'rodape-empresa-cliente'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
         </footer>
         </div>
             );
