@@ -211,32 +211,32 @@ const Home = props => {
             {/*/!*======================================Fim da explicação======================================*!/*/}
 
 
-            {/*/!*Inicio do texto de Como funciona*!/*/}
+            {/*Inicio do texto de Como funciona*/}
 
-            {/*<div id={'como-funciona'}>*/}
-
-            {/*    <h2 id={'titulo-como-funciona'}>Como funciona</h2>*/}
-            {/*    <p id={'texto-como-funciona'}>Todos os clientes que pedem por serviço aparecem no<br/> seu aplicativo*/}
-            {/*    </p>*/}
-            {/*    <img id={'como-funciona-image'} src={ComoFuncionaImage}/>*/}
-
-            {/*</div>*/}
+            <section className={'container-fluid col-12 d-flex justify-content-around'} id={'como-funciona'}>
+                <div id={'comoFuncionaDiv'}>
+                <h2 id={'titulo-como-funciona'}>Como funciona</h2>
+                <p id={'texto-como-funciona'}>Todos os clientes que pedem por serviço aparecem no<br/> seu aplicativo
+                </p>
+                <img id={'como-funciona-image'} src={ComoFuncionaImage}/>
+                </div>
+            </section>
 
             {/*/!*======================================Fim do texto de Como Funciona======================================*!/*/}
 
 
             {/*/!*======================================Inicio do texto de Quanto custa======================================*!/*/}
 
-            {/*<div id={'quanto-custa'}>*/}
+            <section className={'container-fluid col-12 d-flex justify-content-around'} id={'quanto-custa'}>
 
-            {/*    <h2 id={'titulo-quanto-custa'}>Quanto custa?</h2>*/}
-            {/*    <p id={'texto-quanto-custa'}>A Tech Center não tem mensalidade, e não paga nada para se*/}
-            {/*        cadastrar.<br/> Você*/}
-            {/*        só investe em serviços que te interessar,*/}
-            {/*        <b>e fica com 100% do<br/>valor do serviço.</b></p>*/}
-            {/*    <img id={'quanto-custa-image'} src={SemCustoImage}/>*/}
+                <h2 id={'titulo-quanto-custa'}>Quanto custa?</h2>
+                <p id={'texto-quanto-custa'}>A Tech Center não tem mensalidade, e não paga nada para se
+                    cadastrar.<br/> Você
+                    só investe em serviços que te interessar,
+                    <b>e fica com 100% do<br/>valor do serviço.</b></p>
+                <img id={'quanto-custa-image'} src={SemCustoImage}/>
 
-            {/*</div>*/}
+            </section>
 
 
             {/*/!*======================================Fim do texto de Quanto custa======================================*!/*/}

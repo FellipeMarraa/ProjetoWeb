@@ -26,6 +26,17 @@
     #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
     #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
 
+    #como-funciona{top: 350px}
+    #como-funciona img{display: none;}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: -25px; width: 200px; margin-top: 20px; text-align: center}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 250px; margin-top: 35px; text-align: justify}
+
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
@@ -58,6 +69,16 @@
     #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
     #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
 
+    #como-funciona{top: 350px}
+    #como-funciona img{display: block; margin-left: 180px; width: 150px; height: 100px; margin-top: -130px}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: 20px; width: 200px; margin-top: 20px; text-align: left}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 300px; margin-top: 35px; text-align: justify}
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
@@ -89,6 +110,16 @@
     #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
     #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
 
+    #como-funciona{top: 350px}
+    #como-funciona img{display: block; margin-left: 180px; width: 180px; height: 150px; margin-top: -150px}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: 0px; width: 200px; margin-top: 20px; text-align: left}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 300px; margin-top: 35px; text-align: justify}
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 }
 
@@ -119,6 +150,16 @@
 
     #explicacao-seguranca-image{position: relative; left: -570px; top: 100px}
     #explicacao-texto-seguranca{position: relative;left: -1130px; right: 5px; top: 215px}
+
+    #como-funciona{top: 90px}
+    #como-funciona img{display: block; margin-left: 280px; margin-right: -150px; width: 180px; height: 150px; margin-top: -150px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 100px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: -50px; width: 300px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block; position: absolute; margin-left: 450px; margin-right: -15px; width: 180px; height: 150px; margin-top: 100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 50px; margin-top: 10px;}
+    #quanto-custa p{display: block; margin-left: -100px; margin-top: 90px; text-align: left}
 
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
@@ -154,6 +195,16 @@
     #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
     #explicacao-texto-seguranca{position: relative;left: -400px; right: 5px; top: 15px; width: 150px}
 
+    #como-funciona{top: -50px}
+    #como-funciona img{display: block; margin-left: 450px; width: 180px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 100px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: -50px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -120px}
+    #quanto-custa h2{display: block;  font-size: 25px; margin-left: -100px; margin-top: -100px;}
+    #quanto-custa p{display: block; margin-left: -100px; margin-top: -50px; text-align: left; width: 600px}
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 }
 
@@ -183,6 +234,16 @@
 
     #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
     #explicacao-texto-seguranca{position: relative;left: -380px; right: 5px; top: 15px; width: 150px}
+
+    #como-funciona{top: -50px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -100px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -50px; text-align: left; width: 600px}
 
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
@@ -215,6 +276,16 @@
     #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
     #explicacao-texto-seguranca{position: relative;left: -220px; right: 5px; top: 15px; width: 300px}
 
+    #como-funciona{top: -100px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -180px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -180px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -120px; text-align: left; width: 600px}
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
@@ -246,6 +317,16 @@
     #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
     #explicacao-texto-seguranca{position: relative;left: -90px; right: 5px; top: 15px; width: 300px}
 
+    #como-funciona{top: -100px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -180px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -180px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -120px; text-align: left; width: 600px}
+
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
@@ -276,6 +357,16 @@
 
     #explicacao-seguranca-image{position: relative; left: -470px; top: 20px}
     #explicacao-texto-seguranca{position: relative;left: 510px; right: 5px; top: 150px; width: 300px}
+
+    #como-funciona{top: 20px}
+    #como-funciona img{display: block; margin-left: 600px; width: 400px; height: 200px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 30px; margin-left: 390px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 50px; text-align: left; }
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: 100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: 50px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -200px; margin-top: 120px; text-align: left; width: 600px}
 
     #rodape-home{position: fixed; float: bottom; top: 2000px}
 
