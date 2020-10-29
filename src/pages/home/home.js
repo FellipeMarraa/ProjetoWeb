@@ -95,7 +95,7 @@ const Home = props => {
     }
 
     return (
-        <div className={'container-fluid p-0'}>
+        <section className={'container-fluid p-0'}>
             <Nav className={'navbar navbar-expand-md'} id={'cabecalho'}>
 
                 <Button className={'navbar-toggler'} type={'button'} data-toggle={'collapse'}
@@ -193,20 +193,20 @@ const Home = props => {
 
             {/*/!*======================================Inicio das Informações======================================*!/*/}
 
-            {/*<div id={'explicacao'}>*/}
+            <section className={'container-fluid col-12 d-flex justify-content-around'} id={'explicacao'}>
 
-            {/*    <img id={'explicacao-notificacao-image'} src={NotificacaoImage}/>*/}
-            {/*    <p id={'explicacao-texto-notificacao'}>Receba alertas de serviços no seu aparelho <br/> de onde estiver*/}
-            {/*    </p>*/}
-            {/*    <img id={'explicacao-economia-image'} src={EconomiaImage}/>*/}
-            {/*    <p id={'explicacao-texto-economia'}>100% do valor do serviço é seu e nós <br/>não cobramos mensalidade!*/}
-            {/*    </p>*/}
-            {/*    <img id={'explicacao-seguranca-image'} src={SegurancaImage}/>*/}
-            {/*    <p id={'explicacao-texto-seguranca'}>Tenha segurança com seus dados e <br/> fique longe de possíveis*/}
-            {/*        golpes*/}
-            {/*    </p>*/}
+                <img id={'explicacao-notificacao-image'} src={NotificacaoImage}/>
+                <p id={'explicacao-texto-notificacao'}>Receba alertas de serviços no seu aparelho <br/> de onde estiver
+                </p>
+                <img id={'explicacao-economia-image'} src={EconomiaImage}/>
+                <p id={'explicacao-texto-economia'}>100% do valor do serviço é seu e nós <br/>não cobramos mensalidade!
+                </p>
+                <img id={'explicacao-seguranca-image'} src={SegurancaImage}/>
+                <p id={'explicacao-texto-seguranca'}>Tenha segurança com seus dados e <br/> fique longe de possíveis
+                    golpes
+                </p>
 
-            {/*</div>*/}
+            </section>
 
             {/*/!*======================================Fim da explicação======================================*!/*/}
 
@@ -353,7 +353,7 @@ const Home = props => {
 
             {/*======================================Fim do rodape======================================*/}
 
-        </div>
+        </section>
 
     );
 }

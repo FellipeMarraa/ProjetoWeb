@@ -7,13 +7,26 @@
     #header{top: 50px;}
     #header-image{display: none; position: absolute; width: 520px; top: 500px}
 
-    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;line-height: 30px}
     #tituloForm b {font-size: 25px;}
     #subtitulo-formulario b {font-size: 15px}
 
-    #formulario-cadastro input{width: 250px;margin-left: 480px;}
-    #formulario-cadastro select{width: 250px;margin-left: 480px;}
-    #cadastrarP button{position: absolute; width: 250px;margin-left: 480px;}
+    #formulario-cadastro input{width: 250px;margin-left: 490px;margin-top: 15px}
+    #formulario-cadastro select{width: 250px;margin-left: 490px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 250px;margin-left: 490px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
 
@@ -30,9 +43,22 @@
     #tituloForm b {font-size: 25px;}
     #subtitulo-formulario b {font-size: 15px}
 
-    #formulario-cadastro input{width: 280px;margin-left: 470px;}
-    #formulario-cadastro select{width: 280px;margin-left: 470px;}
-    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;}
+    #formulario-cadastro input{width: 280px;margin-left: 470px;margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
 
@@ -48,9 +74,22 @@
     #tituloForm b {font-size: 25px;}
     #subtitulo-formulario b {font-size: 15px}
 
-    #formulario-cadastro input{width: 280px;margin-left: 470px;}
-    #formulario-cadastro select{width: 280px;margin-left: 470px;}
-    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;}
+    #formulario-cadastro input{width: 280px;margin-left: 470px;margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 }
 
 @media (min-width:768px) and (max-width: 1024px) {
@@ -69,6 +108,19 @@
     #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -140px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -500px; right: 300px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -60px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -380px; top: 10px}
+
+    #explicacao-seguranca-image{position: relative; left: -570px; top: 100px}
+    #explicacao-texto-seguranca{position: relative;left: -1130px; right: 5px; top: 215px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 
 
@@ -90,6 +142,19 @@
     #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -280px; right: 300px; top: 10px; width: 180px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -360px; top: 10px; width: 150px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -400px; right: 5px; top: 15px; width: 150px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 }
 
 @media (min-width:1080px) and (max-width: 1440px) {
@@ -107,6 +172,19 @@
     #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -250px; right: 300px; top: 10px; width: 180px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -340px; top: 10px; width: 150px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -380px; right: 5px; top: 15px; width: 150px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
 
@@ -126,6 +204,19 @@
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
 
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -220px; right: 300px; top: 10px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -220px; top: 10px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -220px; right: 5px; top: 15px; width: 300px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
 }
 
 @media (min-width:1600px) and (max-width: 2556px) {
@@ -144,9 +235,22 @@
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
 
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -180px; right: 300px; top: 10px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -150px; top: 10px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -90px; right: 5px; top: 15px; width: 300px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
 }
 
-@media (min-width: 2556px) {
+@media (min-width: 2556px) and (min-height: 1080px) {
     .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
     #empresa-cabecalho b{display:block; margin-left: 750px; font-size: 25px}
     #login-cabecalho {position: absolute;  width: 130px; margin-left: 1650px; margin-top: 5px;}
@@ -161,6 +265,19 @@
     #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
     #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
     #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 0px; top: 20px}
+    #explicacao-texto-notificacao{position: relative; left: 200px; right: 300px; top: 150px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 20px}
+    #explicacao-texto-economia{position: relative; left: 330px; top: 150px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -470px; top: 20px}
+    #explicacao-texto-seguranca{position: relative;left: 510px; right: 5px; top: 150px; width: 300px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
 
 }
 
