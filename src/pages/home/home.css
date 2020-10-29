@@ -1,3 +1,171 @@
+@media (min-width:320px) and (max-width: 375px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 250px;margin-left: 480px;}
+    #formulario-cadastro select{width: 250px;margin-left: 480px;}
+    #cadastrarP button{position: absolute; width: 250px;margin-left: 480px;}
+
+}
+
+@media (min-width:375px) and (max-width: 425px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 280px;margin-left: 470px;}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;}
+
+}
+
+@media (min-width:425px) and (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 280px;margin-left: 470px;}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 60px; width: 20px;}
+    #empresa-cabecalho b{display:block; right: 170px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 600px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+
+
+}
+
+@media (min-width:1024px) and (max-width: 1080px) {
+
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; right: 170px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 850px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+}
+
+@media (min-width:1080px) and (max-width: 1440px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 15px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 30px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 900px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+}
+
+@media (min-width:1440px) and (max-width: 1600px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 250px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1070px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+}
+
+@media (min-width:1600px) and (max-width: 2556px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 0px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 300px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1100px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+}
+
+@media (min-width: 2556px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 750px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1650px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+}
+
+
+
 #cabecalho {
     background-color: #418e89;
     position: fixed;
@@ -94,25 +262,26 @@
 /*Inicio do header ********************************************************/
 
 #header {
+
     position: absolute;
-    width: 100%;
     height: 78%;
     background: #4eada7;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 #header-image {
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 150px;
+    /*position: absolute;*/
+    margin-left: 600px;
+    margin-top: -500px;
+
 }
 
 #caixa-cadastro {
     position: absolute;
     width: 430px;
     height: 540px;
-    left: 350px;
-    top: 150px;
+    margin-left: -800px;
+    margin-top: 150px;
 
 }
 
@@ -125,7 +294,7 @@
 
 /*}*/
 
-#titulo-formulario {
+#tituloForm {
     margin-left: 15px;
     font-family: SansSerif, Helvetica, Arial;
     font-size: 35px;
@@ -427,144 +596,170 @@
 
 #rodape-home {
     position: absolute;
-    margin-top: 2230px;
-    width: 100%;
-    height: 31%;
-    background-color: #282c34;
+    bottom: 0;
+    height: 70px;
+
 }
 
-#rodape-servicos {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 150px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-dt {
-    font-size: 15px;
-}
-
-dt:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-rede-social {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 650px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-instagram-icon {
-    position: absolute;
+#facebook{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 115px;
-
 }
 
-#rodape-facebook-icon {
-    position: absolute;
+#instagram{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 165px
 }
 
-#rodape-whatsapp-icon {
-    position: absolute;
+#google{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 215px
 }
 
-#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-instagram, #rodape-facebook, #rodape-whatsapp {
-    margin-left: 40px;
-    padding: 2px;
-}
-
-#rodape-downloads {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 1050px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-baixar-icon {
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    margin-left: 1025px;
-    margin-top: 100px
-}
-
-#rodape-mais-informacoes {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 1500px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-email {
-    position: absolute;
-    margin-top: 108px;
-    margin-left: 1545px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-email:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-email-icon {
-    position: absolute;
+#linkedin{
     width: 30px;
     height: 30px;
-    margin-left: 1502px;
-    margin-top: 105px
 }
 
-#rodape-telefone {
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 1545px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-telefone-icon {
-    position: absolute;
+#whatsapp{
     width: 30px;
     height: 30px;
-    margin-left: 1502px;
-    margin-top: 155px
 }
 
-#rodape-empresa {
 
-    margin-top: 255px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
+
+/*#rodape-servicos {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    !*margin: auto;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*dt {*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*dt:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-rede-social {*/
+/*    position: absolute;*/
+/*    !*bottom: 10px;*!*/
+/*    margin-left: 650px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-instagram-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 115px;*!*/
+
+/*}*/
+
+/*#rodape-facebook-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 165px*!*/
+/*}*/
+
+/*#rodape-whatsapp-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 215px*!*/
+/*}*/
+
+/*#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-instagram, #rodape-facebook, #rodape-whatsapp {*/
+/*    !*margin-left: 40px;*!*/
+/*    padding: 2px;*/
+/*}*/
+
+/*#rodape-downloads {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    margin-left: 1050px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-baixar-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 150px;*/
+/*    height: 100px;*/
+/*    !*margin-left: 1025px;*!*/
+/*    !*margin-top: 100px*!*/
+/*}*/
+
+/*#rodape-mais-informacoes {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    margin-left: 1500px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-email {*/
+/*    !*position: absolute;*!*/
+/*    !*margin-top: 108px;*!*/
+/*    !*margin-left: 1545px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-email:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-email-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 1502px;*!*/
+/*    !*margin-top: 105px*!*/
+/*}*/
+
+/*#rodape-telefone {*/
+/*    !*position: absolute;*!*/
+/*    !*margin-top: 160px;*!*/
+/*    !*margin-left: 1545px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-telefone-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 1502px;*!*/
+/*    !*margin-top: 155px*!*/
+/*}*/
+
+/*#rodape-empresa {*/
+
+/*    !*margin-top: 255px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*}*/
