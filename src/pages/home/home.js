@@ -4,7 +4,6 @@ import {useHistory} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import HeaderImage from '../../assets/cliente.png';
 import NotificacaoImage from '../../assets/notificacao.png';
-import JogandoImage from '../../assets/jogando.jpg';
 import EconomiaImage from '../../assets/economia.png';
 import SegurancaImage from '../../assets/seguranca.png';
 import ComoFuncionaImage from '../../assets/imageComoFunciona.jpg';
@@ -14,19 +13,11 @@ import Facebook from '../../assets/facebook.png';
 import Whatsapp from '../../assets/whatsapp.png';
 import Linkedin from '../../assets/linkedin.png';
 import Google from '../../assets/google.png';
-import Baixar from '../../assets/baixar.png';
-import Email from '../../assets/email.png';
-import Telefone from '../../assets/telefone.png';
 import Menu from '../../assets/menu.png'
-
-import primeiraImagem from '../../assets/hide-the-pain-stockphoto-840x560 1.png';
-import segundaImagem from '../../assets/tela-azul-da-morte-windows-10.jpg';
-import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_17825.svg.png';
 import Nav from "reactstrap/es/Nav";
 import Form from "reactstrap/es/Form";
 import Button from "reactstrap/es/Button";
 import passwordValidator from 'password-validator';
-
 
 const Home = props => {
 
