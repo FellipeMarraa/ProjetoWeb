@@ -26,6 +26,9 @@ import Button from "reactstrap/es/Button";
 import passwordValidator from 'password-validator';
 
 
+
+
+
 const Home = props => {
 
     const [login, setLogin] = useState("");
