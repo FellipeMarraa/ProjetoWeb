@@ -1,0 +1,149 @@
+#cabecalho-perfil-profissional {
+    background-color: #418e89;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+#empresa-cabecalho-perfil-profissional {
+    font-family: SansSerif, Helvetica, Arial;
+    font-style: italic;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+
+}
+
+#empresa-cabecalho:hover {
+    color: #5bc4b5;
+    cursor: pointer;
+}
+
+#icon-cabecalho-perfil-profissional {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+    font-family: SansSerif, Helvetica, Arial;
+    text-decoration: none;
+}
+
+#icon-cabecalho-perfil-profissional:hover{
+    cursor: pointer;
+}
+
+/* *******************************************Fim do cabecalho ********************************************************/
+
+#cadastrar-servico-perfil-profissional{
+    position: absolute;
+    width: 1500px;
+    height: 500px;
+    left: 220px;
+    top: 150px;
+    background-color: #4eada7;
+}
+
+#titulo-empresa-perfil-profissional{
+    position: relative;
+    left: 80px;
+    top: 40px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-style: italic;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#nome-empresa-perfil-profissional{
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 80px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#cnpj-empresa-perfil-profissional{
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#titulo-formulario-perfil-profissional{
+    position: relative;
+    left: 80px;
+    top: 40px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-style: italic;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#nome-servico-perfil-profissional{
+    width: 500px;
+    margin-top: 80px;
+    margin-left: 80px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#valor-servico-perfil-profissional{
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 80px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#categoria-servico-perfil-profissional{
+    position: relative;
+    width: 250px;
+    top: -38px;
+    margin-left: 328px;
+    height: 40px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    padding-left: 0px;
+    background-color: white;
+}
+
+#image-uploader-perfil-profissional{
+    position: relative;
+    width: 600px;
+    left: 300px;
+    top: -350px;
+    outline: none;
+}
+
+#button{
+    margin-left: 250px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+#titulo-cadastrar-servicos{
+    position: absolute;
+    left: 15px;
+    top: -70px;
+    font-family: SansSerif, Helvetica, Arial;
+    font-style: italic;
+    font-size: 30px;
+    color: #FFFFFF;
+    margin: auto;
+}
+
+#button-cadastrar{
+    position: absolute;
+    bottom: 20px;
+    left: 650px;
+    border-radius: 15px;
+    border: 2px solid black;
+    outline: none;
+    background-color: #FFFFFF;
+    color: black;
+}

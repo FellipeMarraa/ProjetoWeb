@@ -1,25 +1,7 @@
-import React, {useEffect, useState} from 'react';
-import './cliente.css'
-import {Link, useHistory} from "react-router-dom";
-import Nav from "reactstrap/es/Nav";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState, useEffect } from "react";
+import { Card, CardDeck, Button, ListGroup, Form } from 'react-bootstrap';
 
-import ImgPerfil from "../../assets/perfil.png";
-import ImgManu from "../../assets/manutencao-computadores-notebooks-sjc.png";
-import ImgSite from "../../assets/criação-sites-desenvolvimento-sites-2.svg";
-import ImgDesign from "../../assets/Vector.png";
-import Instagram from "../../assets/instagram.png";
-import Facebook from "../../assets/facebook.png";
-import Whatsapp from "../../assets/whatsapp.png";
-import Baixar from "../../assets/baixar.png";
-import Email from "../../assets/email.png";
-import Telefone from "../../assets/telefone.png";
-import Button from "reactstrap/lib/Button";
-import Fechar from "../../assets/fechar.png";
-import Input from "reactstrap/lib/Input";
-import {Card, CardDeck, Form} from "react-bootstrap";
-
-const Cliente = props => {
+const CardsExample = props => {
 
     const [visibility, setVisibility] = useState(false)
     const [filtro, setFiltro] = useState("")
@@ -35,224 +17,36 @@ const Cliente = props => {
     useEffect(() => {
     }, [visibility]);
 
-
-
-    const [manutencao, setManutencao] = useState(false);
-    const [sites, setSites] = useState(false);
-    const [design, setDesign] = useState(false);
-    const [fechar, setFechar] = useState(false);
-    const history = useHistory();
-
-    useEffect(() => {
-        document.getElementById('fechar');
-        if (fechar == true){
-            document.getElementById("manutencao").style.display = "none";
-        }else if (fechar == false) {
-            document.getElementById("manutencao").style.display = "block";
-            return setSites(false), setDesign(false);
-        }
-    })
-
-    useEffect(() => {
-
-            document.getElementById('manutencao');
-
-            if (manutencao == false) {
-                document.getElementById("manutencao").style.display = "none";
-            } else if (manutencao == true) {
-                document.getElementById("manutencao").style.display = "block";
-                return setSites(false), setDesign(false);
-            }
-
-
-        }, //efeito
-
-        [manutencao] // gatilho
-
-    );
-
-    useEffect(() => {
-
-            document.getElementById('sites');
-
-            if (sites == false) {
-                document.getElementById("sites").style.display = "none";
-            } else if (sites == true) {
-                document.getElementById("sites").style.display = "block";
-                return setManutencao(false), setDesign(false);
-            }
-
-
-        }, //efeito
-
-        [sites] // gatilho
-
-    );
-
-    useEffect(() => {
-
-            document.getElementById('design');
-
-            if (design == false) {
-                document.getElementById("design").style.display = "none";
-            } else if (design == true) {
-                document.getElementById("design").style.display = "block";
-                return setManutencao(false), setSites(false);
-            }
-
-
-        }, //efeito
-
-        [design] // gatilho
-
-    );
-
     return (
-        <div className={'container-fluid p-0'} id={'conteudo'}>
-        <Nav id={'cabecalho-cliente'}>
-            <Link id={'empresa-cabecalho-cliente'} to="/"><b>Tech Center</b></Link>
-            <img id={'perfil-cliente'} src={ImgPerfil}/>
-        </Nav>
-        <header id={'header-cliente'}>
-            <h1 id={'titulo-cliente'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
+        <div>
+            <Form.Control as="select" defaultValue={filtro} onChange={(evt) => setFiltro(evt.target.value)}>
+                <option>Construção Civil</option>
+                <option>Tecnologia</option>
+            </Form.Control>
 
-            <div id={'servicos-cliente'}>
-
-                <div id={'caixa-manutencao-cliente'}>
-                    <Button id={'botao-manutencao'} onClick={() => {
-                        setManutencao(false);
-                        if (manutencao == false) {
-                            setManutencao(true);
-                        }
-                    }}><img id={'manutencao-cliente'} src={ImgManu}/></Button>
-                <p id={'texto-manutencao-cliente'}>Montagem e manutenção<br/> de computadores</p>
-                </div>
-
-                <div id={'caixa-site-cliente'}>
-                    <Button id={'botao-sites'} onClick={() => {
-                        setSites(false);
-                        if (sites == false) {
-                            setSites(true);
-                        }
-                    }}><img id={'site-cliente'} src={ImgSite}/></Button>
-                <p id={'texto-site-cliente'}>Criação de sites e aplicativos</p>
-                </div>
-
-                <div id={'caixa-design-cliente'}>
-                    <Button id={'botao-design'} onClick={() => {
-                        setDesign(false);
-                        if (design == false) {
-                            setDesign(true);
-                        }
-                    }}><img id={'design-cliente'} src={ImgDesign}/></Button>
-                <p id={'texto-design-cliente'}>Design e criação de banners</p>
-                </div>
-
+            <div >
+                <Button onClick={evt => { visibility ? setVisibility(false) : setVisibility(true); for (let i = 0; i < 10; i++) { servicesArray.push(servicesArray[0]) } }}> Enable/Disable Flow </Button>
+                {visibility &&
+                <CardDeck style={{maxHeight: "300px" }}>
+                    {servicesArray.map(({ descricao, categoria, subcategorias, imgBase64 }) => (
+                            <Card style={{ minWidth: '200px', minHeight: "300px", maxWidth: '200px', maxHeight: "300px" }} key={1} >
+                                <Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="100px" height="100px" />
+                                <Card.Body>
+                                    <Card.Title>Atividade:  </Card.Title>
+                                    <Card.Text>
+                                        GSI Informatica
+                                    </Card.Text>
+                                </Card.Body>
+                                <Card.Footer>
+                                    <small className="text-muted">Last updated 3 mins ago</small>
+                                </Card.Footer>
+                            </Card>
+                        )
+                    )}
+                </CardDeck>}
             </div>
-
-            <div id={'manutencao'}>
-
-                <button id={'button-fechar'} onClick={() => {
-                    setFechar(false);
-                    if(fechar == false){
-                        setFechar(true)
-                    }
-                }} > <img id={'fechar'} src={Fechar}/> </button>
-
-                <Input id={'pesquisa'} type={'search'} placeholder={'Pesquisar Empresas...'}> Pesquisar</Input>
-
-                <div>
-                    <Form.Control as="select" defaultValue={filtro} onChange={(evt) => setFiltro(evt.target.value)}>
-                        <option>Construção Civil</option>
-                        <option>Tecnologia</option>
-                    </Form.Control>
-
-                    <div >
-                        <Button onClick={evt => { visibility ? setVisibility(false) : setVisibility(true); for (let i = 0; i < 10; i++) { servicesArray.push(servicesArray[0]) } }}> Enable/Disable Flow </Button>
-                        {visibility &&
-                        <CardDeck style={{maxHeight: "300px" }}>
-                            {servicesArray.map(({ descricao, categoria, subcategorias, imgBase64 }) => (
-                                    <Card style={{ minWidth: '200px', minHeight: "300px", maxWidth: '200px', maxHeight: "300px" }} key={1} >
-                                        <Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="100px" height="100px" />
-                                        <Card.Body>
-                                            <Card.Title>Empresa:  </Card.Title>
-                                            <Card.Text>
-                                                Nome da Empresa
-                                            </Card.Text>
-                                        </Card.Body>
-                                        <Card.Footer>
-                                            <small className="text-muted">Last updated 3 mins ago</small>
-                                        </Card.Footer>
-                                    </Card>
-                                )
-                            )}
-                        </CardDeck>}
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div id={'sites'}>
-
-                <button onClick={() => {
-                    setFechar(false);
-                    if(fechar == false){
-                        setFechar(true)
-                    }
-                }} > <img id={'fechar'} src={Fechar}/> </button>
-
-            </div>
-
-            <div id={'design'}>
-
-                <button onClick={() => {
-                    setFechar(false);
-                    if(fechar == false){
-                        setFechar(true)
-                    }
-                }} > <img id={'fechar'} src={Fechar}/> </button>
-
-            </div>
-
-
-        </header>
-
-            <footer id={'rodape-cliente'}>
-
-            <dl id={'rodape-servicos-cliente'}>Serviços
-                <dt><br/>Montagem e manutenção de computadores</dt>
-                <dt><br/>Criação de sites e aplicativos</dt>
-                <dt><br/>Design e criação de banners</dt>
-
-            </dl>
-
-            <img id={'rodape-instagram-icon-cliente'} src={Instagram}/>
-            <img id={'rodape-facebook-icon-cliente'} src={Facebook}/>
-            <img id={'rodape-whatsapp-icon-cliente'} src={Whatsapp}/>
-            <img id={'rodape-baixar-icon-cliente'} src={Baixar}/>
-
-
-            <dl id={'rodape-rede-social-cliente'}>Redes Sociais
-                <dt id={'rodape-instagram-cliente'}><br/>Instagram</dt>
-                <dt id={'rodape-facebook-cliente'}><br/>Facebook</dt>
-                <dt id={'rodape-whatsapp-cliente'}><br/>Whatsapp</dt>
-            </dl>
-
-            <p id={'rodape-downloads-cliente'}>Downloads</p>
-            <p id={'rodape-mais-informacoes-cliente'}>Mais informações</p>
-
-            <img id={'rodape-email-icon-cliente'} src={Email}/>
-
-            <p id={'rodape-email-cliente'}>contact@contactus.com.br</p>
-
-            <img id={'rodape-telefone-icon-cliente'} src={Telefone}/>
-
-            <p id={'rodape-telefone-cliente'}>(34) 3232-3232</p>
-            <p id={'rodape-empresa-cliente'}>&copy; 2020 Tech Center 99.999.999/9999-99</p>
-        </footer>
         </div>
-            );
-
+    )
 }
-export default Cliente;
+
+export default CardsExample;
