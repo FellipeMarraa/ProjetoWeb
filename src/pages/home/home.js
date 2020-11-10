@@ -27,8 +27,6 @@ import passwordValidator from 'password-validator';
 
 
 
-
-
 const Home = props => {
 
     const [login, setLogin] = useState("");
