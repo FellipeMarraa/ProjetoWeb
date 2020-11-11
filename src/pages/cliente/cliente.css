@@ -141,61 +141,6 @@
     margin-top: 30px;
 }
 
-/*============================================manutencao===========================*/
-
-#manutencao{
-    position: absolute;
-    margin-left: 485px;
-    margin-top: 250px;
-    width: 950px;
-    height: 400px;
-    background: #4eada7;
-    border: 1px solid white;
-    border-radius: 25px;
-
-
-}
-
-#sites{
-    position: absolute;
-    margin-left: 485px;
-    margin-top: 250px;
-    width: 950px;
-    height: 400px;
-    background: #4eada7;
-    border: 1px solid white;
-    border-radius: 25px;
-}
-
-#design{
-    position: absolute;
-    margin-left: 485px;
-    margin-top: 250px;
-    width: 950px;
-    height: 400px;
-    background: #4eada7;
-    border: 1px solid white;
-    border-radius: 25px;
-}
-
-#fechar{
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-#button-fechar{
-    text-align: center;
-    background-color: #4eada7;
-}
-
-#pesquisa{
-    width: 300px;
-    margin-left: 305px;
-
-}
-
 /*======================================Inicio Rodape======================================*/
 
 #rodape-cliente {
