@@ -23,7 +23,10 @@ import terceiraImagem from '../../assets/1024px-Running_icon_-_Noun_Project_1782
 import Nav from "reactstrap/es/Nav";
 import Form from "reactstrap/es/Form";
 import Button from "reactstrap/es/Button";
-import passwordValidator from 'password-validator';
+// import passwordValidator from 'password-validator';
+
+
+
 
 
 
@@ -36,18 +39,18 @@ const Home = props => {
     const [cpf, setCpf] = useState("");
     const history = useHistory();
 
-    function validationPassword(senha){
-        let schema = new passwordValidator();
-        schema
-            .is().min(8)                                    // Minimum length 8
-            .is().max(100)                                  // Maximum length 100
-            .has().uppercase()                              // Must have uppercase letters
-            .has().lowercase()                              // Must have lowercase letters
-            .has().digits(2)                                // Must have at least 2 digits
-            .has().not().spaces()                           // Should not have spaces
-            .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
-        return schema.validate(senha)
-    }
+    // function validationPassword(senha){
+    //     let schema = new passwordValidator();
+    //     schema
+    //         .is().min(8)                                    // Minimum length 8
+    //         .is().max(100)                                  // Maximum length 100
+    //         .has().uppercase()                              // Must have uppercase letters
+    //         .has().lowercase()                              // Must have lowercase letters
+    //         .has().digits(2)                                // Must have at least 2 digits
+    //         .has().not().spaces()                           // Should not have spaces
+    //         .is().not().oneOf(['Passw0rd', 'Password123']); // Blacklist these values
+    //     return schema.validate(senha)
+    // }
 
 
     const routeChangeCadastro = (name) => {
@@ -157,7 +160,8 @@ const Home = props => {
                                onChange={(textLogin) => setLogin(textLogin.target.value)}/>
                         <input id={'senha-cadastro'} required={true} value={senha} type={'password'} name="senha"
                                placeholder={'Senha: '} maxLength={256} onChange={(textSenha) => {
-                            setSenha(textSenha.target.value); console.log(validationPassword(senha))
+                            setSenha(textSenha.target.value);
+                            //console.log(validationPassword(senha))
                         }}/>
                         <input id={'nome-cadastro'} required={true} value={nome} type={'text'} name="nome"
                                placeholder={'Nome: '} maxLength={256}

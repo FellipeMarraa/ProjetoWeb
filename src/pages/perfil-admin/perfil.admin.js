@@ -51,3 +51,6 @@ function PerfilCliente() {
 }
 export default PerfilCliente;
 
+const onDrop = picture => {
+    setPictures(picture);
+};
