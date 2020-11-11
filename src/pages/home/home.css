@@ -1,3 +1,420 @@
+@media (min-width:320px) and (max-width: 375px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;line-height: 30px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 250px;margin-left: 490px;margin-top: 15px}
+    #formulario-cadastro select{width: 250px;margin-left: 490px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 250px;margin-left: 490px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #como-funciona{top: 350px}
+    #como-funciona img{display: none;}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: -25px; width: 200px; margin-top: 20px; text-align: center}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 250px; margin-top: 35px; text-align: justify}
+
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width:375px) and (max-width: 425px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 280px;margin-left: 470px;margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #como-funciona{top: 350px}
+    #como-funciona img{display: block; margin-left: 180px; width: 150px; height: 100px; margin-top: -130px}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: 20px; width: 200px; margin-top: 20px; text-align: left}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 300px; margin-top: 35px; text-align: justify}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width:425px) and (max-width: 768px) {
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 10px;}
+    #empresa-cabecalho b{display:none; right: 170px; font-size: 20px}
+    #login-cabecalho {  width: 150px; margin-left: -5px; margin-top: 5px}
+
+    #header{top: 50px;}
+    #header-image{display: none; position: absolute; width: 520px; top: 500px}
+
+    #textoFormulario{ margin-left: 460px; margin-top: -120px; height: 150px; width: 300px;}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px}
+
+    #formulario-cadastro input{width: 280px;margin-left: 470px;margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 470px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 470px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 70px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -400px; right: 20px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 100px}
+    #explicacao-texto-economia{position: relative; left: -780px; right: 30px; top: 250px}
+
+    #explicacao-seguranca-image{position: relative; left: -580px; top: 340px}
+    #explicacao-texto-seguranca{position: relative;left: -1150px; right: 5px; top: 480px}
+
+    #como-funciona{top: 350px}
+    #como-funciona img{display: block; margin-left: 180px; width: 180px; height: 150px; margin-top: -150px}
+    #como-funciona h2{display: none}
+    #como-funciona p{display: block; margin-left: 0px; width: 200px; margin-top: 20px; text-align: left}
+
+    #quanto-custa{ top: 300px}
+    #quanto-custa img{display: none;}
+    #quanto-custa h2{display: none}
+    #quanto-custa p{display: block; margin-left: -25px; width: 300px; margin-top: 35px; text-align: justify}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+}
+
+@media (min-width:768px) and (max-width: 1024px) {
+
+    .navbar-expand-md .navbar-nav .nav-link {margin-left: 60px; width: 20px;}
+    #empresa-cabecalho b{display:block; right: 170px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 600px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -140px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -500px; right: 300px; top: 10px}
+
+    #explicacao-economia-image{ position: relative; left: -60px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -380px; top: 10px}
+
+    #explicacao-seguranca-image{position: relative; left: -570px; top: 100px}
+    #explicacao-texto-seguranca{position: relative;left: -1130px; right: 5px; top: 215px}
+
+    #como-funciona{top: 90px}
+    #como-funciona img{display: block; margin-left: 280px; margin-right: -150px; width: 180px; height: 150px; margin-top: -150px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 100px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: -50px; width: 300px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block; position: absolute; margin-left: 450px; margin-right: -15px; width: 180px; height: 150px; margin-top: 100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 50px; margin-top: 10px;}
+    #quanto-custa p{display: block; margin-left: -100px; margin-top: 90px; text-align: left}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+
+
+}
+
+@media (min-width:1024px) and (max-width: 1080px) {
+
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; right: 170px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 850px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -280px; right: 300px; top: 10px; width: 180px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -360px; top: 10px; width: 150px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -400px; right: 5px; top: 15px; width: 150px}
+
+    #como-funciona{top: -50px}
+    #como-funciona img{display: block; margin-left: 450px; width: 180px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 100px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: -50px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -120px}
+    #quanto-custa h2{display: block;  font-size: 25px; margin-left: -100px; margin-top: -100px;}
+    #quanto-custa p{display: block; margin-left: -100px; margin-top: -50px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+}
+
+@media (min-width:1080px) and (max-width: 1440px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 15px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 30px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 900px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -250px; right: 300px; top: 10px; width: 180px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -340px; top: 10px; width: 150px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -380px; right: 5px; top: 15px; width: 150px}
+
+    #como-funciona{top: -50px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -100px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -50px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width:1440px) and (max-width: 1600px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 250px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1070px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -220px; right: 300px; top: 10px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -220px; top: 10px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -220px; right: 5px; top: 15px; width: 300px}
+
+    #como-funciona{top: -100px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -180px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -180px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -120px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width:1600px) and (max-width: 1920px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 0px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 300px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1100px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -180px; right: 300px; top: 10px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: -150px; top: 10px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: -100px}
+    #explicacao-texto-seguranca{position: relative;left: -90px; right: 5px; top: 15px; width: 300px}
+
+    #como-funciona{top: -100px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -180px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -180px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -120px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width: 1920px) and (max-width: 2556px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 0px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 500px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1300px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px; top: 20px;}
+
+    #explicacao-notificacao-image{ position: relative; left: -220px; top: -120px}
+    #explicacao-texto-notificacao{position: relative; left: -120px; right: 300px; top: 150px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: -120px}
+    #explicacao-texto-economia{position: relative; left: 0px; top: 150px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -270px; top: 120px}
+    #explicacao-texto-seguranca{position: relative;left: 150px; right: 5px; top: 150px; width: 300px}
+
+    #como-funciona{top: 20px}
+    #como-funciona img{display: block; margin-left: 600px; width: 250px; height: 150px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 25px; margin-left: 340px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 15px; text-align: left;}
+
+    #quanto-custa{ top: 250px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: -180px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: -180px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -50px; margin-top: -120px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+@media (min-width: 2556px) and (min-height: 1080px) {
+    .navbar-expand-md .navbar-nav .nav-link { margin-left: 10px; width: 150px; text-align: center;}
+    #empresa-cabecalho b{display:block; margin-left: 750px; font-size: 25px}
+    #login-cabecalho {position: absolute;  width: 130px; margin-left: 1650px; margin-top: 5px;}
+
+    #header{top: 50px;}
+    #header-image{display: block; position: absolute; width: 400px; top: 550px}
+
+    #textoFormulario{ margin-left: 280px; margin-top: -90px; height: 150px; width: 300px; line-height: 30px; margin-bottom: -15px}
+    #tituloForm b {font-size: 25px;}
+    #subtitulo-formulario b {font-size: 15px;}
+
+    #formulario-cadastro input{width: 280px;margin-left: 280px; margin-top: 10px}
+    #formulario-cadastro select{width: 280px;margin-left: 280px;margin-top: 10px}
+    #cadastrarP button{position: absolute; width: 280px;margin-left: 280px;margin-top: 20px}
+
+    #explicacao img{width: 120px; height: 100px;}
+
+    #explicacao-notificacao-image{ position: relative; left: 0px; top: 20px}
+    #explicacao-texto-notificacao{position: relative; left: 200px; right: 300px; top: 150px; width: 380px}
+
+    #explicacao-economia-image{ position: relative; left: -250px; top: 20px}
+    #explicacao-texto-economia{position: relative; left: 330px; top: 150px; width: 300px}
+
+    #explicacao-seguranca-image{position: relative; left: -470px; top: 20px}
+    #explicacao-texto-seguranca{position: relative;left: 510px; right: 5px; top: 150px; width: 300px}
+
+    #como-funciona{top: 20px}
+    #como-funciona img{display: block; margin-left: 600px; width: 400px; height: 200px; margin-top: -125px}
+    #como-funciona h2{display: block; font-size: 30px; margin-left: 390px; margin-top: 10px}
+    #como-funciona p{display: block; margin-left: 100px; width: 500px; margin-top: 50px; text-align: left; }
+
+    #quanto-custa{ top: 50px;}
+    #quanto-custa img{display: block;  margin-left: 650px; margin-right: -15px; width: 180px; height: 150px; margin-top: 100px}
+    #quanto-custa h2{display: block; position: absolute; font-size: 25px; margin-left: 0px; margin-top: 50px;}
+    #quanto-custa p{display: block; position: absolute; margin-left: -200px; margin-top: 120px; text-align: left; width: 600px}
+
+    #rodape-home{position: fixed; float: bottom; top: 2000px}
+
+}
+
+
+
 #cabecalho {
     background-color: #418e89;
     position: fixed;
@@ -94,25 +511,26 @@
 /*Inicio do header ********************************************************/
 
 #header {
+
     position: absolute;
-    width: 100%;
     height: 78%;
     background: #4eada7;
-    padding-bottom: 20px;
+    /*padding-bottom: 20px;*/
 }
 
 #header-image {
-    position: absolute;
-    margin-left: 900px;
-    margin-top: 150px;
+    /*position: absolute;*/
+    margin-left: 600px;
+    margin-top: -500px;
+
 }
 
 #caixa-cadastro {
     position: absolute;
     width: 430px;
     height: 540px;
-    left: 350px;
-    top: 150px;
+    margin-left: -800px;
+    margin-top: 150px;
 
 }
 
@@ -125,7 +543,7 @@
 
 /*}*/
 
-#titulo-formulario {
+#tituloForm {
     margin-left: 15px;
     font-family: SansSerif, Helvetica, Arial;
     font-size: 35px;
@@ -427,144 +845,170 @@
 
 #rodape-home {
     position: absolute;
-    margin-top: 2230px;
-    width: 100%;
-    height: 31%;
-    background-color: #282c34;
+    bottom: 0;
+    height: 70px;
+
 }
 
-#rodape-servicos {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 150px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-dt {
-    font-size: 15px;
-}
-
-dt:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-rede-social {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 650px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-instagram-icon {
-    position: absolute;
+#facebook{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 115px;
-
 }
 
-#rodape-facebook-icon {
-    position: absolute;
+#instagram{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 165px
 }
 
-#rodape-whatsapp-icon {
-    position: absolute;
+#google{
     width: 30px;
     height: 30px;
-    margin-left: 650px;
-    margin-top: 215px
 }
 
-#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-instagram, #rodape-facebook, #rodape-whatsapp {
-    margin-left: 40px;
-    padding: 2px;
-}
-
-#rodape-downloads {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 1050px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-baixar-icon {
-    position: absolute;
-    width: 150px;
-    height: 100px;
-    margin-left: 1025px;
-    margin-top: 100px
-}
-
-#rodape-mais-informacoes {
-    position: absolute;
-    margin-top: 70px;
-    margin-left: 1500px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-email {
-    position: absolute;
-    margin-top: 108px;
-    margin-left: 1545px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-email:hover {
-    color: #5bc4b5;
-    cursor: pointer;
-}
-
-#rodape-email-icon {
-    position: absolute;
+#linkedin{
     width: 30px;
     height: 30px;
-    margin-left: 1502px;
-    margin-top: 105px
 }
 
-#rodape-telefone {
-    position: absolute;
-    margin-top: 160px;
-    margin-left: 1545px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-}
-
-#rodape-telefone-icon {
-    position: absolute;
+#whatsapp{
     width: 30px;
     height: 30px;
-    margin-left: 1502px;
-    margin-top: 155px
 }
 
-#rodape-empresa {
 
-    margin-top: 255px;
-    font-family: SansSerif, Helvetica, Arial;
-    font-size: 20px;
-    color: white;
-    text-align: center;
-}
+
+/*#rodape-servicos {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    !*margin: auto;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*dt {*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*dt:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-rede-social {*/
+/*    position: absolute;*/
+/*    !*bottom: 10px;*!*/
+/*    margin-left: 650px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-instagram-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 115px;*!*/
+
+/*}*/
+
+/*#rodape-facebook-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 165px*!*/
+/*}*/
+
+/*#rodape-whatsapp-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 650px;*!*/
+/*    !*margin-top: 215px*!*/
+/*}*/
+
+/*#rodape-instagram:hover, #rodape-facebook:hover, #rodape-whatsapp:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-instagram, #rodape-facebook, #rodape-whatsapp {*/
+/*    !*margin-left: 40px;*!*/
+/*    padding: 2px;*/
+/*}*/
+
+/*#rodape-downloads {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    margin-left: 1050px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-baixar-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 150px;*/
+/*    height: 100px;*/
+/*    !*margin-left: 1025px;*!*/
+/*    !*margin-top: 100px*!*/
+/*}*/
+
+/*#rodape-mais-informacoes {*/
+/*    position: absolute;*/
+/*    !*margin-top: 70px;*!*/
+/*    margin-left: 1500px;*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-email {*/
+/*    !*position: absolute;*!*/
+/*    !*margin-top: 108px;*!*/
+/*    !*margin-left: 1545px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-email:hover {*/
+/*    color: #5bc4b5;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*#rodape-email-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 1502px;*!*/
+/*    !*margin-top: 105px*!*/
+/*}*/
+
+/*#rodape-telefone {*/
+/*    !*position: absolute;*!*/
+/*    !*margin-top: 160px;*!*/
+/*    !*margin-left: 1545px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*}*/
+
+/*#rodape-telefone-icon {*/
+/*    !*position: absolute;*!*/
+/*    width: 30px;*/
+/*    height: 30px;*/
+/*    !*margin-left: 1502px;*!*/
+/*    !*margin-top: 155px*!*/
+/*}*/
+
+/*#rodape-empresa {*/
+
+/*    !*margin-top: 255px;*!*/
+/*    font-family: SansSerif, Helvetica, Arial;*/
+/*    font-size: 20px;*/
+/*    color: white;*/
+/*    text-align: center;*/
+/*}*/
