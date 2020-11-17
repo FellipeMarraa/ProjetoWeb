@@ -6,7 +6,6 @@ import Cliente from "./pages/cliente/cliente";
 import Profissional from "./pages/profissional/profissional";
 import PerfilProfissional from "./pages/home/perfil-profissional/perfil.profissional";
 import PerfilAdmin from "./pages/perfil-admin/perfil.admin";
-import Cards from "./pages/cards/cardsExample";
 
 function Routes() {
     return (
@@ -17,7 +16,6 @@ function Routes() {
             <Route exact path='/profissional' component={Profissional}/>
             <Route exact path='/perfil-profissional' component={PerfilProfissional}/>
             <Route exact path='/perfil-admin' component={PerfilAdmin}/>
-            <Route exact path='/cards' component={Cards}/>
         </Switch>
     )
 }

@@ -198,7 +198,7 @@
 
 #button-card{
     position: absolute;
-    margin-top: 10px;
+    margin-top: 70px;
     margin-left: 80px;
  }
 
@@ -209,12 +209,6 @@
     border-radius: 25px;
     margin-left: 880px;
     color: white;
-}
-
-#form-pesquisa{
-    width: 300px;
-    margin-left: 560px;
-    margin-top: 20px;
 }
 
 #pesquisa{
