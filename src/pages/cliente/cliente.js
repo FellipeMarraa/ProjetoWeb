@@ -24,7 +24,6 @@ const Cliente = props => {
     const [visibility, setVisibility] = useState(false)
     const [filtro, setFiltro] = useState("")
 
-
     const [servicesArray, setServicesArray] = useState([{
         "descricao": "descricao",
         "categoria": "categoria",
@@ -107,6 +106,34 @@ const Cliente = props => {
 
     );
 
+    async function getEmpresa(descricao) {
+        try {
+            console.log("Entrou no processo de recuperação de dados")
+            let retorno = await fetch('http://localhost:5000/services', {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+
+                body: JSON.stringify(
+                    {
+                        descricao: descricao
+                    }
+                )
+            });
+
+            let json = await retorno.json();
+
+            localStorage.setItem('token', json.token);
+
+        } catch (error) {
+            console.error(error);
+        }
+
+    }
+
     return (
         <div className={'container-fluid p-0'} id={'conteudo'}>
         <Nav id={'cabecalho-cliente'}>
@@ -115,6 +142,8 @@ const Cliente = props => {
         </Nav>
         <header id={'header-cliente'}>
             <h1 id={'titulo-cliente'}>Bem vindo, quais dos nossos serviços você deseja?</h1>
+
+        </header>
 
             <div id={'servicos-cliente'}>
 
@@ -161,34 +190,32 @@ const Cliente = props => {
 
                 <Input id={'pesquisa'} type={'search'} placeholder={'Pesquisar Empresas...'}> Pesquisar</Input>
 
-                <div>
+                <div id={'form-pesquisa'}>
                     <Form.Control as="select" defaultValue={filtro} onChange={(evt) => setFiltro(evt.target.value)}>
-                        <option>Construção Civil</option>
-                        <option>Tecnologia</option>
+                        <option>Montagem e manutenção</option>
+                        <option>Criação de sites</option>
+                        <option>Design e criação de banners</option>
                     </Form.Control>
-
-                    <div >
-                        <Button onClick={evt => { visibility ? setVisibility(false) : setVisibility(true); for (let i = 0; i < 10; i++) { servicesArray.push(servicesArray[0]) } }}> Enable/Disable Flow </Button>
+                </div>
+                    <div id={'button-card'}>
+                        <Button onClick={evt => { visibility ? setVisibility(false) : setVisibility(true); for (let i = 0; i < 2; i++) { servicesArray.push(servicesArray[0]) } }}> Empresas </Button>
                         {visibility &&
-                        <CardDeck style={{maxHeight: "300px" }}>
+                        <CardDeck style={{maxHeight: '100px' }}>
                             {servicesArray.map(({ descricao, categoria, subcategorias, imgBase64 }) => (
-                                    <Card style={{ minWidth: '200px', minHeight: "300px", maxWidth: '200px', maxHeight: "300px" }} key={1} >
-                                        <Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="100px" height="100px" />
+                                    <Card style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }} key={1} >
+                                        <Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />
                                         <Card.Body>
                                             <Card.Title>Empresa:  </Card.Title>
                                             <Card.Text>
-                                                Nome da Empresa
+                                                ${getEmpresa(descricao)}
                                             </Card.Text>
                                         </Card.Body>
-                                        <Card.Footer>
-                                            <small className="text-muted">Last updated 3 mins ago</small>
-                                        </Card.Footer>
                                     </Card>
                                 )
                             )}
-                        </CardDeck>}
+                        </CardDeck>
+                        }
                     </div>
-                </div>
 
 
             </div>
@@ -216,7 +243,7 @@ const Cliente = props => {
             </div>
 
 
-        </header>
+        //
 
             <footer id={'rodape-cliente'}>
 

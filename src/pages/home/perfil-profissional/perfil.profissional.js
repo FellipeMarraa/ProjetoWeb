@@ -18,7 +18,6 @@ const PerfilProfissional = props =>  {
 
     const [nomeEmpresa, setNomeEmpresa] = useState("");
     const [cnpjEmpresa, setCnpjEmpresa] = useState("");
-    const [nomeServico, setNomeServico] = useState("");
     const [valorServico, setValorServico] = useState("");
     const [categoriaServico, setCategoriaServico] = useState("");
     const [servicoAtivo, setServicoAtivo] = useState("");
@@ -30,6 +29,35 @@ const PerfilProfissional = props =>  {
     const routeChange = (name) => {
         let path = '/'.concat(name);
         history.push(path);
+    }
+
+    async function cadastroEmpresa() {
+
+        try {
+
+            let retorno = await fetch('http://localhost:5000/empresas/cadastroempresa', {
+                method: 'POST',
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
+                },
+
+                body: JSON.stringify(
+                    {
+                        nomeEmpresa: nomeEmpresa,
+                        cnpjEmpresa: cnpjEmpresa,
+                        servico: categoriaServico,
+                        valorServico: valorServico
+                    }
+                )
+            });
+
+            let json = await retorno.json();
+
+        } catch (error) {
+            console.error(error);
+        }
     }
 
     async function cadastroCategoria() {
@@ -57,45 +85,6 @@ const PerfilProfissional = props =>  {
         setPictures(picture);
     };
 
-    // async function efetuarCadastro() {
-    //
-    //     try {
-    //
-    //         let retorno = await fetch('http://localhost:5000/users/cadastro', {
-    //             method: 'POST',
-    //             headers: {
-    //                 'Accept': 'application/json',
-    //                 'Content-Type': 'application/json',
-    //                 'Access-Control-Allow-Origin': '*'
-    //             },
-    //
-    //             body: JSON.stringify(
-    //                 {
-    //                     login: login,
-    //                     senha: senha,
-    //                     nome: nome,
-    //                     tipo: tipo,
-    //                     cpf: cpf
-    //                 }
-    //             )
-    //         });
-    //
-    //         let json = await retorno.json();
-    //
-    //         localStorage.setItem('token', json.token);
-    //
-    //         console.log(localStorage.getItem("token"));
-    //
-    //         if (json.tipo) {
-    //             routeChange(json.tipo);
-    //         } else {
-    //             alert("Usuario nao autorizado")
-    //         }
-    //     } catch (error) {
-    //         console.error(error);
-    //     }
-    // }
-
     return(
         <div className={'container-fluid p-0'}>
             <Nav className={'navbar navbar-expand-md'} id={'cabecalho-perfil-profissional'}>
@@ -113,23 +102,19 @@ const PerfilProfissional = props =>  {
 
                     <h2 id={'titulo-empresa-perfil-profissional'}>Dados da empresa</h2>
 
-                    <Input className={'form-control'} id={'nome-empresa-perfil-profissional'} required={true} value={nomeEmpresa} type={'search'} name="Nome Empresa"
+                    <Input id={'nome-empresa-perfil-profissional'} required={true} value={nomeEmpresa} type={'text'} name="Nome Empresa"
                            placeholder={'Razão Social:'} maxLength={256}
-                           onChange={(textNomeEmpresa) => setNomeServico(textNomeEmpresa.target.value)}/>
+                           onChange={(NomeEmpresa) => setNomeEmpresa(NomeEmpresa.target.value)}/>
 
-                    <Input className={'form-control'} id={'cnpj-empresa-perfil-profissional'} required={true} value={cnpjEmpresa} type={'text'} name="Cpnj Empresa"
+                    <Input id={'cnpj-empresa-perfil-profissional'} required={true} value={cnpjEmpresa} type={'text'} name="Cpnj Empresa"
                            placeholder={'CNPJ/CPF da empresa: '}
-                           onChange={(textCnpjEmpresa) => setValorServico(textCnpjEmpresa.target.value)}/>
+                           onChange={(CnpjEmpresa) => setCnpjEmpresa(CnpjEmpresa.target.value)}/>
 
                     <h2 id={'titulo-formulario-perfil-profissional'}>Dados do serviço</h2>
 
-                    <Input className={'form-control'} id={'nome-servico-perfil-profissional'} required={true} value={nomeServico} type={'search'} name="Nome Servico"
-                           placeholder={'Nome do Servico:'} maxLength={256}
-                           onChange={(textNomeServico) => setNomeServico(textNomeServico.target.value)}/>
-
-                    <Input className={'form-control'} id={'valor-servico-perfil-profissional'} required={true} value={valorServico} type={'number'} name="Valor Servico"
+                    <Input id={'valor-servico-perfil-profissional'} required={true} value={valorServico} type={'number'} name="Valor Servico"
                            placeholder={'Valor do servico: '}
-                           onChange={(textValorServico) => setValorServico(textValorServico.target.value)}/>
+                           onChange={(ValorServico) => setValorServico(ValorServico.target.value)}/>
 
                     <select required={true} value={categoriaServico} id={'categoria-servico-perfil-profissional'}
                             onChange={(textCategoriaServico) => setCategoriaServico(textCategoriaServico.target.value)}>
@@ -152,10 +137,14 @@ const PerfilProfissional = props =>  {
                         imgExtension={['.jpg', '.gif', '.png', '.jpeg']}>
                     </ImageUploader>
 
-                    <Button id={'button'} onClick={cadastroCategoria}> enviar</Button>
+                    <Button id={'button'}> enviar</Button>
                 </div>
 
-                <Button id={'button-cadastrar'}> Cadastrar Serviço</Button>
+                <button id={'button-cadastrar'} type={"submit"} onClick={() => {
+                    cadastroEmpresa();
+                    cadastroCategoria();
+                    routeChange("profissional")
+                }}> Cadastrar Serviço</button>
 
             </div>
 
