@@ -23,6 +23,7 @@ const Cliente = props => {
 
     const [visibility, setVisibility] = useState(false)
     const [filtro, setFiltro] = useState("")
+    const [nomeEmpresa, setNomeEmpresa] = useState("")
 
     const [servicesArray, setServicesArray] = useState([{
         "descricao": "descricao",
@@ -109,7 +110,7 @@ const Cliente = props => {
     async function getEmpresa(descricao) {
         try {
             console.log("Entrou no processo de recuperação de dados")
-            let retorno = await fetch('http://localhost:5000/services', {
+            let retorno = await fetch('http://localhost:5000/empresas', {
                 method: 'GET',
                 headers: {
                     'Accept': 'application/json',
@@ -119,7 +120,7 @@ const Cliente = props => {
 
                 body: JSON.stringify(
                     {
-                        descricao: descricao
+                        nomeEmpresa: nomeEmpresa
                     }
                 )
             });
@@ -190,13 +191,6 @@ const Cliente = props => {
 
                 <Input id={'pesquisa'} type={'search'} placeholder={'Pesquisar Empresas...'}> Pesquisar</Input>
 
-                <div id={'form-pesquisa'}>
-                    <Form.Control as="select" defaultValue={filtro} onChange={(evt) => setFiltro(evt.target.value)}>
-                        <option>Montagem e manutenção</option>
-                        <option>Criação de sites</option>
-                        <option>Design e criação de banners</option>
-                    </Form.Control>
-                </div>
                     <div id={'button-card'}>
                         <Button onClick={evt => { visibility ? setVisibility(false) : setVisibility(true); for (let i = 0; i < 2; i++) { servicesArray.push(servicesArray[0]) } }}> Empresas </Button>
                         {visibility &&
@@ -207,7 +201,7 @@ const Cliente = props => {
                                         <Card.Body>
                                             <Card.Title>Empresa:  </Card.Title>
                                             <Card.Text>
-                                                ${getEmpresa(descricao)}
+                                                {descricao = `${getEmpresa()}`}
                                             </Card.Text>
                                         </Card.Body>
                                     </Card>
