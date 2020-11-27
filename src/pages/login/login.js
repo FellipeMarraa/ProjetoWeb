@@ -41,7 +41,7 @@ const Login = props => {
 
             console.log(localStorage.getItem("token"));
 
-            if (json.tipo) {
+            if (json.body.login != null) {
                 routeChange(json.tipo);
             } else {
                 alert("Usuario nao autorizado")

@@ -49,9 +49,15 @@ const Home = props => {
     }
 
 
-    const routeChangeCadastro = (name) => {
-        let path = '/perfil-'.concat(name);
-        history.push(path);
+    const routeChangeCadastro = (tipo) => {
+        if (tipo == "profissional"){
+            let path = '/perfil-'.concat(tipo);
+            history.push(path);
+        }
+        else {
+            let path = '/'.concat(tipo);
+            history.push(path);
+        }
     }
 
     const routeChange = (name) => {
@@ -88,11 +94,8 @@ const Home = props => {
 
             console.log(localStorage.getItem("token"));
 
-            if (json.tipo) {
-                routeChange(json.tipo);
-            } else {
-                alert("Usuario nao autorizado")
-            }
+            json.tipo = routeChangeCadastro(json.tipo);
+
         } catch (error) {
             console.error(error);
         }
@@ -174,7 +177,7 @@ const Home = props => {
 
                         <button id={'cadastrar'} type={"submit"} onClick={() => {
                             efetuarCadastro();
-                            routeChangeCadastro(tipo)
+                            routeChangeCadastro(tipo);
                         }}> Cadastrar
                         </button>
                     </Form>

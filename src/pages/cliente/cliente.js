@@ -22,8 +22,8 @@ import {Card, CardDeck, Form} from "react-bootstrap";
 const Cliente = props => {
 
     const [visibility, setVisibility] = useState(false)
-    const [filtro, setFiltro] = useState("")
-    const [nomeEmpresa, setNomeEmpresa] = useState("")
+    // const [filtro, setFiltro] = useState("")
+    // const [nomeEmpresa, setNomeEmpresa] = useState("")
 
     const [servicesArray, setServicesArray] = useState([{
         "descricao": "descricao",
@@ -36,7 +36,8 @@ const Cliente = props => {
     }, []);
 
 
-
+    // const [initialSliceCards, setInitialSliceCards] = useState(0);
+    // const [endSliceCards, setEndSliceCards] = useState(3);
     const [manutencao, setManutencao] = useState(false);
     const [sites, setSites] = useState(false);
     const [design, setDesign] = useState(false);
@@ -46,9 +47,9 @@ const Cliente = props => {
     useEffect(() => {
         document.getElementById('fechar');
         if (fechar == true){
-            document.getElementById("manutencao").style.display = "none";
-        }else if (fechar == false) {
             document.getElementById("manutencao").style.display = "block";
+        }else if (fechar == false) {
+            document.getElementById("manutencao").style.display = "none";
             return setSites(false), setDesign(false);
         }
     })
@@ -74,7 +75,6 @@ const Cliente = props => {
     useEffect(() => {
 
             document.getElementById('sites');
-
             if (sites == false) {
                 document.getElementById("sites").style.display = "none";
             } else if (sites == true) {
@@ -147,30 +147,24 @@ const Cliente = props => {
 
                 <div id={'caixa-manutencao-cliente'}>
                     <Button id={'botao-manutencao'} onClick={() => {
-                        setManutencao(false);
-                        if (manutencao == false) {
-                            setManutencao(true);
-                        }
+                        setManutencao(true);
+                        setFechar(true);
                     }}><img id={'manutencao-cliente'} src={ImgManu}/></Button>
                 <p id={'texto-manutencao-cliente'}>Montagem e manutenção<br/> de computadores</p>
                 </div>
 
                 <div id={'caixa-site-cliente'}>
                     <Button id={'botao-sites'} onClick={() => {
-                        setSites(false);
-                        if (sites == false) {
-                            setSites(true);
-                        }
+                        setSites(true);
+                        setFechar(true);
                     }}><img id={'site-cliente'} src={ImgSite}/></Button>
                 <p id={'texto-site-cliente'}>Criação de sites e aplicativos</p>
                 </div>
 
                 <div id={'caixa-design-cliente'}>
                     <Button id={'botao-design'} onClick={() => {
-                        setDesign(false);
-                        if (design == false) {
-                            setDesign(true);
-                        }
+                        setDesign(true);
+                        setFechar(true);
                     }}><img id={'design-cliente'} src={ImgDesign}/></Button>
                 <p id={'texto-design-cliente'}>Design e criação de banners</p>
                 </div>
@@ -178,7 +172,6 @@ const Cliente = props => {
             </div>
 
             <div id={'manutencao'}>
-
                 <button id={'button-fechar'} onClick={() => {
                     setFechar(false);
                     if(fechar == false){
@@ -186,13 +179,13 @@ const Cliente = props => {
                     }
                 }} > <img id={'fechar'} src={Fechar}/> </button>
 
-                <Input id={'pesquisa'} type={'search'} placeholder={'Pesquisar Empresas...'}> Pesquisar</Input>
 
                     <div id={'button-card'}>
                         <CardDeck style={{maxHeight: '100px' }}>
                             {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
-                                    <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }} key={1} >
+                                    <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
                                         {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
+                                        { servico = nomeEmpresa}
                                         <Card.Body>
                                             <Card.Title>Empresa:  </Card.Title>
                                             <Card.Text>
@@ -203,6 +196,16 @@ const Cliente = props => {
                                 )
                             )}
                         </CardDeck>
+                        {/*<Button onClick={()=> {*/}
+                        {/*    setVisibility(false);setVisibility(true);*/}
+                        {/*    if ((initialSliceCards+3) > servicesArray.length){*/}
+                        {/*        setInitialSliceCards(0);  setEndSliceCards(3)*/}
+                        {/*    }*/}
+                        {/*    else {*/}
+                        {/*        setInitialSliceCards(initialSliceCards+3);  setEndSliceCards(endSliceCards+3)*/}
+                        {/*    }*/}
+                        {/*    console.log(initialSliceCards);console.log(endSliceCards);*/}
+                        {/*} } > TROCAR CARDS! </Button>*/}
                     </div>
 
 
@@ -210,23 +213,80 @@ const Cliente = props => {
 
             <div id={'sites'}>
 
-                <button onClick={() => {
+                <button id={'button-fechar'} onClick={() => {
                     setFechar(false);
                     if(fechar == false){
                         setFechar(true)
                     }
                 }} > <img id={'fechar'} src={Fechar}/> </button>
+
+                <div id={'button-card'}>
+                    <CardDeck style={{maxHeight: '100px' }}>
+                        {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
+                                <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
+                                    {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
+                                    <Card.Body>
+                                        <Card.Title>Empresa:  </Card.Title>
+                                        <Card.Text>
+                                            {servico}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )
+                        )}
+                    </CardDeck>
+                    {/*<Button onClick={()=> {*/}
+                    {/*    setVisibility(false);setVisibility(true);*/}
+                    {/*    if ((initialSliceCards+3) > servicesArray.length){*/}
+                    {/*        setInitialSliceCards(0);  setEndSliceCards(3)*/}
+                    {/*    }*/}
+                    {/*    else {*/}
+                    {/*        setInitialSliceCards(initialSliceCards+3);  setEndSliceCards(endSliceCards+3)*/}
+                    {/*    }*/}
+                    {/*    console.log(initialSliceCards);console.log(endSliceCards);*/}
+                    {/*} } > TROCAR CARDS! </Button>*/}
+                </div>
+
 
             </div>
 
+
             <div id={'design'}>
 
-                <button onClick={() => {
+                <button id={'button-fechar'} onClick={() => {
                     setFechar(false);
                     if(fechar == false){
                         setFechar(true)
                     }
                 }} > <img id={'fechar'} src={Fechar}/> </button>
+
+                <div id={'button-card'}>
+                    <CardDeck style={{maxHeight: '100px' }}>
+                        {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
+                                <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
+                                    {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
+                                    <Card.Body>
+                                        <Card.Title>Empresa:  </Card.Title>
+                                        <Card.Text>
+                                            {nomeEmpresa}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            )
+                        )}
+                    </CardDeck>
+                    {/*<Button onClick={()=> {*/}
+                    {/*    setVisibility(false);setVisibility(true);*/}
+                    {/*    if ((initialSliceCards+3) > servicesArray.length){*/}
+                    {/*        setInitialSliceCards(0);  setEndSliceCards(3)*/}
+                    {/*    }*/}
+                    {/*    else {*/}
+                    {/*        setInitialSliceCards(initialSliceCards+3);  setEndSliceCards(endSliceCards+3)*/}
+                    {/*    }*/}
+                    {/*    console.log(initialSliceCards);console.log(endSliceCards);*/}
+                    {/*} } > TROCAR CARDS! </Button>*/}
+                </div>
+
 
             </div>
 

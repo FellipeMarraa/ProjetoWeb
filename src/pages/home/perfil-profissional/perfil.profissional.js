@@ -137,7 +137,6 @@ const PerfilProfissional = props =>  {
                         imgExtension={['.jpg', '.gif', '.png', '.jpeg']}>
                     </ImageUploader>
 
-                    <Button id={'button'}> enviar</Button>
                 </div>
 
                 <button id={'button-cadastrar'} type={"submit"} onClick={() => {
