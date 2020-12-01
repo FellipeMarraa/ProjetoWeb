@@ -8,6 +8,7 @@ const Login = props => {
     const [login, setLogin] = useState("");
     const [senha, setSenha] = useState("");
     // const [token, setToken] = useState("");
+    const [tipo, setTipo] = useState("");
 
     const history = useHistory();
 
@@ -16,9 +17,9 @@ const Login = props => {
         history.push(path);
     }
 
-    async function efetuarLogin(login, senha) {
+    async function efetuarLogin() {
         try {
-            console.log("Entrou no processo de envio para o back end")
+            console.log("Entrou no processo de envio para o back end", login, senha)
             let retorno = await fetch('http://localhost:5000/users/login', {
                 method: 'POST',
                 headers: {
@@ -35,13 +36,15 @@ const Login = props => {
                 )
             });
 
+            console.log("saiu do fetch");
+
             let json = await retorno.json();
 
             localStorage.setItem('token', json.token);
 
             console.log(localStorage.getItem("token"));
 
-            if (json.body.login != null) {
+            if (json.tipo) {
                 routeChange(json.tipo);
             } else {
                 alert("Usuario nao autorizado")
@@ -58,11 +61,12 @@ const Login = props => {
             <div className={'caixa-login'}>
                 <img id={'icone-user-login'} src={IconeUser}/>
 
-                <form id={'formulario-login'}>
+                <div id={'formulario-logar'}>
 
                     <input id={'email-login'} value={login} type={'email'} name="email" placeholder={'Email:'}
                            onChange={textEmail => {
                                setLogin(textEmail.target.value);
+                               console.log(textEmail);
                            }}/>
 
 
@@ -70,11 +74,12 @@ const Login = props => {
                            onChange={textSenha => {
                                setSenha(textSenha);
                                setSenha(textSenha.target.value);
+                               console.log(textSenha);
                            }}/>
 
                     <button id={'login'} onClick={() => {
-                        efetuarLogin(login, senha);
-                        routeChange()
+                        efetuarLogin();
+
                     }}> Login
                     </button>
 
@@ -82,7 +87,7 @@ const Login = props => {
 
                     <p id={'nao-possui-login'}>Não possui login? <Link id={'cadastro-login'} to="/">Cadastre-se</Link></p>
 
-                </form>
+                </div>
             </div>
         </div>
 
