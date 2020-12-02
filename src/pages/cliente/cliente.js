@@ -121,8 +121,8 @@ const Cliente = props => {
             });
 
             let json = await retorno.json();
-            setServicesArray(json);
 
+            setServicesArray(json);
 
             localStorage.setItem('token', json.token);
 
@@ -187,7 +187,7 @@ const Cliente = props => {
                         <CardDeck style={{maxHeight: '100px' }}>
                             {servicesArray.filter(x => x.servico === filtro).map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
                                     <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
-                                        {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
+                                        <Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />
                                         <Card.Body>
                                             <Card.Title>Empresa:  </Card.Title>
                                             <Card.Text>

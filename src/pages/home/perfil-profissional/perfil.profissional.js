@@ -54,13 +54,16 @@ const PerfilProfissional = props =>  {
             });
 
             let json = await retorno.json();
+            console.log(json);
+            cadastroCategoria(json._id);
 
         } catch (error) {
             console.error(error);
         }
     }
 
-    async function cadastroCategoria() {
+    async function cadastroCategoria(id) {
+        formData.append('id', id);
         formData.append('image', pictures[0]);
         formData.append('descricao', "nova descricao");
         formData.append('categoria', " nova categoria");
@@ -141,7 +144,7 @@ const PerfilProfissional = props =>  {
 
                 <button id={'button-cadastrar'} type={"submit"} onClick={() => {
                     cadastroEmpresa();
-                    cadastroCategoria();
+
                     routeChange("profissional")
                 }}> Cadastrar Serviço</button>
 
