@@ -22,7 +22,7 @@ import {Card, CardDeck, Form} from "react-bootstrap";
 const Cliente = props => {
 
     const [visibility, setVisibility] = useState(false)
-    // const [filtro, setFiltro] = useState("")
+    const [filtro, setFiltro] = useState("")
     // const [nomeEmpresa, setNomeEmpresa] = useState("")
 
     const [servicesArray, setServicesArray] = useState([{
@@ -147,6 +147,7 @@ const Cliente = props => {
 
                 <div id={'caixa-manutencao-cliente'}>
                     <Button id={'botao-manutencao'} onClick={() => {
+                        setFiltro("Manutenção");
                         setManutencao(true);
                         setFechar(true);
                     }}><img id={'manutencao-cliente'} src={ImgManu}/></Button>
@@ -155,6 +156,7 @@ const Cliente = props => {
 
                 <div id={'caixa-site-cliente'}>
                     <Button id={'botao-sites'} onClick={() => {
+                        setFiltro("Sites");
                         setSites(true);
                         setFechar(true);
                     }}><img id={'site-cliente'} src={ImgSite}/></Button>
@@ -163,6 +165,7 @@ const Cliente = props => {
 
                 <div id={'caixa-design-cliente'}>
                     <Button id={'botao-design'} onClick={() => {
+                        setFiltro("Design");
                         setDesign(true);
                         setFechar(true);
                     }}><img id={'design-cliente'} src={ImgDesign}/></Button>
@@ -182,10 +185,9 @@ const Cliente = props => {
 
                     <div id={'button-card'}>
                         <CardDeck style={{maxHeight: '100px' }}>
-                            {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
+                            {servicesArray.filter(x => x.servico === filtro).map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
                                     <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
                                         {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
-                                        { servico = nomeEmpresa}
                                         <Card.Body>
                                             <Card.Title>Empresa:  </Card.Title>
                                             <Card.Text>
@@ -222,7 +224,7 @@ const Cliente = props => {
 
                 <div id={'button-card'}>
                     <CardDeck style={{maxHeight: '100px' }}>
-                        {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
+                        {servicesArray.filter(x => x.servico === filtro).map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
                                 <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
                                     {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
                                     <Card.Body>
@@ -262,7 +264,7 @@ const Cliente = props => {
 
                 <div id={'button-card'}>
                     <CardDeck style={{maxHeight: '100px' }}>
-                        {servicesArray.map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
+                        {servicesArray.filter(x => x.servico === filtro).map(({ nomeEmpresa, servico, valorServico, cnpjEmpresa, _id }) => (
                                 <Card key={_id} style={{marginLeft: '50px' ,marginTop: '20px', minWidth: '200px', minHeight: "250px", maxWidth: '200px', maxHeight: "250px" }}>
                                     {/*<Card.Img variant="top" src={`data:image/jpeg;base64,${imgBase64}`} width="80px" height="120px" />*/}
                                     <Card.Body>
